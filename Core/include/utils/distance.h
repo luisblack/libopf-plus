@@ -9,6 +9,9 @@
 #define FUNCTION_H_
 
 #include<functional>
+#include<vector>
+
+using namespace std;
 
 namespace opf
 {

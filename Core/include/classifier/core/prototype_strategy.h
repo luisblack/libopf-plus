@@ -12,9 +12,13 @@
 #include <input/patterns.h>
 #include <utils/distance.h>
 
+#include <vector>
+
+using namespace std;
+
 class PrototypesStrategy {
     public:
-    virtual double* SelectPrototypes(opf::Distance distance, Patterns patterns) = 0;
+    virtual vector<double> SelectPrototypes(opf::Distance distance, Patterns patterns) = 0;
 
 	private:
 };
