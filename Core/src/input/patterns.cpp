@@ -9,7 +9,7 @@
 #include <input/pattern.h>
 
 Patterns::Patterns(string file_name) {
-    LoadTextFile(file_name);
+    load_text_file(file_name);
 }
 
 Patterns::Patterns(int number_of_patterns) {
@@ -41,7 +41,7 @@ void Patterns::set_number_of_classes(int number_of_classes) {
 	number_of_classes_ = number_of_classes;
 }
 
-void Patterns::LoadTextFile(string file_name){
+void Patterns::load_text_file(string file_name){
     ifstream filein;
     int dimension;
 
@@ -50,7 +50,7 @@ void Patterns::LoadTextFile(string file_name){
     if(filein.is_open()){
         filein >> *this;
         filein.close();
-	}else{
+    }else{
         throw "Unable to open file " + file_name;
 	}
 }
@@ -58,18 +58,23 @@ void Patterns::LoadTextFile(string file_name){
 
 istream& operator >>(istream& input, Patterns &patterns)
 {
-    int samples_number;
+    int number_of_features;
+    try{
+        //TODO: ler uma linha de cada vez, para validar linhas.
+        input >> patterns.number_of_patterns_ >> patterns.number_of_classes_ >> number_of_features;
 
-    input >> samples_number >> patterns.number_of_classes_ >> patterns.number_of_patterns_;
+        //cout << "Patterns( samples= " << patterns.number_of_patterns_ << ", classes= " << patterns.number_of_classes_ << ", features= " << number_of_features << ")\n";
 
-    //cout << "Patterns( samples= " << samples_number << ", classes= " << patterns.number_of_classes_ << ", features= " << patterns.number_of_patterns_ << ")\n";
+        patterns.pattern = new Pattern[patterns.number_of_patterns_];
 
-    patterns.pattern = new Pattern[samples_number];
-
-    for(int i=0; i<samples_number; ++i)
-    {
-        Pattern&p = patterns.pattern[i];
-        p.set_dimension(patterns.number_of_patterns_);
-        input >> p;
+        for(int i=0; i < patterns.number_of_patterns_; ++i)
+        {
+            Pattern&p = patterns.pattern[i];
+            p.set_dimension(patterns.number_of_patterns_);
+            input >> p;
+        }
+    }catch(std::exception e){
+        throw "File in invalid format.";
     }
+
 }

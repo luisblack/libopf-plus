@@ -5,6 +5,7 @@
 #include <classifier/core/model.h>
 #include <utils/distance.h>
 #include <input/file_formats.h>
+#include <utils/priority_queue.h>
 
 //TO DO: adicionar outros includes aqui
 

@@ -1,0 +1,61 @@
+\hypertarget{classMSTPrototypes}{\section{M\+S\+T\+Prototypes Class Reference}
+\label{classMSTPrototypes}\index{M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}}
+}
+
+
+{\ttfamily \#include $<$mst\+\_\+prototype.\+h$>$}
+
+Inheritance diagram for M\+S\+T\+Prototypes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMSTPrototypes}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMSTPrototypes_a62fedec88ad4ab417181fbc672f72410}{M\+S\+T\+Prototypes} ()
+\item 
+virtual double $\ast$ \hyperlink{classMSTPrototypes_a9c6462a87ee9b59cf8ca623b139b701b}{Select\+Prototypes} (opf\+::\+Distance distance, \hyperlink{classPatterns}{Patterns} patterns)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class to handle prototypes selection by using a Minimum Spanning Tree (M\+S\+T). Prim's algorithm is performed to generate the M\+S\+T. Two patterns on M\+S\+T are selected as prototypes if they are connected and belong to different classes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMSTPrototypes_a62fedec88ad4ab417181fbc672f72410}{\index{M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}!M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}}
+\index{M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}!M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}}
+\subsubsection[{M\+S\+T\+Prototypes}]{\setlength{\rightskip}{0pt plus 5cm}M\+S\+T\+Prototypes\+::\+M\+S\+T\+Prototypes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classMSTPrototypes_a62fedec88ad4ab417181fbc672f72410}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMSTPrototypes_a9c6462a87ee9b59cf8ca623b139b701b}{\index{M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}!Select\+Prototypes@{Select\+Prototypes}}
+\index{Select\+Prototypes@{Select\+Prototypes}!M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}}
+\subsubsection[{Select\+Prototypes}]{\setlength{\rightskip}{0pt plus 5cm}double $\ast$ M\+S\+T\+Prototypes\+::\+Select\+Prototypes (
+\begin{DoxyParamCaption}
+\item[{opf\+::\+Distance}]{distance, }
+\item[{{\bf Patterns}}]{patterns}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMSTPrototypes_a9c6462a87ee9b59cf8ca623b139b701b}
+Returns a array of size of patterns with zero value is a pattern is a prototype and infinity otherwise. 
+\begin{DoxyParams}{Parameters}
+{\em distance} & a distance function. \\
+\hline
+{\em patterns} & a set of single pattern. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classPrototypesStrategy_ad1bd1557df7dbc5152a6a640d0b3adaf}{Prototypes\+Strategy}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+classifiers/includes/complete\+\_\+graph/\hyperlink{mst__prototype_8h}{mst\+\_\+prototype.\+h}\item 
+classifiers/src/complete\+\_\+graph/src/\hyperlink{mst__prototype_8cpp}{mst\+\_\+prototype.\+cpp}\end{DoxyCompactItemize}

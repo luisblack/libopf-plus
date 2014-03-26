@@ -61,7 +61,7 @@ private:
 	int number_of_classes_;
 
 	/*Load a txt dataset and save in a pattern object**/
-    void LoadTextFile(string file_name);
+    void load_text_file(string file_name);
 };
 
 

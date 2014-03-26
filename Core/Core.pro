@@ -46,4 +46,5 @@ SOURCES += \
     src/input/pattern.cpp \
     src/classifier/complete_graph/mst_prototype.cpp \
     src/classifier/core/opf.cpp \
-    src/input/file_formats.cpp
+    src/input/file_formats.cpp \
+    src/utils/priority_queue.cpp

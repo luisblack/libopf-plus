@@ -29,10 +29,10 @@ public:
     * @param dimension dimension of feature vector.
     * @param index index of pattern.
     * */
-    template <typename Iterator> Pattern(int class_value, int dimension, Iterator begin, Iterator end, int index)
+    template <typename Iterator> Pattern(int class_value, Iterator begin, Iterator end, int index)
     {
         class_value_ = class_value;
-        dimension_ = dimension;
+        dimension_ = end - begin;
         set_feature_vector(begin, end);
         index_ = index;
     }
@@ -42,9 +42,9 @@ public:
     * @param dimension dimension of feature vector.
     * @param index index of pattern.
     * */
-    template <typename Iterator> Pattern( int dimension, Iterator begin, Iterator end, int index)
+    template <typename Iterator> Pattern(Iterator begin, Iterator end, int index)
     {
-        dimension_ = dimension;
+        dimension_ = end - begin;
         set_feature_vector(begin, end);
         index_ = index;
     }

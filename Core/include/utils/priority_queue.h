@@ -7,37 +7,48 @@
 
 #ifndef OPF_HEAP_H_
 #define OPF_HEAP_H
+#include <vector>
+
+#include <functional>
+
+using namespace std;
 
 
-class Pair
-{
+
+class PriorityQueue{
 public:
-	Pair();
-    Pair(int x, double y):index(x),cost(y)
-    {}
-    int index;
-    double cost;
 
-    bool operator <(Pair& other_pair)
-    {
-        return cost < other_pair.cost;
-    }
-};
+    enum Type {MIN, MAX};
 
-class OPFHeap{
-public:
-	OPFHeap(int size);
-	void Push(Pair pair);
-	Pair Pop();
-	void Update(int index, double cost);
-	bool IsEmpty();
+    PriorityQueue(int size, Type type = Type::MIN);
+    ~PriorityQueue();
+
+    void insert(double cost);
+    int remove();
+    void update(int index, double cost);
+    bool empty() const;
+    bool full() const;
+
+    void sort();
+
+    const int* begin() const;
+    const int* end() const;
+
+    double get_cost(int index)const;
+
 private:
+
+    Type policy_type;
+
+    bool min(int, int);
+    bool max(int, int);
+
 	enum Status {BLACK, GREY, WHITE};
-	Pair *begin_;
-	Pair *end_;
-	Pair *heap_;
-	int size_;
-	Status *status_;
+    int size_;
+    int cur_idx_;
+    Status* status_;
+    int* index_;
+    double* cost_;
 };
 
 
