@@ -12,7 +12,7 @@
 
 namespace opf
 {
-    typedef std::function<double(const double*)> Distance;
+    typedef std::function<double(const vector<double>,const vector<double>)> Distance;
 }
 
 

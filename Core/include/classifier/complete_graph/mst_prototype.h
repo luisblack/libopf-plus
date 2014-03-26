@@ -15,7 +15,10 @@ public:
      * @param distance a distance function.
      * @param patterns a set of single pattern.
      * */
-    virtual double* SelectPrototypes(opf::Distance distance, Patterns patterns);
+    virtual vector<double> SelectPrototypes(opf::Distance distance, Patterns patterns);
+private:
+    const int NIL = -1;
+    const bool PROTOTYPE = true;
 };
 
 #endif // MST_PROTOTYPES_H

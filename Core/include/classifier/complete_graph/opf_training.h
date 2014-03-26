@@ -8,10 +8,13 @@
 #ifndef OPF_TRAINING_H_
 #define OPF_TRAINING_H_
 
+#include<classifier/core/training_strategy.h>
+#include<utils/distance.h>
+
 class OPFTraining: public TrainingStrategy{
 public:
 	OPFTraining();
-	void Train();
+    void Train(opf::Distance distance, Patterns patterns);
 private:
 };
 
