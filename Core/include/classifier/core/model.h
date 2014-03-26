@@ -5,15 +5,18 @@
  *      Author: tome
  */
 
-#ifndef OPF_MODEL_H_
-#define OPF_MODEL_H_
+#ifndef MODEL_H_
+#define MODEL_H_
 
-class OPF_Model{
+#include<iostream>
+
+class Model{
 public:
-	OPF_Model(int numberOfPatterns);
+	Model(int numberOfPatterns);
 	void setPrototypeStatus(int index, bool status);
 	bool getPrototypeStatus(int index) const;
-	void saveModel() const;
+	//"save" method in C++ pattern
+	std::ostream& operator>>(std::ostream& out);
 
 private:
 	bool *prototypeStatus;
