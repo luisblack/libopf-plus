@@ -11,12 +11,13 @@
 #include <input/pattern.h>
 #include <input/patterns.h>
 #include <utils/distance.h>
+#include <libopf-plus.h>
 
 class PrototypesStrategy {
     public:
-    virtual double* SelectPrototypes(opf::Distance distance, Patterns patterns) = 0;
+    virtual vector<double> SelectPrototypes(opf::Distance distance, Patterns patterns) = 0;
 
 	private:
 };
 
-#endif PROTOTYPES_ESTRATEGY_H_
+#endif //PROTOTYPES_ESTRATEGY_H_

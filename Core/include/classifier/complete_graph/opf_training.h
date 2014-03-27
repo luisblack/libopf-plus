@@ -14,7 +14,7 @@
 class OPFTraining: public TrainingStrategy{
 public:
 	OPFTraining();
-    void Train(opf::Distance distance, Patterns patterns);
+   virtual Model* train(opf::Distance distance, Patterns patterns);
 private:
 };
 
