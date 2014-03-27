@@ -13,6 +13,10 @@
 #include <utils/distance.h>
 #include <libopf-plus.h>
 
+#include <vector>
+
+using namespace std;
+
 class PrototypesStrategy {
     public:
     virtual vector<double> SelectPrototypes(opf::Distance distance, Patterns patterns) = 0;

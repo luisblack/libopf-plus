@@ -10,6 +10,7 @@
 
 #include<classifier/core/training_strategy.h>
 #include<utils/distance.h>
+#include <input/patterns.h>
 
 class OPFTraining: public TrainingStrategy{
 public:
