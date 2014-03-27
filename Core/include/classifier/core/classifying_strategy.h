@@ -5,13 +5,21 @@
 #include<classifier/core/model.h>
 #include<vector>
 
+/**Strategy interface of classifying. All new strategy of classifying must implement this interface.
+*/
+
 class ClassifyingStrategy
 {
 public:
     ClassifyingStrategy();
 
-    /*Define input and output parameters*/
-    virtual vector<double> predict(Model training_model, Patterns test_patterns);
+    /**Returns a vector with predicted class values for all pattern in the set test.
+     * Predicted class values are placed into the vector following the same order of patterns in test set.
+     *@param model a training model
+     *@test test set of patterns.
+     * @see OPFClassifying
+     */
+    virtual vector<double> predict(Model model, Patterns test);
 private:
 };
 

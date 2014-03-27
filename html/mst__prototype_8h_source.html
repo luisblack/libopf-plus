@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>My Project: classifiers/includes/complete_graph/mst_prototype.h Source File</title>
+<title>LibOPF::Plus: Core/include/classifier/complete_graph/mst_prototype.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">LibOPF::Plus
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6d7da728415ebe916df8d231a89c8e91.html">classifiers</a></li><li class="navelem"><a class="el" href="dir_3d2b7bd4980424df474f4ced89771029.html">includes</a></li><li class="navelem"><a class="el" href="dir_89f3924261eb712693f1b608c4fb73e5.html">complete_graph</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_4cd4c13d01dc4f9c94211f072e8c6dd9.html">include</a></li><li class="navelem"><a class="el" href="dir_655c89b7daa221a2eadb969a4b09a21b.html">classifier</a></li><li class="navelem"><a class="el" href="dir_618a8898985d715a0c4957be353bce11.html">complete_graph</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -92,27 +92,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="mst__prototype_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MST_PROTOTYPES_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MST_PROTOTYPES_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="prototype__strategy_8h.html">prototype_strategy.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;utils/distance.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="prototype__strategy_8h.html">classifier/core/prototype_strategy.h</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="distance_8h.html">utils/distance.h</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classMSTPrototypes.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMSTPrototypes.html">MSTPrototypes</a> : <span class="keyword">public</span> <a class="code" href="classPrototypesStrategy.html">PrototypesStrategy</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classMSTPrototypes.html#a62fedec88ad4ab417181fbc672f72410">MSTPrototypes</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span>* <a class="code" href="classMSTPrototypes.html#a9c6462a87ee9b59cf8ca623b139b701b">SelectPrototypes</a>(opf::Distance distance, <a class="code" href="classPatterns.html">Patterns</a> patterns);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif // MST_PROTOTYPES_H</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> vector&lt;double&gt; <a class="code" href="classMSTPrototypes.html#a654ccbaebfdbca73a0da0e5eb1e4e39f">SelectPrototypes</a>(<a class="code" href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a> distance, <a class="code" href="classPatterns.html">Patterns</a> patterns);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> NIL = -1;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> PROTOTYPE = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif // MST_PROTOTYPES_H</span></div>
 <div class="ttc" id="prototype__strategy_8h_html"><div class="ttname"><a href="prototype__strategy_8h.html">prototype_strategy.h</a></div></div>
-<div class="ttc" id="classMSTPrototypes_html_a62fedec88ad4ab417181fbc672f72410"><div class="ttname"><a href="classMSTPrototypes.html#a62fedec88ad4ab417181fbc672f72410">MSTPrototypes::MSTPrototypes</a></div><div class="ttdeci">MSTPrototypes()</div><div class="ttdef"><b>Definition:</b> mst_prototype.cpp:6</div></div>
-<div class="ttc" id="classPrototypesStrategy_html"><div class="ttname"><a href="classPrototypesStrategy.html">PrototypesStrategy</a></div><div class="ttdef"><b>Definition:</b> prototype_strategy.h:14</div></div>
-<div class="ttc" id="classPatterns_html"><div class="ttname"><a href="classPatterns.html">Patterns</a></div><div class="ttdef"><b>Definition:</b> patterns.h:23</div></div>
-<div class="ttc" id="classMSTPrototypes_html_a9c6462a87ee9b59cf8ca623b139b701b"><div class="ttname"><a href="classMSTPrototypes.html#a9c6462a87ee9b59cf8ca623b139b701b">MSTPrototypes::SelectPrototypes</a></div><div class="ttdeci">virtual double * SelectPrototypes(opf::Distance distance, Patterns patterns)</div><div class="ttdef"><b>Definition:</b> mst_prototype.cpp:9</div></div>
-<div class="ttc" id="classMSTPrototypes_html"><div class="ttname"><a href="classMSTPrototypes.html">MSTPrototypes</a></div><div class="ttdef"><b>Definition:</b> mst_prototype.h:10</div></div>
+<div class="ttc" id="distance_8h_html"><div class="ttname"><a href="distance_8h.html">distance.h</a></div></div>
+<div class="ttc" id="classMSTPrototypes_html_a654ccbaebfdbca73a0da0e5eb1e4e39f"><div class="ttname"><a href="classMSTPrototypes.html#a654ccbaebfdbca73a0da0e5eb1e4e39f">MSTPrototypes::SelectPrototypes</a></div><div class="ttdeci">virtual vector&lt; double &gt; SelectPrototypes(opf::Distance distance, Patterns patterns)</div><div class="ttdoc">Returns a array of size of patterns with zero value is a pattern is a prototype and infinity otherwis...</div><div class="ttdef"><b>Definition:</b> mst_prototype.cpp:11</div></div>
+<div class="ttc" id="classMSTPrototypes_html_a62fedec88ad4ab417181fbc672f72410"><div class="ttname"><a href="classMSTPrototypes.html#a62fedec88ad4ab417181fbc672f72410">MSTPrototypes::MSTPrototypes</a></div><div class="ttdeci">MSTPrototypes()</div><div class="ttdef"><b>Definition:</b> mst_prototype.cpp:7</div></div>
+<div class="ttc" id="namespaceopf_html_a61631393754e0aa6aaeacf0767b2b419"><div class="ttname"><a href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a></div><div class="ttdeci">std::function&lt; double(const vector&lt; double &gt;, const vector&lt; double &gt;)&gt; Distance</div><div class="ttdef"><b>Definition:</b> distance.h:18</div></div>
+<div class="ttc" id="classPrototypesStrategy_html"><div class="ttname"><a href="classPrototypesStrategy.html">PrototypesStrategy</a></div><div class="ttdoc">Strategy interface of way to select prototypes. </div><div class="ttdef"><b>Definition:</b> prototype_strategy.h:23</div></div>
+<div class="ttc" id="classPatterns_html"><div class="ttname"><a href="classPatterns.html">Patterns</a></div><div class="ttdoc">Class for handling a set of patterns. </div><div class="ttdef"><b>Definition:</b> patterns.h:23</div></div>
+<div class="ttc" id="classMSTPrototypes_html"><div class="ttname"><a href="classMSTPrototypes.html">MSTPrototypes</a></div><div class="ttdoc">Class to handle prototypes selection by using a Minimum Spanning Tree (MST). </div><div class="ttdef"><b>Definition:</b> mst_prototype.h:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 26 2014 12:36:13 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 27 2014 20:13:00 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

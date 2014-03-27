@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['update',['Update',['../classOPFHeap.html#a9c41459084b8e6ab0d1ba9e32bedb312',1,'OPFHeap']]]
+  ['remove',['remove',['../classPriorityQueue.html#a02b033eeb3cd8a760496a1c269ec4855',1,'PriorityQueue']]]
 ];

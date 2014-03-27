@@ -4,8 +4,9 @@
 #include <utils/priority_queue.h>
 #include <limits>
 
-MSTPrototypes::MSTPrototypes()
-{}
+MSTPrototypes::MSTPrototypes(){
+
+}
 
 vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns patterns)
 {
@@ -18,7 +19,6 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns 
 
     for(int i=0; i < patterns.get_number_of_classes(); i++){
         Q.insert(numeric_limits<double>::max());
-
     }
 
     Q.update(0,0);

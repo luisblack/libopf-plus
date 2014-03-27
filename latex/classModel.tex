@@ -8,34 +8,81 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classModel_ab859cb5a0d061cc342c9c856a0eb2b73}{Model} (int number\+Of\+Patterns)
+\hyperlink{classModel_a2970c96c9a3976c0887cb06f71753f1e}{Model} (\hyperlink{classPattern}{Pattern} pattern)
 \item 
-void \hyperlink{classModel_a8193991ba78f4c9811a229bac6df2264}{set\+Prototype\+Status} (int index, bool status)
+\hyperlink{classModel_a555e27949c7a209f607d77e5d57c1599}{Model} (string file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Constructor for a model saved in file. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \hyperlink{classModel_ad821b67839a18f6fc6af508823ba73e0}{get\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes} () const 
 \item 
-bool \hyperlink{classModel_a592e53bfdc311c719b1f31b6613c8ba9}{get\+Prototype\+Status} (int index) const 
+void \hyperlink{classModel_a6f2fa936b9d754d971f2972716b41656}{push\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes} (int index)
+\item 
+Model\+Node $\ast$ \hyperlink{classModel_a7bae5e69e7ca1d5bb8a04c74148c82f0}{pop\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes} () const 
+\item 
+vector$<$ Model\+Node $>$\+::\hyperlink{classModel_a0cfbe847990e80cb9033e8a3257bced2}{iterator} \hyperlink{classModel_a035c58a162aad06dad63a2be8976e17c}{begin} () const 
+\item 
+vector$<$ Model\+Node $>$\+::\hyperlink{classModel_a0cfbe847990e80cb9033e8a3257bced2}{iterator} \hyperlink{classModel_ad66f8045b3632a366af4f38b2042cf19}{end} () const 
 \item 
 std\+::ostream \& \hyperlink{classModel_a466e585afab385972eea3c8bd51f14f8}{operator$>$$>$} (std\+::ostream \&out)
+\item 
+void \hyperlink{classModel_afa9087f16c68b0c7cb67c5a285dde750}{save\+\_\+model\+\_\+to\+\_\+file} ()
+\begin{DoxyCompactList}\small\item\em Save model to file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ Model\+Node $>$\+::iterator \hyperlink{classModel_a0cfbe847990e80cb9033e8a3257bced2}{iterator}
+\item 
+vector$<$ Model\+Node $>$\+::const\+\_\+iterator \hyperlink{classModel_a578f203623cdda48b577f10a8d6e12d4}{const\+\_\+iterator}
 \end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classModel_ab859cb5a0d061cc342c9c856a0eb2b73}{\index{Model@{Model}!Model@{Model}}
+\hypertarget{classModel_a2970c96c9a3976c0887cb06f71753f1e}{\index{Model@{Model}!Model@{Model}}
 \index{Model@{Model}!Model@{Model}}
 \subsubsection[{Model}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::\+Model (
 \begin{DoxyParamCaption}
-\item[{int}]{number\+Of\+Patterns}
+\item[{{\bf Pattern}}]{pattern}
 \end{DoxyParamCaption}
-)}}\label{classModel_ab859cb5a0d061cc342c9c856a0eb2b73}
+)}}\label{classModel_a2970c96c9a3976c0887cb06f71753f1e}
+\hypertarget{classModel_a555e27949c7a209f607d77e5d57c1599}{\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\subsubsection[{Model}]{\setlength{\rightskip}{0pt plus 5cm}Model\+::\+Model (
+\begin{DoxyParamCaption}
+\item[{string}]{file\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{classModel_a555e27949c7a209f607d77e5d57c1599}
+
+
+Constructor for a model saved in file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & name of a file whose model was saved in. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classModel_a592e53bfdc311c719b1f31b6613c8ba9}{\index{Model@{Model}!get\+Prototype\+Status@{get\+Prototype\+Status}}
-\index{get\+Prototype\+Status@{get\+Prototype\+Status}!Model@{Model}}
-\subsubsection[{get\+Prototype\+Status}]{\setlength{\rightskip}{0pt plus 5cm}bool Model\+::get\+Prototype\+Status (
+\hypertarget{classModel_a035c58a162aad06dad63a2be8976e17c}{\index{Model@{Model}!begin@{begin}}
+\index{begin@{begin}!Model@{Model}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} Model\+::begin (
 \begin{DoxyParamCaption}
-\item[{int}]{index}
+{}
 \end{DoxyParamCaption}
-) const}}\label{classModel_a592e53bfdc311c719b1f31b6613c8ba9}
+) const}}\label{classModel_a035c58a162aad06dad63a2be8976e17c}
+\hypertarget{classModel_ad66f8045b3632a366af4f38b2042cf19}{\index{Model@{Model}!end@{end}}
+\index{end@{end}!Model@{Model}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} Model\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classModel_ad66f8045b3632a366af4f38b2042cf19}
+\hypertarget{classModel_ad821b67839a18f6fc6af508823ba73e0}{\index{Model@{Model}!get\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes@{get\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes}}
+\index{get\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes@{get\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes}!Model@{Model}}
+\subsubsection[{get\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ int $>$ Model\+::get\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classModel_ad821b67839a18f6fc6af508823ba73e0}
 \hypertarget{classModel_a466e585afab385972eea3c8bd51f14f8}{\index{Model@{Model}!operator$>$$>$@{operator$>$$>$}}
 \index{operator$>$$>$@{operator$>$$>$}!Model@{Model}}
 \subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& Model\+::operator$>$$>$ (
@@ -43,16 +90,43 @@ std\+::ostream \& \hyperlink{classModel_a466e585afab385972eea3c8bd51f14f8}{opera
 \item[{std\+::ostream \&}]{out}
 \end{DoxyParamCaption}
 )}}\label{classModel_a466e585afab385972eea3c8bd51f14f8}
-\hypertarget{classModel_a8193991ba78f4c9811a229bac6df2264}{\index{Model@{Model}!set\+Prototype\+Status@{set\+Prototype\+Status}}
-\index{set\+Prototype\+Status@{set\+Prototype\+Status}!Model@{Model}}
-\subsubsection[{set\+Prototype\+Status}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+::set\+Prototype\+Status (
+\hypertarget{classModel_a7bae5e69e7ca1d5bb8a04c74148c82f0}{\index{Model@{Model}!pop\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes@{pop\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes}}
+\index{pop\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes@{pop\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes}!Model@{Model}}
+\subsubsection[{pop\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes}]{\setlength{\rightskip}{0pt plus 5cm}Model\+Node $\ast$ Model\+::pop\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes (
 \begin{DoxyParamCaption}
-\item[{int}]{index, }
-\item[{bool}]{status}
+{}
 \end{DoxyParamCaption}
-)}}\label{classModel_a8193991ba78f4c9811a229bac6df2264}
+) const}}\label{classModel_a7bae5e69e7ca1d5bb8a04c74148c82f0}
+\hypertarget{classModel_a6f2fa936b9d754d971f2972716b41656}{\index{Model@{Model}!push\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes@{push\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes}}
+\index{push\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes@{push\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes}!Model@{Model}}
+\subsubsection[{push\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+::push\+\_\+ordered\+\_\+list\+\_\+of\+\_\+nodes (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}}\label{classModel_a6f2fa936b9d754d971f2972716b41656}
+\hypertarget{classModel_afa9087f16c68b0c7cb67c5a285dde750}{\index{Model@{Model}!save\+\_\+model\+\_\+to\+\_\+file@{save\+\_\+model\+\_\+to\+\_\+file}}
+\index{save\+\_\+model\+\_\+to\+\_\+file@{save\+\_\+model\+\_\+to\+\_\+file}!Model@{Model}}
+\subsubsection[{save\+\_\+model\+\_\+to\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+::save\+\_\+model\+\_\+to\+\_\+file (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classModel_afa9087f16c68b0c7cb67c5a285dde750}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Save model to file. 
+
+\hyperlink{classModel}{Model} has to be completely filled. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classModel_a578f203623cdda48b577f10a8d6e12d4}{\index{Model@{Model}!const\+\_\+iterator@{const\+\_\+iterator}}
+\index{const\+\_\+iterator@{const\+\_\+iterator}!Model@{Model}}
+\subsubsection[{const\+\_\+iterator}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$Model\+Node$>$\+::const\+\_\+iterator Model\+::const\+\_\+iterator}}\label{classModel_a578f203623cdda48b577f10a8d6e12d4}
+\hypertarget{classModel_a0cfbe847990e80cb9033e8a3257bced2}{\index{Model@{Model}!iterator@{iterator}}
+\index{iterator@{iterator}!Model@{Model}}
+\subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$Model\+Node$>$\+::iterator Model\+::iterator}}\label{classModel_a0cfbe847990e80cb9033e8a3257bced2}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-classifiers/includes/core/\hyperlink{model_8h}{model.\+h}\end{DoxyCompactItemize}
+Core/include/classifier/core/\hyperlink{model_8h}{model.\+h}\item 
+Core/src/classifier/core/\hyperlink{model_8cpp}{model.\+cpp}\end{DoxyCompactItemize}

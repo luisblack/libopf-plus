@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['function',['function',['../namespaceopf.html#a3c63eb194cadb016d0d4168823516183',1,'opf']]]
+  ['distance',['Distance',['../namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419',1,'opf']]]
 ];

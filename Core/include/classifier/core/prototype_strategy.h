@@ -17,8 +17,17 @@
 
 using namespace std;
 
+/**Strategy interface of way to select prototypes. All new strategy of selecting prototypes must implement this interface.
+*/
+
 class PrototypesStrategy {
     public:
+    /**Returns a vector with initial costs to all nodes.
+     *These costs are used to define roots/prototypes in the process of growing optimum-path trees during OPF training phase.
+     *@param distance a similarity function.
+     *@param patterns set of input patterns.
+     * @see MSTPrototypes
+    */
     virtual vector<double> SelectPrototypes(opf::Distance distance, Patterns patterns) = 0;
 	private:
 };

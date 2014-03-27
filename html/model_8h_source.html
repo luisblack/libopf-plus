@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>My Project: classifiers/includes/core/model.h Source File</title>
+<title>LibOPF::Plus: Core/include/classifier/core/model.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">LibOPF::Plus
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_6d7da728415ebe916df8d231a89c8e91.html">classifiers</a></li><li class="navelem"><a class="el" href="dir_3d2b7bd4980424df474f4ced89771029.html">includes</a></li><li class="navelem"><a class="el" href="dir_21ec01bb8f7cc89338e121ec376a1f81.html">core</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_c6310732a22f63c0c2fc5595561e68f1.html">Core</a></li><li class="navelem"><a class="el" href="dir_4cd4c13d01dc4f9c94211f072e8c6dd9.html">include</a></li><li class="navelem"><a class="el" href="dir_655c89b7daa221a2eadb969a4b09a21b.html">classifier</a></li><li class="navelem"><a class="el" href="dir_24a43d6b04d461e33d01026dd59914c6.html">core</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -99,31 +99,67 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef MODEL_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define MODEL_H_</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classModel.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classModel.html">Model</a>{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classModel.html#ab859cb5a0d061cc342c9c856a0eb2b73">Model</a>(<span class="keywordtype">int</span> numberOfPatterns);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classModel.html#a8193991ba78f4c9811a229bac6df2264">setPrototypeStatus</a>(<span class="keywordtype">int</span> index, <span class="keywordtype">bool</span> status);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classModel.html#a592e53bfdc311c719b1f31b6613c8ba9">getPrototypeStatus</a>(<span class="keywordtype">int</span> index) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//&quot;save&quot; method in C++ pattern</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::ostream&amp; <a class="code" href="classModel.html#a466e585afab385972eea3c8bd51f14f8">operator&gt;&gt;</a>(std::ostream&amp; out);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">bool</span> *prototypeStatus;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="libopf-plus_8h.html">libopf-plus.h</a>&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="model__node_8h.html">classifier/core/model_node.h</a>&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classModel.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classModel.html">Model</a>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classModel.html#a0cfbe847990e80cb9033e8a3257bced2">   20</a></span>&#160;    vector&lt;ModelNode&gt;::iterator <a class="code" href="classModel.html#a0cfbe847990e80cb9033e8a3257bced2">iterator</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classModel.html#a578f203623cdda48b577f10a8d6e12d4">   21</a></span>&#160;    vector&lt;ModelNode&gt;::const_iterator <a class="code" href="classModel.html#a578f203623cdda48b577f10a8d6e12d4">const_iterator</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OPF_MODEL_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="classModel_html_ab859cb5a0d061cc342c9c856a0eb2b73"><div class="ttname"><a href="classModel.html#ab859cb5a0d061cc342c9c856a0eb2b73">Model::Model</a></div><div class="ttdeci">Model(int numberOfPatterns)</div></div>
-<div class="ttc" id="classModel_html_a592e53bfdc311c719b1f31b6613c8ba9"><div class="ttname"><a href="classModel.html#a592e53bfdc311c719b1f31b6613c8ba9">Model::getPrototypeStatus</a></div><div class="ttdeci">bool getPrototypeStatus(int index) const </div></div>
-<div class="ttc" id="classModel_html_a8193991ba78f4c9811a229bac6df2264"><div class="ttname"><a href="classModel.html#a8193991ba78f4c9811a229bac6df2264">Model::setPrototypeStatus</a></div><div class="ttdeci">void setPrototypeStatus(int index, bool status)</div></div>
-<div class="ttc" id="classModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdef"><b>Definition:</b> model.h:13</div></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//TO DO: valor ou referencia? salvar funcao de distnacia no model, é possivel?</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classModel.html#a2970c96c9a3976c0887cb06f71753f1e">Model</a>(<a class="code" href="classPattern.html">Pattern</a> pattern);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classModel.html#a2970c96c9a3976c0887cb06f71753f1e">Model</a>(<span class="keywordtype">string</span> file_name);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classModel.html#ad821b67839a18f6fc6af508823ba73e0">   32</a></span>&#160;    vector&lt;int&gt;<a class="code" href="classModel.html#ad821b67839a18f6fc6af508823ba73e0">get_ordered_list_of_nodes</a>()<span class="keyword">const</span>{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">return</span> ordered_list_of_nodes_;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//TO DO: utilizar lista ou não</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classModel.html#a6f2fa936b9d754d971f2972716b41656">push_ordered_list_of_nodes</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ModelNode * <a class="code" href="classModel.html#a7bae5e69e7ca1d5bb8a04c74148c82f0">pop_ordered_list_of_nodes</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    vector&lt;ModelNode&gt;::iterator <a class="code" href="classModel.html#a035c58a162aad06dad63a2be8976e17c">begin</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    vector&lt;ModelNode&gt;::iterator <a class="code" href="classModel.html#ad66f8045b3632a366af4f38b2042cf19">end</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//&quot;save&quot; method in C++ pattern</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    std::ostream&amp; <a class="code" href="classModel.html#a466e585afab385972eea3c8bd51f14f8">operator&gt;&gt;</a>(std::ostream&amp; out);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classModel.html#afa9087f16c68b0c7cb67c5a285dde750">save_model_to_file</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    vector&lt;int&gt; ordered_list_of_nodes_;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    vector&lt;ModelNode&gt; node;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> load_model_from_file(<span class="keywordtype">string</span> file_name);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OPF_MODEL_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classModel_html_afa9087f16c68b0c7cb67c5a285dde750"><div class="ttname"><a href="classModel.html#afa9087f16c68b0c7cb67c5a285dde750">Model::save_model_to_file</a></div><div class="ttdeci">void save_model_to_file()</div><div class="ttdoc">Save model to file. </div></div>
+<div class="ttc" id="classModel_html_a578f203623cdda48b577f10a8d6e12d4"><div class="ttname"><a href="classModel.html#a578f203623cdda48b577f10a8d6e12d4">Model::const_iterator</a></div><div class="ttdeci">vector&lt; ModelNode &gt;::const_iterator const_iterator</div><div class="ttdef"><b>Definition:</b> model.h:21</div></div>
+<div class="ttc" id="classModel_html_a0cfbe847990e80cb9033e8a3257bced2"><div class="ttname"><a href="classModel.html#a0cfbe847990e80cb9033e8a3257bced2">Model::iterator</a></div><div class="ttdeci">vector&lt; ModelNode &gt;::iterator iterator</div><div class="ttdef"><b>Definition:</b> model.h:20</div></div>
+<div class="ttc" id="classPattern_html"><div class="ttname"><a href="classPattern.html">Pattern</a></div><div class="ttdoc">Class for handling a single pattern. </div><div class="ttdef"><b>Definition:</b> pattern.h:20</div></div>
+<div class="ttc" id="model__node_8h_html"><div class="ttname"><a href="model__node_8h.html">model_node.h</a></div></div>
+<div class="ttc" id="classModel_html_a035c58a162aad06dad63a2be8976e17c"><div class="ttname"><a href="classModel.html#a035c58a162aad06dad63a2be8976e17c">Model::begin</a></div><div class="ttdeci">vector&lt; ModelNode &gt;::iterator begin() const </div><div class="ttdef"><b>Definition:</b> model.cpp:24</div></div>
+<div class="ttc" id="classModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdef"><b>Definition:</b> model.h:18</div></div>
+<div class="ttc" id="classModel_html_a2970c96c9a3976c0887cb06f71753f1e"><div class="ttname"><a href="classModel.html#a2970c96c9a3976c0887cb06f71753f1e">Model::Model</a></div><div class="ttdeci">Model(Pattern pattern)</div></div>
+<div class="ttc" id="classModel_html_a6f2fa936b9d754d971f2972716b41656"><div class="ttname"><a href="classModel.html#a6f2fa936b9d754d971f2972716b41656">Model::push_ordered_list_of_nodes</a></div><div class="ttdeci">void push_ordered_list_of_nodes(int index)</div><div class="ttdef"><b>Definition:</b> model.cpp:16</div></div>
+<div class="ttc" id="classModel_html_ad821b67839a18f6fc6af508823ba73e0"><div class="ttname"><a href="classModel.html#ad821b67839a18f6fc6af508823ba73e0">Model::get_ordered_list_of_nodes</a></div><div class="ttdeci">vector&lt; int &gt; get_ordered_list_of_nodes() const </div><div class="ttdef"><b>Definition:</b> model.h:32</div></div>
+<div class="ttc" id="classModel_html_a7bae5e69e7ca1d5bb8a04c74148c82f0"><div class="ttname"><a href="classModel.html#a7bae5e69e7ca1d5bb8a04c74148c82f0">Model::pop_ordered_list_of_nodes</a></div><div class="ttdeci">ModelNode * pop_ordered_list_of_nodes() const </div><div class="ttdef"><b>Definition:</b> model.cpp:20</div></div>
+<div class="ttc" id="libopf-plus_8h_html"><div class="ttname"><a href="libopf-plus_8h.html">libopf-plus.h</a></div></div>
+<div class="ttc" id="classModel_html_ad66f8045b3632a366af4f38b2042cf19"><div class="ttname"><a href="classModel.html#ad66f8045b3632a366af4f38b2042cf19">Model::end</a></div><div class="ttdeci">vector&lt; ModelNode &gt;::iterator end() const </div><div class="ttdef"><b>Definition:</b> model.cpp:28</div></div>
 <div class="ttc" id="classModel_html_a466e585afab385972eea3c8bd51f14f8"><div class="ttname"><a href="classModel.html#a466e585afab385972eea3c8bd51f14f8">Model::operator&gt;&gt;</a></div><div class="ttdeci">std::ostream &amp; operator&gt;&gt;(std::ostream &amp;out)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Mar 26 2014 12:36:13 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 27 2014 20:13:00 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

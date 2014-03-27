@@ -1,12 +1,8 @@
 var searchData=
 [
-  ['selectprototypes',['SelectPrototypes',['../classMSTPrototypes.html#a9c6462a87ee9b59cf8ca623b139b701b',1,'MSTPrototypes::SelectPrototypes()'],['../classPrototypesStrategy.html#ad1bd1557df7dbc5152a6a640d0b3adaf',1,'PrototypesStrategy::SelectPrototypes()']]],
-  ['set_5fclass_5fvalue',['set_class_value',['../classPattern.html#ac4235d677a656d5cc272d192af210d4f',1,'Pattern']]],
-  ['set_5fdimension',['set_dimension',['../classPattern.html#aa498151def7e9e9fabf874bfead90b3b',1,'Pattern']]],
-  ['set_5fdistance',['set_distance',['../classClassifier.html#a7665a5d4968c83f5e02829b67e5c7c3b',1,'Classifier']]],
-  ['set_5ffeature_5fvector',['set_feature_vector',['../classPattern.html#a0612d5b48232fa0a7697584263fc6287',1,'Pattern']]],
-  ['set_5findex',['set_index',['../classPattern.html#ad74cb513a6a76c20121297f2ab867a07',1,'Pattern']]],
-  ['set_5fnumber_5fof_5fclasses',['set_number_of_classes',['../classPatterns.html#adcfd5d41467f7174f12c139adcbea384',1,'Patterns']]],
-  ['set_5fnumber_5fof_5fpatterns',['set_number_of_patterns',['../classPatterns.html#abbac70e6ecb3c8677e5418ed85170fe6',1,'Patterns']]],
-  ['setprototypestatus',['setPrototypeStatus',['../classModel.html#a8193991ba78f4c9811a229bac6df2264',1,'Model']]]
+  ['operator_28_29',['operator()',['../classMaxPolicy.html#a812f133c0ec9ce8d05fc7f53f4d001f9',1,'MaxPolicy::operator()()'],['../classMinPolicy.html#a59891945c51d479ede8f7ed3def4b783',1,'MinPolicy::operator()()']]],
+  ['operator_3e_3e',['operator&gt;&gt;',['../classModel.html#a466e585afab385972eea3c8bd51f14f8',1,'Model::operator&gt;&gt;()'],['../file__formats_8cpp.html#a2a2e2f128a329757f385bbd6d0d3f0b4',1,'operator&gt;&gt;(istream &amp;in, CsvAdapter &amp;c):&#160;file_formats.cpp'],['../pattern_8cpp.html#a27ae4d6c06ab6d17ff9392ba3f5a5532',1,'operator&gt;&gt;(istream &amp;in, Pattern pattern):&#160;pattern.cpp'],['../patterns_8cpp.html#aed3f40599aaf63a1f5126b3acac33fb4',1,'operator&gt;&gt;(istream &amp;input, Patterns &amp;patterns):&#160;patterns.cpp']]],
+  ['operator_5b_5d',['operator[]',['../classPattern.html#a979a9f332fc23c453659fc4d4d2ae8c5',1,'Pattern']]],
+  ['opf',['OPF',['../classOPF.html#a937d755f9ec9d517eead90e06d5ab672',1,'OPF']]],
+  ['opftraining',['OPFTraining',['../classOPFTraining.html#a901f7f1c7f467dcfee5678fc4b6bfbd4',1,'OPFTraining']]]
 ];

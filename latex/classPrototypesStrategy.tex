@@ -3,6 +3,11 @@
 }
 
 
+Strategy interface of way to select prototypes.  
+
+
+
+
 {\ttfamily \#include $<$prototype\+\_\+strategy.\+h$>$}
 
 Inheritance diagram for Prototypes\+Strategy\+:\begin{figure}[H]
@@ -14,25 +19,44 @@ Inheritance diagram for Prototypes\+Strategy\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual double $\ast$ \hyperlink{classPrototypesStrategy_ad1bd1557df7dbc5152a6a640d0b3adaf}{Select\+Prototypes} (opf\+::\+Distance distance, \hyperlink{classPatterns}{Patterns} patterns)=0
-\end{DoxyCompactItemize}
+virtual vector$<$ double $>$ \hyperlink{classPrototypesStrategy_a0422be14bb6be39a2d06112daf7043c1}{Select\+Prototypes} (\hyperlink{namespaceopf_a61631393754e0aa6aaeacf0767b2b419}{opf\+::\+Distance} distance, \hyperlink{classPatterns}{Patterns} patterns)=0
+\begin{DoxyCompactList}\small\item\em Returns a vector with initial costs to all nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Strategy interface of way to select prototypes. 
+
+All new strategy of selecting prototypes must implement this interface. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classPrototypesStrategy_ad1bd1557df7dbc5152a6a640d0b3adaf}{\index{Prototypes\+Strategy@{Prototypes\+Strategy}!Select\+Prototypes@{Select\+Prototypes}}
+\hypertarget{classPrototypesStrategy_a0422be14bb6be39a2d06112daf7043c1}{\index{Prototypes\+Strategy@{Prototypes\+Strategy}!Select\+Prototypes@{Select\+Prototypes}}
 \index{Select\+Prototypes@{Select\+Prototypes}!Prototypes\+Strategy@{Prototypes\+Strategy}}
-\subsubsection[{Select\+Prototypes}]{\setlength{\rightskip}{0pt plus 5cm}virtual double$\ast$ Prototypes\+Strategy\+::\+Select\+Prototypes (
+\subsubsection[{Select\+Prototypes}]{\setlength{\rightskip}{0pt plus 5cm}virtual vector$<$double$>$ Prototypes\+Strategy\+::\+Select\+Prototypes (
 \begin{DoxyParamCaption}
-\item[{opf\+::\+Distance}]{distance, }
+\item[{{\bf opf\+::\+Distance}}]{distance, }
 \item[{{\bf Patterns}}]{patterns}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classPrototypesStrategy_ad1bd1557df7dbc5152a6a640d0b3adaf}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classPrototypesStrategy_a0422be14bb6be39a2d06112daf7043c1}
 
 
-Implemented in \hyperlink{classMSTPrototypes_a9c6462a87ee9b59cf8ca623b139b701b}{M\+S\+T\+Prototypes}.
+Returns a vector with initial costs to all nodes. 
+
+These costs are used to define roots/prototypes in the process of growing optimum-\/path trees during \hyperlink{classOPF}{O\+P\+F} training phase. 
+\begin{DoxyParams}{Parameters}
+{\em distance} & a similarity function. \\
+\hline
+{\em patterns} & set of input patterns. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classMSTPrototypes}{M\+S\+T\+Prototypes} 
+\end{DoxySeeAlso}
+
+
+Implemented in \hyperlink{classMSTPrototypes_a654ccbaebfdbca73a0da0e5eb1e4e39f}{M\+S\+T\+Prototypes}.
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-classifiers/includes/core/\hyperlink{prototype__strategy_8h}{prototype\+\_\+strategy.\+h}\end{DoxyCompactItemize}
+Core/include/classifier/core/\hyperlink{prototype__strategy_8h}{prototype\+\_\+strategy.\+h}\end{DoxyCompactItemize}

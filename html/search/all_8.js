@@ -1,11 +1,17 @@
 var searchData=
 [
-  ['operator_3c',['operator&lt;',['../classPair.html#a7f6b7f291882e8d1f97a3d9e601268ae',1,'Pair']]],
-  ['operator_3e_3e',['operator&gt;&gt;',['../classModel.html#a466e585afab385972eea3c8bd51f14f8',1,'Model::operator&gt;&gt;()'],['../classPattern.html#a27ae4d6c06ab6d17ff9392ba3f5a5532',1,'Pattern::operator&gt;&gt;()'],['../pattern_8cpp.html#a27ae4d6c06ab6d17ff9392ba3f5a5532',1,'operator&gt;&gt;():&#160;pattern.cpp']]],
-  ['opf',['OPF',['../classOPF.html',1,'OPF'],['../namespaceopf.html',1,'opf'],['../classOPF.html#ae3e3c455e99708f10e68cd5f39a89c19',1,'OPF::OPF()']]],
-  ['opf_2eh',['opf.h',['../opf_8h.html',1,'']]],
-  ['opf_5fheap_5fh',['OPF_HEAP_H',['../priority__queue_8h.html#a4f1cb52d5bada49f3c2f7798fae75e2e',1,'priority_queue.h']]],
-  ['opf_5ftraining_2eh',['opf_training.h',['../opf__training_8h.html',1,'']]],
-  ['opfheap',['OPFHeap',['../classOPFHeap.html',1,'OPFHeap'],['../classOPFHeap.html#a38332294b0ce16cb58a29f7cf280bdba',1,'OPFHeap::OPFHeap()']]],
-  ['opftraining',['OPFTraining',['../classOPFTraining.html',1,'OPFTraining'],['../classOPFTraining.html#a901f7f1c7f467dcfee5678fc4b6bfbd4',1,'OPFTraining::OPFTraining()']]]
+  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['max',['MAX',['../classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081aa427d161a5bb6967ec6d39a669f852c5d',1,'PriorityQueue']]],
+  ['maxpolicy',['MaxPolicy',['../classMaxPolicy.html',1,'MaxPolicy'],['../classMaxPolicy.html#a69154bb395b6ab4c5e2cc51c29e68bed',1,'MaxPolicy::MaxPolicy()']]],
+  ['min',['MIN',['../classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081aa594ee8d58305ad3ccb1f987007a1cb19',1,'PriorityQueue']]],
+  ['minpolicy',['MinPolicy',['../classMinPolicy.html',1,'MinPolicy'],['../classMinPolicy.html#ab16af4db33006558fc24b739b243f335',1,'MinPolicy::MinPolicy()']]],
+  ['model',['Model',['../classModel.html',1,'Model'],['../classModel.html#a2970c96c9a3976c0887cb06f71753f1e',1,'Model::Model(Pattern pattern)'],['../classModel.html#a555e27949c7a209f607d77e5d57c1599',1,'Model::Model(string file_name)']]],
+  ['model_2ecpp',['model.cpp',['../model_8cpp.html',1,'']]],
+  ['model_2eh',['model.h',['../model_8h.html',1,'']]],
+  ['model_5fnode_2ecpp',['model_node.cpp',['../model__node_8cpp.html',1,'']]],
+  ['model_5fnode_2eh',['model_node.h',['../model__node_8h.html',1,'']]],
+  ['mst_5fprototype_2ecpp',['mst_prototype.cpp',['../mst__prototype_8cpp.html',1,'']]],
+  ['mst_5fprototype_2eh',['mst_prototype.h',['../mst__prototype_8h.html',1,'']]],
+  ['mstprototypes',['MSTPrototypes',['../classMSTPrototypes.html',1,'MSTPrototypes'],['../classMSTPrototypes.html#a62fedec88ad4ab417181fbc672f72410',1,'MSTPrototypes::MSTPrototypes()']]]
 ];
