@@ -9,7 +9,7 @@ MSTPrototypes::MSTPrototypes()
 
 vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns patterns)
 {
-    int p, q;
+    int p;
     double weight;
     vector<double>initial_costs(patterns.get_number_of_patterns());
     vector<int>predecessors(patterns.get_number_of_patterns());
@@ -25,6 +25,7 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns 
     predecessors[0] = NIL;
 
     while(!Q.empty()){
+        Q.sort();
         p = Q.remove();
 
         //selecting prototypes

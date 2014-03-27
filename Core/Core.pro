@@ -31,7 +31,6 @@ HEADERS += \
     include/classifier/core/trainer.h \
     include/classifier/core/prototype_strategy.h \
     include/classifier/core/opf.h \
-    include/classifier/core/model.h \
     include/classifier/core/classifying_strategy.h \
     include/classifier/core/classifier.h \
     include/input/patterns.h \
@@ -39,7 +38,10 @@ HEADERS += \
     include/utils/priority_queue.h \
     include/utils/distance.h \
     include/libopf-plus.h \
-    include/input/file_formats.h
+    include/input/file_formats.h \
+    include/classifier/core/model.h \
+    include/classifier/complete_graph/opf_classifying.h \
+    include/classifier/core/model_node.h
 
 SOURCES += \
     src/input/patterns.cpp \
@@ -48,4 +50,7 @@ SOURCES += \
     src/classifier/core/opf.cpp \
     src/input/file_formats.cpp \
     src/utils/priority_queue.cpp \
-    src/classifier/complete_graph/opf_training.cpp
+    src/classifier/complete_graph/opf_training.cpp \
+    src/classifier/core/model.cpp \
+    src/classifier/complete_graph/opf_classifying.cpp \
+    src/classifier/core/model_node.cpp

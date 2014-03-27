@@ -22,7 +22,7 @@ using namespace std;
 */
 class Patterns{
 public:
-    Pattern *pattern;
+    vector<Pattern> pattern;
 
     Patterns();
 

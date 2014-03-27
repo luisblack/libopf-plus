@@ -20,7 +20,6 @@ using namespace std;
 class PrototypesStrategy {
     public:
     virtual vector<double> SelectPrototypes(opf::Distance distance, Patterns patterns) = 0;
-
 	private:
 };
 
