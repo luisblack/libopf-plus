@@ -12,7 +12,7 @@ Patterns::Patterns(string file_name) {
     load_text_file(file_name);
 }
 
-Patterns::Patterns(int number_of_patterns):number_of_patterns_(number_of_patterns), pattern(number_of_patterns), number_of_classes_(0){
+Patterns::Patterns(int number_of_patterns):number_of_patterns_(number_of_patterns), number_of_classes_(0), pattern(number_of_patterns){
 }
 
 Patterns::~Patterns(){
@@ -61,7 +61,9 @@ istream& operator >>(istream& input, Patterns &patterns)
 
         //cout << "Patterns( samples= " << patterns.number_of_patterns_ << ", classes= " << patterns.number_of_classes_ << ", features= " << number_of_features << ")\n";
 
-    //    patterns.pattern(patterns.number_of_patterns_);
+
+
+        patterns.pattern.resize(patterns.number_of_patterns_);
 
         for(int i=0; i < patterns.number_of_patterns_; ++i)
         {

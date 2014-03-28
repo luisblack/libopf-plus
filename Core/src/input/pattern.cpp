@@ -6,12 +6,22 @@
  */
 #include <input/pattern.h>
 #include <iostream>
+#include <assert.h>
 
-Pattern::Pattern(){
+Pattern::Pattern(): feature_vector_(0){
+    cout << "empty parada";
     class_value_ = 0;
-	dimension_ = 0;
-    feature_vector_ = vector<double>();
-	index_ = -1;
+    dimension_ = 0;
+    index_ = -1;
+}
+
+Pattern::Pattern(int dimension): feature_vector_(dimension){
+    cout << "dimension parada" << endl;
+    class_value_ = 0;
+    dimension_ = dimension;
+    index_ = -1;
+    assert(this!=NULL);
+    cout << this << endl;
 }
 
 Pattern::~Pattern(){
@@ -34,8 +44,10 @@ int Pattern::get_dimension() const {
 }
 
 void Pattern::set_dimension(int dimension) {
-	dimension_ = dimension;
+
+    feature_vector_.clear();
     feature_vector_.resize(dimension);
+    dimension_ = dimension;
 }
 
 int Pattern::get_index() const {

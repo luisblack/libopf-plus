@@ -12,6 +12,8 @@
 #include <iterator>
 #include <vector>
 
+#include<iostream>
+
 using namespace std;
 
 /**Class for handling a single pattern.
@@ -30,9 +32,10 @@ public:
     * @param index index of pattern.
     * */
     template <typename Iterator> Pattern(int class_value, Iterator begin, Iterator end, int index)
+        :dimension_(end-begin), feature_vector_(dimension_)
     {
+        cout << "another header paradas" << endl;
         class_value_ = class_value;
-        dimension_ = end - begin;
         set_feature_vector(begin, end);
         index_ = index;
     }
@@ -44,6 +47,7 @@ public:
     * */
     template <typename Iterator> Pattern(Iterator begin, Iterator end, int index)
     {
+        cout << "header paradas" << endl;
         dimension_ = end - begin;
         set_feature_vector(begin, end);
         index_ = index;
