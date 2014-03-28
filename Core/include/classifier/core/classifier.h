@@ -18,8 +18,8 @@ public:
     Classifier(Model &model, ClassifyingStrategy &classifier, Patterns &test_patterns);
     void set_distance(opf::Distance);
     opf::Distance distance();
-	int Predict(Pattern pattern);
-	int* Predict(Patterns patterns);
+    int classify(Pattern pattern);
+    int* classify(Patterns patterns);
 
 	private:
 };

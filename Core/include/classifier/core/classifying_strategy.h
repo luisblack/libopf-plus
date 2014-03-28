@@ -19,7 +19,7 @@ public:
      *@test test set of patterns.
      * @see OPFClassifying
      */
-    virtual vector<double> predict(Model model, Patterns test);
+    virtual vector<double> classify(Model model, Patterns test);
 private:
 };
 

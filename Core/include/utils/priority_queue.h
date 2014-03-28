@@ -13,14 +13,27 @@
 
 using namespace std;
 
-
+/**A class for handling minimum and maximum priority queues.
+*/
 
 class PriorityQueue{
 public:
 
-    enum Type {MIN, MAX};
+    /** An enumeration for setting removal policy of queue.
+    */
+    enum Type {MIN, /**< enum value MIN for minimum priority queue. */
+               MAX /**< enum value MAX for maximum priority queue. */
+              };
 
+    /**Constructor creating a priority queue with defined size and removal policy. A queue with minimal priority is created if the policy is not denifed.
+     *@param size defined size of queue.
+     *@param type removal policy
+     *@see Type
+    */
     PriorityQueue(int size, Type type = Type::MIN);
+
+    /**Destructor of priority queue.
+    */
     ~PriorityQueue();
 
     /**Inserts cost in priority qeue.
@@ -33,7 +46,7 @@ public:
     int remove();
 
     /**Updates the cost of an element if it still in the priority queue.
-     * If the element is out of the queue, then an exception rises. The sort function must to call after a cost(s) is update.
+     * If the element is out of the queue, then an exception rises. The sort function must be called after a cost(s) is update.
      * @param index index of element whose cost has to be updated.
      * @param cost cost value to be update in the qeue.
     */
@@ -67,7 +80,5 @@ private:
     int* index_;
     double* cost_;
 };
-
-
 
 #endif /* OPF_HEAP_H */
