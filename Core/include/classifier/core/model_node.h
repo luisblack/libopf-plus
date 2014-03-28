@@ -1,14 +1,16 @@
 #ifndef MODEL_NODE_H
 #define MODEL_NODE_H
 
-#include<input/pattern.h>
+#include <input/pattern.h>
 
-class ModelNode:public Pattern{
+class ModelNode : public Pattern{
 public:
+
+    ModelNode();
 
     /**Returns the propagated cost of a node.
     */
-    int get_cost()const;
+    double get_cost() const;
 
     /**Sets the propagated cost to a node.
      * @param cost cost propagated through a path.
@@ -28,5 +30,5 @@ private:
     double cost_;
     int predecessor_;
 
-
+};
 #endif // MODEL_NODE_H

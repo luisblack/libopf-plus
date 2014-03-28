@@ -38,19 +38,19 @@ HEADERS += \
     include/utils/priority_queue.h \
     include/utils/distance.h \
     include/libopf-plus.h \
-    include/input/file_formats.h \
     include/classifier/core/model.h \
     include/classifier/complete_graph/opf_classifying.h \
-    include/classifier/core/model_node.h
+    include/classifier/core/model_node.h \
+    include/input/io_formater.h
 
 SOURCES += \
     src/input/patterns.cpp \
     src/input/pattern.cpp \
     src/classifier/complete_graph/mst_prototype.cpp \
     src/classifier/core/opf.cpp \
-    src/input/file_formats.cpp \
     src/utils/priority_queue.cpp \
     src/classifier/complete_graph/opf_training.cpp \
     src/classifier/core/model.cpp \
     src/classifier/complete_graph/opf_classifying.cpp \
-    src/classifier/core/model_node.cpp
+    src/classifier/core/model_node.cpp \
+    src/input/io_fomatter.cpp

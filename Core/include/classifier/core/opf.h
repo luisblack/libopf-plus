@@ -5,13 +5,14 @@
  *      Author: tome
  */
 
+#include <utils/distance.h>
+#include <classifier/core/model.h>
+#include <classifier/core/prototype_strategy.h>
+#include <classifier/core/classifier.h>
+#include <classifier/core/trainer.h>
+
 #ifndef OPF_H_
 #define OPF_H_
-
-#include <classifier/core/model.h>
-#include <classifier/core/trainer.h>
-#include <utils/distance.h>
-#include <classifier/core/classifier.h>
 
 class OPF{
 public:

@@ -5,11 +5,11 @@
  *      Author: peixinho
  */
 
-#ifndef FUNCTION_H_
-#define FUNCTION_H_
-
 #include<functional>
 #include<vector>
+
+#ifndef FUNCTION_H_
+#define FUNCTION_H_
 
 using namespace std;
 

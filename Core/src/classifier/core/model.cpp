@@ -2,7 +2,7 @@
 #include<libopf-plus.h>
 
 Model::Model(Patterns patterns){
-    ordered_list_of_nodes_.capacity(patterns.get_number_of_patterns());
+    ordered_list_of_nodes_.reserve(patterns.get_number_of_patterns());
 }
 
 Model::Model(string file_name){
@@ -17,14 +17,14 @@ void Model::push_ordered_list_of_nodes(int index){
     ordered_list_of_nodes_.push_back(index);
 }
 
-ModelNode* Model::pop_ordered_list_of_nodes(){
+ModelNode* Model::pop_ordered_list_of_nodes() const{
     return NULL;
 }
 
-iterator Model::begin(){
+Model::const_iterator Model::begin() const{
     return node.begin();
 }
 
-iterator Model::end(){
+Model::const_iterator Model::end() const{
     return node.end();
 }

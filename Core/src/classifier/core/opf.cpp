@@ -1,4 +1,5 @@
 #include <classifier/core/opf.h>
+#include <iostream>
 
 OPF::OPF(Trainer &trainer, Classifier &classifier, opf::Distance distance)
 {

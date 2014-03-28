@@ -19,11 +19,11 @@ int main()
     Q.sort();
     for(const int *i = Q.begin(); i != Q.end(); ++i){
         Q.update(*i,0.0);
-        cout <<Q.get_costs(*i)<<"\t";
+        cout <<Q.get_cost(*i)<<"\t";
         cout <<*i<<endl;
     }
-   // cout << p.get_number_of_patterns() << endl;
-    //cout << p.get_number_of_classes() << endl;
+    cout << p.get_number_of_patterns() << endl;
+    cout << p.get_number_of_classes() << endl;
 
     return 0;
 }

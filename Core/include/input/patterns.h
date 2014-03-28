@@ -9,7 +9,6 @@
 #define PATTERNS_H_
 
 #include<string>
-#include <iostream>
 #include <fstream>
 #include<stdlib.h>
 

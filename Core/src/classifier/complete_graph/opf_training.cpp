@@ -11,6 +11,7 @@ Model* OPFTraining::train(opf::Distance distance, Patterns patterns){
     int p,q;
     double tmp;
 
+    /*
     vector<double>initial_costs = MSTPrototypes.SelectPrototypes(distance, patterns);
 
     PriorityQueue Q(patterns.get_number_of_patterns());
@@ -36,4 +37,5 @@ Model* OPFTraining::train(opf::Distance distance, Patterns patterns){
         }
     }
     return model_train;
+    */
 }

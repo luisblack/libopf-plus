@@ -37,11 +37,11 @@ public:
     }
 };
 
-PriorityQueue::PriorityQueue(int size, Type type): cur_index_(0), size_(size), policy_type(type){
+PriorityQueue::PriorityQueue(int size, Type type): cur_idx_(0), size_(size), policy_type(type){
     double default_value;
 
-    indexes_ = new int[size];
-    costs_ = new double[size];
+    index_ = new int[size];
+    cost_ = new double[size];
     status_ = new Status[size];
 
     if(type==Type::MIN)
@@ -54,16 +54,16 @@ PriorityQueue::PriorityQueue(int size, Type type): cur_index_(0), size_(size), p
     }
 
     for(int i=0; i<size; ++i){
-        indexes_[i] = i;
+        index_[i] = i;
     }
 
-    std::fill(costs_, costs_ + size, default_value);
+    std::fill(cost_, cost_ + size, default_value);
 }
 
 PriorityQueue::~PriorityQueue()
 {
-    delete indexes_;
-    delete costs_;
+    delete index_;
+    delete cost_;
     delete status_;
 }
 
@@ -72,9 +72,9 @@ void PriorityQueue::insert(double cost){
     if(full()){
         throw "Queue is full!";
     }
-    costs_[cur_index_] = cost;
-    status_[cur_index_] = Status::WHITE;
-    cur_index_++;
+    cost_[cur_idx_] = cost;
+    status_[cur_idx_] = Status::WHITE;
+    cur_idx_++;
 
 }
 
@@ -84,19 +84,19 @@ int PriorityQueue::remove()
         throw "Queue is empty!";
     }
     //TODO: mudar essa joca
-    cur_index_--;
-    status_[cur_index_] = Status::BLACK;
-    return indexes_[cur_index_];
+    cur_idx_--;
+    status_[cur_idx_] = Status::BLACK;
+    return index_[cur_idx_];
 }
 
 bool PriorityQueue::min(int index1, int index2)
 {
-    return costs_[indexes_[index1]] < costs_[indexes_[index2]];
+    return cost_[index_[index1]] < cost_[index_[index2]];
 }
 
 bool PriorityQueue::max(int index1, int index2)
 {
-    return costs_[indexes_[index1]] > costs_[indexes_[index2]];
+    return cost_[index_[index1]] > cost_[index_[index2]];
 }
 
 void PriorityQueue::sort()
@@ -107,13 +107,13 @@ void PriorityQueue::sort()
     //TO DO: remover esse if
     if(policy_type == Type::MIN)
     {
-        make_heap(indexes_, indexes_+cur_index_, MinPolicy(indexes_, costs_));
-        sort_heap(indexes_, indexes_+cur_index_, MinPolicy(indexes_, costs_));
+        make_heap(index_, index_+cur_idx_, MinPolicy(index_, cost_));
+        sort_heap(index_, index_+cur_idx_, MinPolicy(index_, cost_));
     }
     else
     {
-        make_heap(indexes_, indexes_+cur_index_, MaxPolicy(indexes_, costs_));
-        sort_heap(indexes_, indexes_+cur_index_, MaxPolicy(indexes_, costs_));
+        make_heap(index_, index_+cur_idx_, MaxPolicy(index_, cost_));
+        sort_heap(index_, index_+cur_idx_, MaxPolicy(index_, cost_));
     }
 }
 
@@ -122,30 +122,30 @@ void PriorityQueue::update(int index, double cost)
     if(status_[index] == Status::BLACK){
         throw "Element %d is already out of queue",index;
     }
-    costs_[index] = cost;
+    cost_[index] = cost;
     status_[index] = Status::GREY;
 }
 
 bool PriorityQueue::empty() const
 {
-    return cur_index_ <= 0;
+    return cur_idx_ <= 0;
 }
 
 bool PriorityQueue::full() const
 {
-    return cur_index_ >= size_;
+    return cur_idx_ >= size_;
 }
 
 const int* PriorityQueue::begin() const
 {
-    return indexes_;
+    return index_;
 }
 
 const int* PriorityQueue::end() const
 {
-    return indexes_+cur_index_;
+    return index_+cur_idx_;
 }
 
-double PriorityQueue::get_costs(int index) const{
-    return costs_[index];
+double PriorityQueue::get_cost(int index) const{
+    return cost_[index];
 }

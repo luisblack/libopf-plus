@@ -1,10 +1,9 @@
 #include<classifier/core/model_node.h>
 
-ModelNode::ModelNode(){
+ModelNode::ModelNode()
+{}
 
-}
-
-double ModelNode::get_cost()const{
+double ModelNode::get_cost() const{
     return cost_;
 }
 
@@ -12,7 +11,7 @@ void ModelNode::set_cost(double cost){
     cost_ = cost;
 }
 
-int ModelNode::get_predecessor()const{
+int ModelNode::get_predecessor() const{
     return predecessor_;
 }
 

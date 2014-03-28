@@ -11,15 +11,12 @@
 #include <input/pattern.h>
 #include <input/patterns.h>
 #include <utils/distance.h>
-#include <libopf-plus.h>
 
 #include <vector>
 
-using namespace std;
 
 /**Strategy interface of way to select prototypes. All new strategy of selecting prototypes must implement this interface.
 */
-
 class PrototypesStrategy {
     public:
     /**Returns a vector with initial costs to all nodes.

@@ -11,8 +11,6 @@
 #include <utils/distance.h>
 #include <classifier/core/classifying_strategy.h>
 
-using namespace std;
-
 class Classifier {
 public:
     Classifier(Model &model, ClassifyingStrategy &classifier, Patterns &test_patterns);
