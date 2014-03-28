@@ -22,7 +22,7 @@ namespace opf {
             InputFormatter(Patterns&, InputMethod&);
 
         //    friend ostream& operator <<(ostream&, OutputFunction&);
-            friend istream& operator >>(istream&, InputMethod&);
+            friend istream& operator >>(istream&, InputFormatter&);
         };
 
         class OutputFormatter
@@ -32,13 +32,13 @@ namespace opf {
             OutputMethod& output_function_;
             OutputFormatter(Patterns&, OutputMethod&);
 
-            friend ostream& operator <<(ostream&, OutputMethod&);
+            friend ostream& operator <<(ostream&, OutputFormatter&);
         //    friend istream& operator >>(istream&, InputFunction&);
         };
 
 
-        InputFormatter& format(Patterns& patterns, InputMethod& input_method);
-        OutputFormatter& format(Patterns& patterns, OutputMethod& output_method);
+        InputFormatter& format(Patterns& patterns, InputMethod input_method);
+        OutputFormatter& format_out(Patterns& patterns, OutputMethod output_method);
 
     }
 }

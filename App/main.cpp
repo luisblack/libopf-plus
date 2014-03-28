@@ -4,9 +4,25 @@
 
 using namespace std;
 
+void hue(ostream& o, Patterns& p)
+{
+    o << p.get_number_of_patterns() + p.get_number_of_classes();
+}
+
+void hue2(Patterns& p, ostream& o, opf::io::OutputMethod omg)
+{
+    omg(o,p);
+}
+
 int main()
 {
     Patterns p("boat.txt");
+
+    auto aeho = opf::io::format_out(p, hue);
+
+    cout << aeho << endl;
+
+//    cout << opf::io::format_out(p, [](ostream& o, Patterns &p){cout << "aeho";});
 
 //    int x, y;
 //    PriorityQueue Q(5,PriorityQueue::Type::MAX);
