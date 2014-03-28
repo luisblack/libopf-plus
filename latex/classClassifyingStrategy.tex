@@ -21,7 +21,7 @@ Inheritance diagram for Classifying\+Strategy\+:\begin{figure}[H]
 \item 
 \hyperlink{classClassifyingStrategy_a8dd920216306e6df413a9e5e0b34d93b}{Classifying\+Strategy} ()
 \item 
-virtual vector$<$ double $>$ \hyperlink{classClassifyingStrategy_a081f87253b198818243d5e7b53553c04}{predict} (\hyperlink{classModel}{Model} model, \hyperlink{classPatterns}{Patterns} test)
+virtual vector$<$ double $>$ \hyperlink{classClassifyingStrategy_a0b0e637921ba52ff52069824e96cab7b}{classify} (\hyperlink{classModel}{Model} model, \hyperlink{classPatterns}{Patterns} test)
 \begin{DoxyCompactList}\small\item\em Returns a vector with predicted class values for all pattern in the set test. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -41,14 +41,14 @@ All new strategy of classifying must implement this interface.
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classClassifyingStrategy_a081f87253b198818243d5e7b53553c04}{\index{Classifying\+Strategy@{Classifying\+Strategy}!predict@{predict}}
-\index{predict@{predict}!Classifying\+Strategy@{Classifying\+Strategy}}
-\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}virtual vector$<$double$>$ Classifying\+Strategy\+::predict (
+\hypertarget{classClassifyingStrategy_a0b0e637921ba52ff52069824e96cab7b}{\index{Classifying\+Strategy@{Classifying\+Strategy}!classify@{classify}}
+\index{classify@{classify}!Classifying\+Strategy@{Classifying\+Strategy}}
+\subsubsection[{classify}]{\setlength{\rightskip}{0pt plus 5cm}virtual vector$<$double$>$ Classifying\+Strategy\+::classify (
 \begin{DoxyParamCaption}
 \item[{{\bf Model}}]{model, }
 \item[{{\bf Patterns}}]{test}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classClassifyingStrategy_a081f87253b198818243d5e7b53553c04}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classClassifyingStrategy_a0b0e637921ba52ff52069824e96cab7b}
 
 
 Returns a vector with predicted class values for all pattern in the set test. 

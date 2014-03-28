@@ -101,10 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7665a5d4968c83f5e02829b67e5c7c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a626488d8dea91e51687de45681fbbddd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClassifier.html#a626488d8dea91e51687de45681fbbddd">distance</a> ()</td></tr>
 <tr class="separator:a626488d8dea91e51687de45681fbbddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cadb07d3554c9831126c0d4ee68002d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClassifier.html#a6cadb07d3554c9831126c0d4ee68002d">Predict</a> (<a class="el" href="classPattern.html">Pattern</a> pattern)</td></tr>
-<tr class="separator:a6cadb07d3554c9831126c0d4ee68002d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a817f2396febf2a07a2db9586dae96286"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClassifier.html#a817f2396febf2a07a2db9586dae96286">Predict</a> (<a class="el" href="classPatterns.html">Patterns</a> patterns)</td></tr>
-<tr class="separator:a817f2396febf2a07a2db9586dae96286"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955fe3a8a866ae5ad0d322077967cbfe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClassifier.html#a955fe3a8a866ae5ad0d322077967cbfe">classify</a> (<a class="el" href="classPattern.html">Pattern</a> pattern)</td></tr>
+<tr class="separator:a955fe3a8a866ae5ad0d322077967cbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e1ed6cb802dd01c2f9485daf2d1e023"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classClassifier.html#a3e1ed6cb802dd01c2f9485daf2d1e023">classify</a> (<a class="el" href="classPatterns.html">Patterns</a> patterns)</td></tr>
+<tr class="separator:a3e1ed6cb802dd01c2f9485daf2d1e023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ab386c7969106735b11062f948eb16708"></a>
@@ -140,27 +140,12 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a626488d8dea91e51687de45681fbbddd"></a>
+<a class="anchor" id="a955fe3a8a866ae5ad0d322077967cbfe"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a> Classifier::distance </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6cadb07d3554c9831126c0d4ee68002d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Classifier::Predict </td>
+          <td class="memname">int Classifier::classify </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classPattern.html">Pattern</a>&#160;</td>
           <td class="paramname"><em>pattern</em></td><td>)</td>
@@ -171,15 +156,30 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a817f2396febf2a07a2db9586dae96286"></a>
+<a class="anchor" id="a3e1ed6cb802dd01c2f9485daf2d1e023"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int* Classifier::Predict </td>
+          <td class="memname">int* Classifier::classify </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classPatterns.html">Patterns</a>&#160;</td>
           <td class="paramname"><em>patterns</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a626488d8dea91e51687de45681fbbddd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a> Classifier::distance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -209,7 +209,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 27 2014 21:15:55 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 28 2014 11:59:04 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

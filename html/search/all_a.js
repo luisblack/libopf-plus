@@ -7,10 +7,10 @@ var searchData=
   ['patterns_2ecpp',['patterns.cpp',['../patterns_8cpp.html',1,'']]],
   ['patterns_2eh',['patterns.h',['../patterns_8h.html',1,'']]],
   ['pop_5fordered_5flist_5fof_5fnodes',['pop_ordered_list_of_nodes',['../classModel.html#a7bae5e69e7ca1d5bb8a04c74148c82f0',1,'Model']]],
-  ['predict',['Predict',['../classClassifier.html#a6cadb07d3554c9831126c0d4ee68002d',1,'Classifier::Predict(Pattern pattern)'],['../classClassifier.html#a817f2396febf2a07a2db9586dae96286',1,'Classifier::Predict(Patterns patterns)'],['../classOPF.html#a694477ddd6df7bebbd1856cdf7bf3ce1',1,'OPF::Predict()'],['../classClassifyingStrategy.html#a081f87253b198818243d5e7b53553c04',1,'ClassifyingStrategy::predict()']]],
+  ['predict',['Predict',['../classOPF.html#a694477ddd6df7bebbd1856cdf7bf3ce1',1,'OPF']]],
   ['priority_5fqueue_2ecpp',['priority_queue.cpp',['../priority__queue_8cpp.html',1,'']]],
   ['priority_5fqueue_2eh',['priority_queue.h',['../priority__queue_8h.html',1,'']]],
-  ['priorityqueue',['PriorityQueue',['../classPriorityQueue.html',1,'PriorityQueue'],['../classPriorityQueue.html#ab2db14880bcb6c0b3717c574e0c34557',1,'PriorityQueue::PriorityQueue()']]],
+  ['priorityqueue',['PriorityQueue',['../classPriorityQueue.html',1,'PriorityQueue'],['../classPriorityQueue.html#ab2db14880bcb6c0b3717c574e0c34557',1,'PriorityQueue::PriorityQueue(int size, Type type=Type::MIN)'],['../classPriorityQueue.html#a24fb332cca8380a3f3c5ad59e3ef3c07',1,'PriorityQueue::PriorityQueue(vector&lt; double &gt;costs, Type type=Type::MIN)']]],
   ['prototype_5fstrategy_2eh',['prototype_strategy.h',['../prototype__strategy_8h.html',1,'']]],
   ['prototypesstrategy',['PrototypesStrategy',['../classPrototypesStrategy.html',1,'']]],
   ['push_5fordered_5flist_5fof_5fnodes',['push_ordered_list_of_nodes',['../classModel.html#a6f2fa936b9d754d971f2972716b41656',1,'Model']]]
