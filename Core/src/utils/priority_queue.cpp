@@ -146,6 +146,6 @@ const int* PriorityQueue::end() const
     return indexes_+cur_index_;
 }
 
-double PriorityQueue::get_costs(int index) const{
+double PriorityQueue::get_cost(int index) const{
     return costs_[index];
 }

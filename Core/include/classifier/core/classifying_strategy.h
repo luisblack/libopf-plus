@@ -5,7 +5,13 @@
 #include<classifier/core/model.h>
 #include<vector>
 
-/**Strategy interface of classifying. All new strategy of classifying must implement this interface.
+/**Interface for classifying strategies.
+* One may want to develop a new OPF classifying strategy.
+* Thus, this class provides an interface to support this development.
+* All new classifying strategies should implement this interface.
+*\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
+*\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
+* \version 1.0.0
 */
 
 class ClassifyingStrategy

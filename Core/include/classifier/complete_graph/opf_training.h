@@ -12,6 +12,11 @@
 #include<utils/distance.h>
 #include <input/patterns.h>
 
+/**\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
+*\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
+* \version 1.0.0
+*/
+
 class OPFTraining: public TrainingStrategy{
 public:
 	OPFTraining();

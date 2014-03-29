@@ -3,7 +3,9 @@
 
 #include<classifier/core/model.h>
 
-/**Strategy interface for training. All new strategy of training must implement this interface.
+/**Interface for training strategies.
+ * One may want to develop a new OPF training strategy.
+ * Therefore, all new training strategy must implement this interface.
 */
 
 class TrainingStrategy

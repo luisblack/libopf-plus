@@ -95,29 +95,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="prototype__strategy_8h.html">classifier/core/prototype_strategy.h</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="distance_8h.html">utils/distance.h</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classMSTPrototypes.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMSTPrototypes.html">MSTPrototypes</a> : <span class="keyword">public</span> <a class="code" href="classPrototypesStrategy.html">PrototypesStrategy</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classMSTPrototypes.html#a62fedec88ad4ab417181fbc672f72410">MSTPrototypes</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> vector&lt;double&gt; <a class="code" href="classMSTPrototypes.html#a654ccbaebfdbca73a0da0e5eb1e4e39f">SelectPrototypes</a>(<a class="code" href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a> distance, <a class="code" href="classPatterns.html">Patterns</a> patterns);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> NIL = -1;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> PROTOTYPE = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif // MST_PROTOTYPES_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classMSTPrototypes.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMSTPrototypes.html">MSTPrototypes</a> : <span class="keyword">public</span> <a class="code" href="classPrototypesStrategy.html">PrototypesStrategy</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classMSTPrototypes.html#a62fedec88ad4ab417181fbc672f72410">MSTPrototypes</a>();</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">virtual</span> vector&lt;double&gt; <a class="code" href="classMSTPrototypes.html#a654ccbaebfdbca73a0da0e5eb1e4e39f">SelectPrototypes</a>(<a class="code" href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a> distance, <a class="code" href="classPatterns.html">Patterns</a> patterns);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> NIL = -1;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> PROTOTYPE = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif // MST_PROTOTYPES_H</span></div>
 <div class="ttc" id="prototype__strategy_8h_html"><div class="ttname"><a href="prototype__strategy_8h.html">prototype_strategy.h</a></div></div>
 <div class="ttc" id="distance_8h_html"><div class="ttname"><a href="distance_8h.html">distance.h</a></div></div>
 <div class="ttc" id="classMSTPrototypes_html_a654ccbaebfdbca73a0da0e5eb1e4e39f"><div class="ttname"><a href="classMSTPrototypes.html#a654ccbaebfdbca73a0da0e5eb1e4e39f">MSTPrototypes::SelectPrototypes</a></div><div class="ttdeci">virtual vector&lt; double &gt; SelectPrototypes(opf::Distance distance, Patterns patterns)</div><div class="ttdoc">Returns a array of size of patterns with zero value is a pattern is a prototype and infinity otherwis...</div><div class="ttdef"><b>Definition:</b> mst_prototype.cpp:11</div></div>
 <div class="ttc" id="classMSTPrototypes_html_a62fedec88ad4ab417181fbc672f72410"><div class="ttname"><a href="classMSTPrototypes.html#a62fedec88ad4ab417181fbc672f72410">MSTPrototypes::MSTPrototypes</a></div><div class="ttdeci">MSTPrototypes()</div><div class="ttdef"><b>Definition:</b> mst_prototype.cpp:7</div></div>
-<div class="ttc" id="namespaceopf_html_a61631393754e0aa6aaeacf0767b2b419"><div class="ttname"><a href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a></div><div class="ttdeci">std::function&lt; double(const vector&lt; double &gt;, const vector&lt; double &gt;)&gt; Distance</div><div class="ttdef"><b>Definition:</b> distance.h:18</div></div>
-<div class="ttc" id="classPrototypesStrategy_html"><div class="ttname"><a href="classPrototypesStrategy.html">PrototypesStrategy</a></div><div class="ttdoc">Strategy interface of way to select prototypes. </div><div class="ttdef"><b>Definition:</b> prototype_strategy.h:23</div></div>
+<div class="ttc" id="namespaceopf_html_a61631393754e0aa6aaeacf0767b2b419"><div class="ttname"><a href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a></div><div class="ttdeci">std::function&lt; double(const vector&lt; double &gt;, const vector&lt; double &gt;)&gt; Distance</div><div class="ttdef"><b>Definition:</b> distance.h:24</div></div>
+<div class="ttc" id="classPrototypesStrategy_html"><div class="ttname"><a href="classPrototypesStrategy.html">PrototypesStrategy</a></div><div class="ttdoc">Strategy interface of way to select prototypes. </div><div class="ttdef"><b>Definition:</b> prototype_strategy.h:27</div></div>
 <div class="ttc" id="classPatterns_html"><div class="ttname"><a href="classPatterns.html">Patterns</a></div><div class="ttdoc">Class for handling a set of patterns. </div><div class="ttdef"><b>Definition:</b> patterns.h:23</div></div>
-<div class="ttc" id="classMSTPrototypes_html"><div class="ttname"><a href="classMSTPrototypes.html">MSTPrototypes</a></div><div class="ttdoc">Class to handle prototypes selection by using a Minimum Spanning Tree (MST). </div><div class="ttdef"><b>Definition:</b> mst_prototype.h:10</div></div>
+<div class="ttc" id="classMSTPrototypes_html"><div class="ttname"><a href="classMSTPrototypes.html">MSTPrototypes</a></div><div class="ttdoc">Class to handle prototypes selection by using a Minimum Spanning Tree (MST). </div><div class="ttdef"><b>Definition:</b> mst_prototype.h:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 28 2014 11:59:03 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 28 2014 23:38:56 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

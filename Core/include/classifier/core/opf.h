@@ -13,6 +13,11 @@
 #include <utils/distance.h>
 #include <classifier/core/classifier.h>
 
+/**\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
+*\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
+* \version 1.0.0
+*/
+
 class OPF{
 public:
     OPF(Trainer &trainer, Classifier &classifier, opf::Distance distance);

@@ -10,7 +10,7 @@ var searchData=
   ['predict',['Predict',['../classOPF.html#a694477ddd6df7bebbd1856cdf7bf3ce1',1,'OPF']]],
   ['priority_5fqueue_2ecpp',['priority_queue.cpp',['../priority__queue_8cpp.html',1,'']]],
   ['priority_5fqueue_2eh',['priority_queue.h',['../priority__queue_8h.html',1,'']]],
-  ['priorityqueue',['PriorityQueue',['../classPriorityQueue.html',1,'PriorityQueue'],['../classPriorityQueue.html#ab2db14880bcb6c0b3717c574e0c34557',1,'PriorityQueue::PriorityQueue(int size, Type type=Type::MIN)'],['../classPriorityQueue.html#a24fb332cca8380a3f3c5ad59e3ef3c07',1,'PriorityQueue::PriorityQueue(vector&lt; double &gt;costs, Type type=Type::MIN)']]],
+  ['priorityqueue',['PriorityQueue',['../classPriorityQueue.html',1,'PriorityQueue'],['../classPriorityQueue.html#ab2db14880bcb6c0b3717c574e0c34557',1,'PriorityQueue::PriorityQueue(int size, Type type=Type::MIN)'],['../classPriorityQueue.html#aad8fdab799e19cb8dd88e90d74bd6545',1,'PriorityQueue::PriorityQueue(Iterator begin, Iterator end, Type type=Type::MIN)']]],
   ['prototype_5fstrategy_2eh',['prototype_strategy.h',['../prototype__strategy_8h.html',1,'']]],
   ['prototypesstrategy',['PrototypesStrategy',['../classPrototypesStrategy.html',1,'']]],
   ['push_5fordered_5flist_5fof_5fnodes',['push_ordered_list_of_nodes',['../classModel.html#a6f2fa936b9d754d971f2972716b41656',1,'Model']]]

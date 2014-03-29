@@ -28,8 +28,7 @@ public:
 
     /**Constructor creating an set of patterns from a dataset file with defined extension.
     * @param file_name name of dataset file.
-    *@param labeled_dataset denotes if the dataset has or not label
-    * */
+    */
     Patterns(string file_name);
 
 	/**Constructor creating an empty set of patterns with defined size.

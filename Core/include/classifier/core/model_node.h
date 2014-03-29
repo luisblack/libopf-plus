@@ -3,7 +3,12 @@
 
 #include<input/pattern.h>
 
-class ModelNode:public Pattern{
+/**\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
+*\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
+* \version 1.0.0
+*/
+
+class ModelNode: public Pattern{
 public:
 
     /**Returns the propagated cost of a node.

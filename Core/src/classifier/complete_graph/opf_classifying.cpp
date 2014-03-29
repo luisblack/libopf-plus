@@ -5,7 +5,7 @@ OPFClassifying::OPFClassifying(){
 
 }
 
-vector<int> OPFClassifying::predict(Model model, Patterns test){
+vector<int> OPFClassifying::classify(Model model, Patterns test){
 
     ModelNode node, prox_node;
     double weight, min_cost, tmp;

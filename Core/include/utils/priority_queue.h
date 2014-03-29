@@ -1,28 +1,22 @@
 /*
  * priotiryqueue.h
  *
- *\author Alan Zanoni Peixinho
- *\author Luis Augusto Martins Pereria
- *
  *
  */
 
 #ifndef OPF_HEAP_H_
 #define OPF_HEAP_H
 #include <vector>
-
+#include <iterator>
 #include <functional>
 
 using namespace std;
 
 /**A class for handling minimum and maximum priority queues.
- * Usage example:
- * #include<priority_queue>.
- * PriorityQueue Q(3,Type::MIN);.
- * Q.insert(0.1);.
- * Q.insert(0.01);.
- * Q.insert(10.0);.
- * Q.sort();.
+ *
+ * \authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
+ *\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
+ * \version 1.0.0
 */
 
 class PriorityQueue{
@@ -48,7 +42,8 @@ public:
      *@param type removal policy
      *@see Type
     */
-    PriorityQueue(vector<double>costs, Type type = Type::MIN);
+    template <typename Iterator> PriorityQueue(Iterator begin, Iterator end, Type type = Type::MIN);
+
 
     /**Destructor of priority queue.
     */
@@ -75,10 +70,14 @@ public:
     */
     void update(int index, double cost);
 
-    /**Returns true if the queue is empty, and false otherwise.*/
+    /**Checks if the queue is empty.
+     * @return true if the queue is empty, and false otherwise.
+    */
     bool empty() const;
 
-    /**Returns true if the queue is full, and false otherwise.*/
+    /**Checks if the queue is full.
+     * @return true if the queue is full, and false otherwise.
+    */
     bool full() const;
 
     /**Sorts the queue according to removal policy (minimum or maximum).

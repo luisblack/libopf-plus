@@ -17,7 +17,11 @@
 
 using namespace std;
 
-/**Strategy interface of way to select prototypes. All new strategy of selecting prototypes must implement this interface.
+/**Strategy interface of way to select prototypes.
+ * All new strategy of selecting prototypes must implement this interface.
+ * \authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
+*\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
+* \version 1.0.0
 */
 
 class PrototypesStrategy {

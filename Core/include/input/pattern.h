@@ -15,8 +15,14 @@
 using namespace std;
 
 /**Class for handling a single pattern.
-*@see Patterns()
-*/
+ *@see Patterns()
+ *
+ *\author Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
+ *\author Luis Augusto Martins Pereria lmartins@ic.unicamb.br
+ *\version 1.0.0
+ */
+
+
 class Pattern{
 public:
 
@@ -38,8 +44,7 @@ public:
     }
 
 	/**Constructor creating a unlabeled pattern.
-    * @param feature_vector that represents the pattern.
-    * @param dimension dimension of feature vector.
+
     * @param index index of pattern.
     * */
     template <typename Iterator> Pattern(Iterator begin, Iterator end, int index)

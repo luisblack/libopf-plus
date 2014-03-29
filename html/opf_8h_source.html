@@ -104,33 +104,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="distance_8h.html">utils/distance.h</a>&gt;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="classifier_8h.html">classifier/core/classifier.h</a>&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classOPF.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classOPF.html">OPF</a>{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classOPF.html#a937d755f9ec9d517eead90e06d5ab672">OPF</a>(<a class="code" href="classTrainer.html">Trainer</a> &amp;trainer, <a class="code" href="classClassifier.html">Classifier</a> &amp;classifier, <a class="code" href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a> distance);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classOPF.html#a3008876cfbc3879986126308ca23cc1e">BuildModel</a>(<a class="code" href="classPatterns.html">Patterns</a>&amp; training);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classOPF.html#a694477ddd6df7bebbd1856cdf7bf3ce1">Predict</a>(<a class="code" href="classPatterns.html">Patterns</a>&amp; test);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classModel.html">Model</a>* opf_model_ = NULL;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OPF_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classOPF.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classOPF.html">OPF</a>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classOPF.html#a937d755f9ec9d517eead90e06d5ab672">OPF</a>(<a class="code" href="classTrainer.html">Trainer</a> &amp;trainer, <a class="code" href="classClassifier.html">Classifier</a> &amp;classifier, <a class="code" href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a> distance);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classOPF.html#a3008876cfbc3879986126308ca23cc1e">BuildModel</a>(<a class="code" href="classPatterns.html">Patterns</a>&amp; training);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classOPF.html#a694477ddd6df7bebbd1856cdf7bf3ce1">Predict</a>(<a class="code" href="classPatterns.html">Patterns</a>&amp; test);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classModel.html">Model</a>* opf_model_ = NULL;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OPF_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="distance_8h_html"><div class="ttname"><a href="distance_8h.html">distance.h</a></div></div>
 <div class="ttc" id="classOPF_html_a937d755f9ec9d517eead90e06d5ab672"><div class="ttname"><a href="classOPF.html#a937d755f9ec9d517eead90e06d5ab672">OPF::OPF</a></div><div class="ttdeci">OPF(Trainer &amp;trainer, Classifier &amp;classifier, opf::Distance distance)</div><div class="ttdef"><b>Definition:</b> opf.cpp:3</div></div>
 <div class="ttc" id="model_8h_html"><div class="ttname"><a href="model_8h.html">model.h</a></div></div>
 <div class="ttc" id="classifier_8h_html"><div class="ttname"><a href="classifier_8h.html">classifier.h</a></div></div>
-<div class="ttc" id="namespaceopf_html_a61631393754e0aa6aaeacf0767b2b419"><div class="ttname"><a href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a></div><div class="ttdeci">std::function&lt; double(const vector&lt; double &gt;, const vector&lt; double &gt;)&gt; Distance</div><div class="ttdef"><b>Definition:</b> distance.h:18</div></div>
-<div class="ttc" id="classModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdef"><b>Definition:</b> model.h:18</div></div>
+<div class="ttc" id="namespaceopf_html_a61631393754e0aa6aaeacf0767b2b419"><div class="ttname"><a href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a></div><div class="ttdeci">std::function&lt; double(const vector&lt; double &gt;, const vector&lt; double &gt;)&gt; Distance</div><div class="ttdef"><b>Definition:</b> distance.h:24</div></div>
+<div class="ttc" id="classModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdoc">Class for handling the training model informations. </div><div class="ttdef"><b>Definition:</b> model.h:23</div></div>
 <div class="ttc" id="classPatterns_html"><div class="ttname"><a href="classPatterns.html">Patterns</a></div><div class="ttdoc">Class for handling a set of patterns. </div><div class="ttdef"><b>Definition:</b> patterns.h:23</div></div>
 <div class="ttc" id="trainer_8h_html"><div class="ttname"><a href="trainer_8h.html">trainer.h</a></div></div>
 <div class="ttc" id="classOPF_html_a694477ddd6df7bebbd1856cdf7bf3ce1"><div class="ttname"><a href="classOPF.html#a694477ddd6df7bebbd1856cdf7bf3ce1">OPF::Predict</a></div><div class="ttdeci">int Predict(Patterns &amp;test)</div><div class="ttdef"><b>Definition:</b> opf.cpp:13</div></div>
-<div class="ttc" id="classClassifier_html"><div class="ttname"><a href="classClassifier.html">Classifier</a></div><div class="ttdef"><b>Definition:</b> classifier.h:16</div></div>
-<div class="ttc" id="classOPF_html"><div class="ttname"><a href="classOPF.html">OPF</a></div><div class="ttdef"><b>Definition:</b> opf.h:16</div></div>
-<div class="ttc" id="classTrainer_html"><div class="ttname"><a href="classTrainer.html">Trainer</a></div><div class="ttdef"><b>Definition:</b> trainer.h:15</div></div>
+<div class="ttc" id="classClassifier_html"><div class="ttname"><a href="classClassifier.html">Classifier</a></div><div class="ttdef"><b>Definition:</b> classifier.h:22</div></div>
+<div class="ttc" id="classOPF_html"><div class="ttname"><a href="classOPF.html">OPF</a></div><div class="ttdef"><b>Definition:</b> opf.h:21</div></div>
+<div class="ttc" id="classTrainer_html"><div class="ttname"><a href="classTrainer.html">Trainer</a></div><div class="ttdef"><b>Definition:</b> trainer.h:21</div></div>
 <div class="ttc" id="classOPF_html_a3008876cfbc3879986126308ca23cc1e"><div class="ttname"><a href="classOPF.html#a3008876cfbc3879986126308ca23cc1e">OPF::BuildModel</a></div><div class="ttdeci">void BuildModel(Patterns &amp;training)</div><div class="ttdef"><b>Definition:</b> opf.cpp:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 28 2014 11:59:03 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 28 2014 23:38:56 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -13,7 +13,13 @@
 #include<classifier/core/model_node.h>
 #include<iostream>
 
-
+/**Class for handling the training model informations.
+ * This class provides attributes and methods to deal with information arising from training process that will be used on classifying process.
+ *Among the informations that model can handle are: cost paths, set of pattern using in training phase, learned class value, predecessor of a node and so on.
+ * \authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
+*\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
+* \version 1.0.0
+*/
 
 class Model{
 public:
@@ -52,7 +58,7 @@ private:
     vector<int> ordered_list_of_nodes_;
     vector<ModelNode> node;
 
-    /**Loads model from file. File has to be saved using  the same sequence used by the method "save_model_to_file".
+    /**Loads a model from file. File has to be saved using save_model_to_file.
      * @see save_model_to_file
     */
     void load_model_from_file(string file_name);
