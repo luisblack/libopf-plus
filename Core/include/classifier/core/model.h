@@ -9,9 +9,9 @@
 #define MODEL_H_
 
 
-#include<libopf-plus.h>
-#include<classifier/core/model_node.h>
-#include<iostream>
+#include <libopf-plus.h>
+#include <classifier/core/model_node.h>
+#include <iostream>
 
 /**Class for handling the training model informations.
  * This class provides attributes and methods to deal with information arising from training process that will be used on classifying process.

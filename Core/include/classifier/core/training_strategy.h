@@ -1,7 +1,7 @@
 #ifndef TRAINING_STRATEGY_H
 #define TRAINING_STRATEGY_H
 
-#include<classifier/core/model.h>
+#include <classifier/core/model.h>
 
 /**Interface for training strategies.
  * One may want to develop a new OPF training strategy.

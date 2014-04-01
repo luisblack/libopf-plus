@@ -8,8 +8,8 @@
 #ifndef OPF_TRAINING_H_
 #define OPF_TRAINING_H_
 
-#include<classifier/core/training_strategy.h>
-#include<utils/distance.h>
+#include <classifier/core/training_strategy.h>
+#include <utils/distance.h>
 #include <input/patterns.h>
 
 /**\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br

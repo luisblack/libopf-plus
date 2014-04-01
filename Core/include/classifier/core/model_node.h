@@ -1,7 +1,7 @@
 #ifndef MODEL_NODE_H
 #define MODEL_NODE_H
 
-#include<input/pattern.h>
+#include <input/pattern.h>
 
 /**\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
 *\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br

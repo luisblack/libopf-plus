@@ -31,7 +31,7 @@ public:
     */
     Patterns(string file_name);
 
-	/**Constructor creating an empty set of patterns with defined size.
+    /**Constructor creating an empty set of patterns with defined size. Except the number of patterns,
     * @param number_of_patterns number of patterns to be allocated.
     * */
 	Patterns(int number_of_patterns);

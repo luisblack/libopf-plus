@@ -1,9 +1,9 @@
 #ifndef CLASSIFYING_STRATEGY_H
 #define CLASSIFYING_STRATEGY_H
 
-#include<input/patterns.h>
-#include<classifier/core/model.h>
-#include<vector>
+#include <input/patterns.h>
+#include <classifier/core/model.h>
+#include <vector>
 
 /**Interface for classifying strategies.
 * One may want to develop a new OPF classifying strategy.

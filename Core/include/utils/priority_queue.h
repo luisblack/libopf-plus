@@ -29,7 +29,7 @@ public:
               };
 
     /**Constructor creating a empty priority queue with defined size and removal policy. A queue with minimal priority is created if the policy is not denifed.
-     *@param size defined size of queue.
+     *@param size size of queue.
      *@param type removal policy
      *@see Type
     */

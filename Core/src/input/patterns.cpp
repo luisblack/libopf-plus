@@ -13,6 +13,7 @@ Patterns::Patterns(string file_name) {
 }
 
 Patterns::Patterns(int number_of_patterns):number_of_patterns_(number_of_patterns), pattern(number_of_patterns), number_of_classes_(0){
+
 }
 
 Patterns::~Patterns(){
