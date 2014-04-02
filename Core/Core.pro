@@ -41,7 +41,8 @@ HEADERS += \
     include/input/file_formats.h \
     include/classifier/core/model.h \
     include/classifier/complete_graph/opf_classifying.h \
-    include/classifier/core/model_node.h
+    include/classifier/core/model_node.h \
+    include/classifier/core/prototypes_strategy.h
 
 SOURCES += \
     src/input/patterns.cpp \

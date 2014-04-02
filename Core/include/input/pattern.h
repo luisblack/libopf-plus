@@ -44,11 +44,13 @@ public:
     }
 
 	/**Constructor creating a unlabeled pattern.
-
+    * @param begin
+    * @param end
     * @param index index of pattern.
     * */
     template <typename Iterator> Pattern(Iterator begin, Iterator end, int index)
     {
+        class_value_ = 0;
         dimension_ = end - begin;
         set_feature_vector(begin, end);
         index_ = index;

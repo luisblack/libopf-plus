@@ -8,7 +8,6 @@ var searchData=
   ['opf_2eh',['opf.h',['../opf_8h.html',1,'']]],
   ['opf_5fclassifying_2ecpp',['opf_classifying.cpp',['../opf__classifying_8cpp.html',1,'']]],
   ['opf_5fclassifying_2eh',['opf_classifying.h',['../opf__classifying_8h.html',1,'']]],
-  ['opf_5fheap_5fh',['OPF_HEAP_H',['../priority__queue_8h.html#a4f1cb52d5bada49f3c2f7798fae75e2e',1,'priority_queue.h']]],
   ['opf_5ftraining_2ecpp',['opf_training.cpp',['../opf__training_8cpp.html',1,'']]],
   ['opf_5ftraining_2eh',['opf_training.h',['../opf__training_8h.html',1,'']]],
   ['opfclassifying',['OPFClassifying',['../classOPFClassifying.html',1,'']]],

@@ -5,7 +5,7 @@
  */
 
 #ifndef OPF_HEAP_H_
-#define OPF_HEAP_H
+#define OPF_HEAP_H_
 #include <vector>
 #include <iterator>
 #include <functional>
@@ -35,14 +35,19 @@ public:
     */
     PriorityQueue(int size, Type type = Type::MIN);
 
-    /**Constructor using a vector with costs and a defined removal policy.
+    /**Constructor using an initial vector with costs and a defined removal policy.
      * A queue with minimal priority is created if the policy is not denifed.
      * Costs are only inserted in queue
-     *@param costs vector with costs.
+     *@param begin
+     * @param end
      *@param type removal policy
      *@see Type
     */
-    template <typename Iterator> PriorityQueue(Iterator begin, Iterator end, Type type = Type::MIN);
+    template <typename Iterator> PriorityQueue(Iterator begin, Iterator end, Type polyce_type = Type::MIN){
+        size_ = end - begin;
+        policy_type_ = polyce_type;
+
+    }
 
 
     /**Destructor of priority queue.
@@ -104,7 +109,7 @@ public:
 
 private:
 
-    Type policy_type;
+    Type policy_type_;
 
     bool min(int, int);
     bool max(int, int);

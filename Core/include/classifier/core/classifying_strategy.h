@@ -1,5 +1,5 @@
-#ifndef CLASSIFYING_STRATEGY_H
-#define CLASSIFYING_STRATEGY_H
+#ifndef CLASSIFYING_STRATEGY_H_
+#define CLASSIFYING_STRATEGY_H_
 
 #include <input/patterns.h>
 #include <classifier/core/model.h>

@@ -1,5 +1,5 @@
-#ifndef TRAINING_STRATEGY_H
-#define TRAINING_STRATEGY_H
+#ifndef TRAINING_STRATEGY_H_
+#define TRAINING_STRATEGY_H_
 
 #include <classifier/core/model.h>
 
@@ -17,4 +17,4 @@ public:
     virtual Model* train();
 };
 
-#endif // TRAINING_STRATEGY_H
+#endif // TRAINING_STRATEGY_H_

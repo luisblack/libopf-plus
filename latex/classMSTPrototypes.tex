@@ -3,7 +3,7 @@
 }
 
 
-Class to handle prototypes selection by using a Minimum Spanning Tree (M\+S\+T).  
+Class for handling prototypes selection by using a Minimum Spanning Tree (M\+S\+T).  
 
 
 
@@ -22,13 +22,13 @@ Inheritance diagram for M\+S\+T\+Prototypes\+:\begin{figure}[H]
 \hyperlink{classMSTPrototypes_a62fedec88ad4ab417181fbc672f72410}{M\+S\+T\+Prototypes} ()
 \item 
 virtual vector$<$ double $>$ \hyperlink{classMSTPrototypes_a654ccbaebfdbca73a0da0e5eb1e4e39f}{Select\+Prototypes} (\hyperlink{namespaceopf_a61631393754e0aa6aaeacf0767b2b419}{opf\+::\+Distance} distance, \hyperlink{classPatterns}{Patterns} patterns)
-\begin{DoxyCompactList}\small\item\em Returns a array of size of patterns with zero value is a pattern is a prototype and infinity otherwise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Generates a M\+S\+T to perform a prototype selection. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Class to handle prototypes selection by using a Minimum Spanning Tree (M\+S\+T). 
+Class for handling prototypes selection by using a Minimum Spanning Tree (M\+S\+T). 
 
-Prim's algorithm is performed to generate the M\+S\+T. Two patterns on M\+S\+T are selected as prototypes if they are connected and belong to different classes. \begin{DoxyAuthor}{Authors}
+Prim's algorithm is performed to generate the M\+S\+T. \begin{DoxyAuthor}{Authors}
 Alan Zanoni Peixinho \href{mailto:apeixinho@studends.ic.unicamp.br}{\tt apeixinho@studends.\+ic.\+unicamp.\+br} 
 
 Luis Augusto Martins Pereria \href{mailto:lmartins@ic.unicamb.br}{\tt lmartins@ic.\+unicamb.\+br} 
@@ -59,15 +59,18 @@ Luis Augusto Martins Pereria \href{mailto:lmartins@ic.unicamb.br}{\tt lmartins@i
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMSTPrototypes_a654ccbaebfdbca73a0da0e5eb1e4e39f}
 
 
-Returns a array of size of patterns with zero value is a pattern is a prototype and infinity otherwise. 
+Generates a M\+S\+T to perform a prototype selection. 
 
-
+Two patterns on M\+S\+T are selected as prototypes if they are connected and belong to different classes. 
 \begin{DoxyParams}{Parameters}
 {\em distance} & a distance function. \\
 \hline
 {\em patterns} & a set of single pattern. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector a vector of size of patterns with zero value is a pattern is a prototype and infinity otherwise. 
+\end{DoxyReturn}
 
 
 Implements \hyperlink{classPrototypesStrategy_a0422be14bb6be39a2d06112daf7043c1}{Prototypes\+Strategy}.

@@ -1,5 +1,5 @@
-#ifndef MODEL_NODE_H
-#define MODEL_NODE_H
+#ifndef MODEL_NODE_H_
+#define MODEL_NODE_H_
 
 #include <input/pattern.h>
 

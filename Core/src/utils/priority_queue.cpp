@@ -37,7 +37,7 @@ public:
     }
 };
 
-PriorityQueue::PriorityQueue(int size, Type type): cur_index_(0), size_(size), policy_type(type){
+PriorityQueue::PriorityQueue(int size, Type type): cur_index_(0), size_(size), policy_type_(type){
     double default_value;
 
     indexes_ = new int[size];
@@ -105,7 +105,7 @@ void PriorityQueue::sort()
         throw "Impossible to sort: queue is empty. Insert elements before do this";
     }
     //TO DO: remover esse if
-    if(policy_type == Type::MIN)
+    if(policy_type_ == Type::MIN)
     {
         make_heap(indexes_, indexes_+cur_index_, MinPolicy(indexes_, costs_));
         sort_heap(indexes_, indexes_+cur_index_, MinPolicy(indexes_, costs_));

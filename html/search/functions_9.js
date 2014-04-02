@@ -4,6 +4,6 @@ var searchData=
   ['patterns',['Patterns',['../classPatterns.html#aa6241d95e039c41cc4f4744d2285ebd9',1,'Patterns::Patterns()'],['../classPatterns.html#a91b41ddbe7a24c86697f5e19b93e0f75',1,'Patterns::Patterns(string file_name)'],['../classPatterns.html#ab847348dfaab14ef8a5f9dbc1a936039',1,'Patterns::Patterns(int number_of_patterns)']]],
   ['pop_5fordered_5flist_5fof_5fnodes',['pop_ordered_list_of_nodes',['../classModel.html#a7bae5e69e7ca1d5bb8a04c74148c82f0',1,'Model']]],
   ['predict',['Predict',['../classOPF.html#a694477ddd6df7bebbd1856cdf7bf3ce1',1,'OPF']]],
-  ['priorityqueue',['PriorityQueue',['../classPriorityQueue.html#ab2db14880bcb6c0b3717c574e0c34557',1,'PriorityQueue::PriorityQueue(int size, Type type=Type::MIN)'],['../classPriorityQueue.html#aad8fdab799e19cb8dd88e90d74bd6545',1,'PriorityQueue::PriorityQueue(Iterator begin, Iterator end, Type type=Type::MIN)']]],
+  ['priorityqueue',['PriorityQueue',['../classPriorityQueue.html#ab2db14880bcb6c0b3717c574e0c34557',1,'PriorityQueue::PriorityQueue(int size, Type type=Type::MIN)'],['../classPriorityQueue.html#a9754b8c426ea9e5085b3662e1191b5b5',1,'PriorityQueue::PriorityQueue(Iterator begin, Iterator end, Type polyce_type=Type::MIN)']]],
   ['push_5fordered_5flist_5fof_5fnodes',['push_ordered_list_of_nodes',['../classModel.html#a6f2fa936b9d754d971f2972716b41656',1,'Model']]]
 ];

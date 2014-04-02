@@ -1,5 +1,5 @@
-#ifndef FILE_FORMATS_H
-#define FILE_FORMATS_H
+#ifndef FILE_FORMATS_H_
+#define FILE_FORMATS_H_
 
 #include <iostream>
 #include <input/patterns.h>

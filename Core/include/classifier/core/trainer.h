@@ -9,7 +9,7 @@
 #define TRAINER_H_
 
 #include <utils/distance.h>
-#include <classifier/core/prototype_strategy.h>
+#include <classifier/core/prototypes_strategy.h>
 #include <classifier/core/training_strategy.h>
 
 /**\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
