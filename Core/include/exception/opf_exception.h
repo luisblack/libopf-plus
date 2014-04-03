@@ -7,7 +7,7 @@ using namespace std;
 
 namespace opf {
 
-class OPFException
+class OPFException : exception
 {
 private:
     const string HEADER = "OPF Exception: ";

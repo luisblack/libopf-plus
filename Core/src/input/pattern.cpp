@@ -56,7 +56,14 @@ void Pattern::set_index(int index) {
 	index_ = index;
 }
 
-istream& operator>>(istream& in, Pattern pattern)
+ostream& operator<<(ostream& output, const Pattern &pattern)
+{
+    output << pattern.index_ << " " << pattern.class_value_ << " ";
+    copy(pattern.feature_vector_.begin(), pattern.feature_vector_.end(), ostream_iterator<double>(output, " "));
+    output << endl;
+}
+
+istream& operator>>(istream& in, Pattern &pattern)
 {
     in >> pattern.index_;
     in >> pattern.class_value_;

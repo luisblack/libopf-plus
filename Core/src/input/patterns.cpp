@@ -30,6 +30,7 @@ int Patterns::get_number_of_patterns() const {
 
 void Patterns::set_number_of_patterns(int number_of_patterns) {
 	number_of_patterns_ = number_of_patterns;
+    pattern.resize(number_of_patterns_);
 }
 
 int Patterns::get_number_of_classes() const {
@@ -53,6 +54,24 @@ void Patterns::load_text_file(string file_name){
 	}
 }
 
+ostream& operator <<(ostream& output, Patterns &patterns)
+{
+    output << patterns.number_of_patterns_ << " " << patterns.number_of_classes_ << " ";
+
+    if(patterns.number_of_patterns_<=0)//there are no samples
+    {
+        output << 0 << endl;
+        return output;
+    }
+
+    output << patterns.pattern[0].get_dimension() << endl;
+
+    for(Pattern& p : patterns.pattern)
+    {
+        output << p;
+    }
+
+}
 
 istream& operator >>(istream& input, Patterns &patterns)
 {

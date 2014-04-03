@@ -12,47 +12,15 @@
 
 namespace opf {
 
-const char COMMA = ',';
-const char NEW_LINE = '\n';
-
 namespace output {
 
-    void csv(ostream& o, Patterns& p)
-    {
-        throw opf::LazyProgramerException("CSV is read only");
-    }
+    void csv(ostream& o, Patterns& p);
 
 }
 
 namespace input {
 
-    void csv(istream& i, Patterns& p)
-    {
-        string line;
-
-        i.ignore(numeric_limits<int>::max(), NEW_LINE);//ignore the classes name line
-
-        getline(i, line);//types line
-
-        for(auto s : split(line, ",;"))
-        {
-            cout << s << endl;
-        }
-        double d;
-
-        cout << "line: " << line << endl;
-
-        while(i.peek()!=EOF)
-        {
-            getline(i, line);
-            cout << line << endl;
-            auto h = split(line, ",");
-            for (auto i: h) {
-                cout << i << endl;
-            }
-            cout << "=========\n";
-        }
-    }
+    void csv(istream& i, Patterns& p);
 }
 
 }

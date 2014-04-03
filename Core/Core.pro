@@ -47,7 +47,8 @@ HEADERS += \
     include/exception/opf_exception.h \
     include/exception/lazy_programer_exception.h \
     include/utils/string_utils.h \
-    include/input/csv_format.h
+    include/input/csv_format.h \
+    include/exception/invalid_format_exception.h
 
 SOURCES += \
     src/input/patterns.cpp \
@@ -61,4 +62,7 @@ SOURCES += \
     src/classifier/core/model_node.cpp \
     src/exception/opf_exception.cpp \
     src/exception/lazy_programer_exception.cpp \
-    src/input/io_formatter.cpp
+    src/input/io_formatter.cpp \
+    src/input/csv_format.cpp \
+    src/input/string_utils.cpp \
+    src/exception/invalid_format_exception.cpp

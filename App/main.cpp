@@ -35,8 +35,7 @@ int main()
 
         f >> opf::io::format(p, opf::input::csv);
 
-        cout << p.get_number_of_patterns() << endl;
-        cout << p.get_number_of_classes() << endl;
+        cout << p;
 
         return 0;
     }catch(opf::OPFException e)
