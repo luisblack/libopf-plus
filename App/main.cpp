@@ -34,9 +34,33 @@ try{
         cout<<i<<" "<<Q.get_cost(i)<<endl;
     }
 
-    cout<<Q.remove()<<endl;
+    while(!Q.empty())
+    {
+        cout << "================" << endl;
+        int r = Q.remove();
+        Q.sort();
+
+        cout << "remove " << r << endl;
+
+        for(auto i : Q)
+        {
+            cout << i << "  ++++++++++++++++++ ";
+            Q.update(i, Q.get_cost(r));
+            cout << i << " " << Q.get_cost(i) << endl;
+        }
+
+        cout << "---------------- ";
+
+        cout<< r << " " << Q.get_cost(r) <<endl;
+    }
 
 }catch(const char* e){
-    cerr<< e;}
+    cerr<< e << endl;
 }
 
+catch(string s)
+{
+    cerr << s << endl;
+}
+
+}

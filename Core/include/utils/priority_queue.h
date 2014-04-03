@@ -24,6 +24,25 @@ using namespace std;
 class PriorityQueue{
 public:
 
+    typedef vector<int>::iterator iterator;
+    typedef vector<int>::const_iterator const_iterator;
+
+    struct QueueElement
+    {
+        enum Status {BLACK,  /**< status of an element removed from queue. */
+                     GREY,  /**< status of an element already inserted and visited. */
+                     WHITE  /**< status of an element already inserted but not visited. */
+                    };
+        double cost_;
+        int index_;
+        Status status_;
+
+        bool operator<(const QueueElement& other)
+        {
+            return cost_ < other.cost_;
+        }
+    };
+
     /** An enumeration for setting removal policy of queue.
     */
     enum Type {MIN, /**< enum value MIN for minimum priority queue. */
@@ -50,7 +69,13 @@ public:
         size_ = end - begin;
         policy_type_ = polyce_type;
 
-        copy(begin, end, costs_);
+        initialize();
+
+        int idx = 0;
+        for(auto it = begin; it!=end; ++it)
+        {
+            elements[idx].cost_ = *it;
+        }
     }
 
 
@@ -99,12 +124,12 @@ public:
     /**Returns the memory address of the first element in the queue.
      * @see end
     */
-    const int* begin() const;
+    const_iterator begin() const;
 
     /**Returns the memory address of the last element in the queue.
      * * @see begin
     */
-    const int* end() const;
+    const_iterator end() const;
 
     /**Returns the cost of a particular element in the queue.
     *If the element is out of queue, then an exception rises.
@@ -116,23 +141,15 @@ private:
 
     Type policy_type_;
 
-    /**Returns
-    */
-    bool min(int, int);
+    /**
+     * @brief initialize initialize data structures
+     */
+    void initialize();
 
-    /**Returns
-    */
-    bool max(int, int);
-
-    enum Status {BLACK,  /**< status of an element removed from queue. */
-                 GREY,  /**< status of an element already inserted and visited. */
-                 WHITE  /**< status of an element already inserted but not visited. */
-                };
     int size_;
     int cur_index_;
-    Status* status_;
-    int* indexes_;
-    double* costs_;
+    vector<int> indexes_;
+    vector<QueueElement> elements;
 };
 
 #endif /* PRIOTIRY_QUEUE_H */

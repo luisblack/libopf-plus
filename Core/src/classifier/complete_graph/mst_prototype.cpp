@@ -56,7 +56,7 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns 
             }
         }//end
 
-        for(const int *q = Q.begin(); q != Q.end(); ++q)
+        for(PriorityQueue::const_iterator q = Q.begin(); q != Q.end(); ++q)
         {
             weight = distance(patterns.pattern[p].get_feature_vector(), patterns.pattern[*q].get_feature_vector());
 

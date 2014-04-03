@@ -25,13 +25,13 @@ Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototype
     Model model(patterns, distance);
 
     while(!Q.empty()){
-        Q.sort();
+        //Q.sort();
         p = Q.remove();
         model.push_ordered_list_of_nodes(p);
         model[p].set_cost(Q.get_cost(p));
 
         //TO DO: mudar para um par com atributo index e cost
-        for(const int *q = Q.begin(); q != Q.end(); ++q){
+        for(PriorityQueue::const_iterator q = Q.begin(); q != Q.end(); ++q){
 
             //DUVIDA: como vamos passar a matriz de distâncias?
             weight = distance(model[p].get_feature_vector(), model[*q].get_feature_vector());
