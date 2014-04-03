@@ -14,10 +14,12 @@
 #ifndef OPF_H_
 #define OPF_H_
 
+namespace opf{
 /**\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
 *\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
 * \version 1.0.0
 */
+
 
 class OPF{
 public:
@@ -28,4 +30,5 @@ private:
     Model* opf_model_ = NULL;
 };
 
+}
 #endif /* OPF_H_ */

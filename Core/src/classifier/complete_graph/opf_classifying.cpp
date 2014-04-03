@@ -1,6 +1,7 @@
 #include<classifier/complete_graph/opf_classifying.h>
 #include<classifier/core/model.h>
 
+namespace opf{
 OPFClassifying::OPFClassifying(){
 
 }
@@ -10,6 +11,7 @@ vector<double> OPFClassifying::classify(Model model, Patterns test){
     ModelNode node;
     double weight, min_cost, tmp;
     vector<double> predict_classes(test.get_number_of_patterns());
+
 
     for(Patterns::iterator node_test = test.pattern.begin(); node_test != test.pattern.end(); ++node_test){
 
@@ -38,3 +40,4 @@ vector<double> OPFClassifying::classify(Model model, Patterns test){
     return predict_classes;
 }
 
+}

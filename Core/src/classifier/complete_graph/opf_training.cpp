@@ -3,27 +3,29 @@
 #include <classifier/core/model.h>
 #include <libopf-plus.h>
 
+namespace opf {
+
+
+
 OPFTraining::OPFTraining(){
 
 }
 
-Model OPFTraining::train(opf::Distance distance, Patterns patterns){
+Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototypes mst){
     int p;
     double tmp;
     double weight;
 
-    //vector<double>initial_costs = MSTPrototypes::SelectPrototypes(distance, patterns);
-
-    vector<double> initial_costs(20);
+    vector<double>initial_costs = mst.SelectPrototypes(distance, patterns);
 
     //DUVIDA: isso muda o valor do vector?
     PriorityQueue Q(initial_costs.begin(),initial_costs.end(),PriorityQueue::Type::MIN);
 
-    //DUVIDA: patterns duas vezes na memória. tb passar a distância utilizada para o model
-    Model model(patterns);
+
+    Model model(patterns, distance);
 
     while(!Q.empty()){
-        Q.sort();// DUVIDA: e se a heap estiver vazia
+        Q.sort();
         p = Q.remove();
         model.push_ordered_list_of_nodes(p);
         model[p].set_cost(Q.get_cost(p));
@@ -45,4 +47,5 @@ Model OPFTraining::train(opf::Distance distance, Patterns patterns){
     }
 
     return model;
+}
 }

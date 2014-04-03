@@ -1,0 +1,286 @@
+\hypertarget{classPriorityQueue}{\section{Priority\+Queue Class Reference}
+\label{classPriorityQueue}\index{Priority\+Queue@{Priority\+Queue}}
+}
+
+
+A class for handling minimum and maximum priority queues.  
+
+
+
+
+{\ttfamily \#include $<$priority\+\_\+queue.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081a}{Type} \{ \hyperlink{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081aa594ee8d58305ad3ccb1f987007a1cb19}{M\+I\+N}, 
+\hyperlink{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081aa427d161a5bb6967ec6d39a669f852c5d}{M\+A\+X}
+ \}
+\begin{DoxyCompactList}\small\item\em An enumeration for setting removal policy of queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPriorityQueue_ab2db14880bcb6c0b3717c574e0c34557}{Priority\+Queue} (int size, \hyperlink{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081a}{Type} type=Type\+::\+M\+I\+N)
+\begin{DoxyCompactList}\small\item\em Constructor creating a empty priority queue with defined size and removal policy. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Iterator $>$ }\\\hyperlink{classPriorityQueue_aad8fdab799e19cb8dd88e90d74bd6545}{Priority\+Queue} (Iterator \hyperlink{classPriorityQueue_a06ca073a126211e579a87445edf5a24f}{begin}, Iterator \hyperlink{classPriorityQueue_a4f9007e581cec086c48a634e07855760}{end}, \hyperlink{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081a}{Type} type=Type\+::\+M\+I\+N)
+\begin{DoxyCompactList}\small\item\em Constructor using a vector with costs and a defined removal policy. \end{DoxyCompactList}\item 
+\hyperlink{classPriorityQueue_a69b8f6b5ad108e9db66ac4db46c628d7}{$\sim$\+Priority\+Queue} ()
+\begin{DoxyCompactList}\small\item\em Destructor of priority queue. \end{DoxyCompactList}\item 
+void \hyperlink{classPriorityQueue_aefe65208603d5a5f0692722087700ebd}{insert} (double cost)
+\begin{DoxyCompactList}\small\item\em Inserts cost in priority queue. \end{DoxyCompactList}\item 
+int \hyperlink{classPriorityQueue_a02b033eeb3cd8a760496a1c269ec4855}{remove} ()
+\begin{DoxyCompactList}\small\item\em Returns an index element of priority queue following the removal policy (minimum or maximum). \end{DoxyCompactList}\item 
+void \hyperlink{classPriorityQueue_af5033637a9c516651ee72116e0079703}{update} (int index, double cost)
+\begin{DoxyCompactList}\small\item\em Updates the cost of an element if it still in the priority queue. \end{DoxyCompactList}\item 
+bool \hyperlink{classPriorityQueue_aa0a8c1bed6a9f92728f93e56f3061435}{empty} () const 
+\begin{DoxyCompactList}\small\item\em Checks if the queue is empty. \end{DoxyCompactList}\item 
+bool \hyperlink{classPriorityQueue_abcc034a827aaec16505f9520b66f940d}{full} () const 
+\begin{DoxyCompactList}\small\item\em Checks if the queue is full. \end{DoxyCompactList}\item 
+void \hyperlink{classPriorityQueue_ab03659cc1374261d43252781b3cd7e66}{sort} ()
+\begin{DoxyCompactList}\small\item\em Sorts the queue according to removal policy (minimum or maximum). \end{DoxyCompactList}\item 
+const int $\ast$ \hyperlink{classPriorityQueue_a06ca073a126211e579a87445edf5a24f}{begin} () const 
+\begin{DoxyCompactList}\small\item\em Returns the memory address of the first element in the queue. \end{DoxyCompactList}\item 
+const int $\ast$ \hyperlink{classPriorityQueue_a4f9007e581cec086c48a634e07855760}{end} () const 
+\begin{DoxyCompactList}\small\item\em Returns the memory address of the last element in the queue. \end{DoxyCompactList}\item 
+double \hyperlink{classPriorityQueue_a3fefe82b020315a169e3ad4771450973}{get\+\_\+cost} (int index) const 
+\begin{DoxyCompactList}\small\item\em Returns the cost of a particular element in the queue. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class for handling minimum and maximum priority queues. 
+
+\begin{DoxyAuthor}{Authors}
+Alan Zanoni Peixinho \href{mailto:apeixinho@studends.ic.unicamp.br}{\tt apeixinho@studends.\+ic.\+unicamp.\+br} 
+
+Luis Augusto Martins Pereria \href{mailto:lmartins@ic.unicamb.br}{\tt lmartins@ic.\+unicamb.\+br} 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0.\+0 
+\end{DoxyVersion}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081a}{\index{Priority\+Queue@{Priority\+Queue}!Type@{Type}}
+\index{Type@{Type}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Priority\+Queue\+::\+Type}}}\label{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081a}
+
+
+An enumeration for setting removal policy of queue. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+I\+N@{M\+I\+N}!Priority\+Queue@{Priority\+Queue}}\index{Priority\+Queue@{Priority\+Queue}!M\+I\+N@{M\+I\+N}}\item[{\em 
+\hypertarget{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081aa594ee8d58305ad3ccb1f987007a1cb19}{M\+I\+N}\label{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081aa594ee8d58305ad3ccb1f987007a1cb19}
+}]enum value M\+I\+N for minimum priority queue. \index{M\+A\+X@{M\+A\+X}!Priority\+Queue@{Priority\+Queue}}\index{Priority\+Queue@{Priority\+Queue}!M\+A\+X@{M\+A\+X}}\item[{\em 
+\hypertarget{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081aa427d161a5bb6967ec6d39a669f852c5d}{M\+A\+X}\label{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081aa427d161a5bb6967ec6d39a669f852c5d}
+}]enum value M\+A\+X for maximum priority queue. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPriorityQueue_ab2db14880bcb6c0b3717c574e0c34557}{\index{Priority\+Queue@{Priority\+Queue}!Priority\+Queue@{Priority\+Queue}}
+\index{Priority\+Queue@{Priority\+Queue}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{Priority\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}Priority\+Queue\+::\+Priority\+Queue (
+\begin{DoxyParamCaption}
+\item[{int}]{size, }
+\item[{{\bf Type}}]{type = {\ttfamily Type\+:\+:MIN}}
+\end{DoxyParamCaption}
+)}}\label{classPriorityQueue_ab2db14880bcb6c0b3717c574e0c34557}
+
+
+Constructor creating a empty priority queue with defined size and removal policy. 
+
+A queue with minimal priority is created if the policy is not denifed. 
+\begin{DoxyParams}{Parameters}
+{\em size} & defined size of queue. \\
+\hline
+{\em type} & removal policy \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081a}{Type} 
+\end{DoxySeeAlso}
+\hypertarget{classPriorityQueue_aad8fdab799e19cb8dd88e90d74bd6545}{\index{Priority\+Queue@{Priority\+Queue}!Priority\+Queue@{Priority\+Queue}}
+\index{Priority\+Queue@{Priority\+Queue}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{Priority\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Iterator $>$ Priority\+Queue\+::\+Priority\+Queue (
+\begin{DoxyParamCaption}
+\item[{Iterator}]{begin, }
+\item[{Iterator}]{end, }
+\item[{{\bf Type}}]{type = {\ttfamily Type\+:\+:MIN}}
+\end{DoxyParamCaption}
+)}}\label{classPriorityQueue_aad8fdab799e19cb8dd88e90d74bd6545}
+
+
+Constructor using a vector with costs and a defined removal policy. 
+
+A queue with minimal priority is created if the policy is not denifed. Costs are only inserted in queue 
+\begin{DoxyParams}{Parameters}
+{\em costs} & vector with costs. \\
+\hline
+{\em type} & removal policy \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classPriorityQueue_a5d63bb7f1eeef31a80cdff9f280f081a}{Type} 
+\end{DoxySeeAlso}
+\hypertarget{classPriorityQueue_a69b8f6b5ad108e9db66ac4db46c628d7}{\index{Priority\+Queue@{Priority\+Queue}!````~Priority\+Queue@{$\sim$\+Priority\+Queue}}
+\index{````~Priority\+Queue@{$\sim$\+Priority\+Queue}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{$\sim$\+Priority\+Queue}]{\setlength{\rightskip}{0pt plus 5cm}Priority\+Queue\+::$\sim$\+Priority\+Queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPriorityQueue_a69b8f6b5ad108e9db66ac4db46c628d7}
+
+
+Destructor of priority queue. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPriorityQueue_a06ca073a126211e579a87445edf5a24f}{\index{Priority\+Queue@{Priority\+Queue}!begin@{begin}}
+\index{begin@{begin}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{begin}]{\setlength{\rightskip}{0pt plus 5cm}const int $\ast$ Priority\+Queue\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classPriorityQueue_a06ca073a126211e579a87445edf5a24f}
+
+
+Returns the memory address of the first element in the queue. 
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classPriorityQueue_a4f9007e581cec086c48a634e07855760}{end} 
+\end{DoxySeeAlso}
+\hypertarget{classPriorityQueue_aa0a8c1bed6a9f92728f93e56f3061435}{\index{Priority\+Queue@{Priority\+Queue}!empty@{empty}}
+\index{empty@{empty}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Priority\+Queue\+::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classPriorityQueue_aa0a8c1bed6a9f92728f93e56f3061435}
+
+
+Checks if the queue is empty. 
+
+\begin{DoxyReturn}{Returns}
+true if the queue is empty, and false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classPriorityQueue_a4f9007e581cec086c48a634e07855760}{\index{Priority\+Queue@{Priority\+Queue}!end@{end}}
+\index{end@{end}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}const int $\ast$ Priority\+Queue\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classPriorityQueue_a4f9007e581cec086c48a634e07855760}
+
+
+Returns the memory address of the last element in the queue. 
+
+
+\begin{DoxyItemize}
+\item \begin{DoxySeeAlso}{See Also}
+\hyperlink{classPriorityQueue_a06ca073a126211e579a87445edf5a24f}{begin} 
+\end{DoxySeeAlso}
+
+\end{DoxyItemize}\hypertarget{classPriorityQueue_abcc034a827aaec16505f9520b66f940d}{\index{Priority\+Queue@{Priority\+Queue}!full@{full}}
+\index{full@{full}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{full}]{\setlength{\rightskip}{0pt plus 5cm}bool Priority\+Queue\+::full (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classPriorityQueue_abcc034a827aaec16505f9520b66f940d}
+
+
+Checks if the queue is full. 
+
+\begin{DoxyReturn}{Returns}
+true if the queue is full, and false otherwise. 
+\end{DoxyReturn}
+\hypertarget{classPriorityQueue_a3fefe82b020315a169e3ad4771450973}{\index{Priority\+Queue@{Priority\+Queue}!get\+\_\+cost@{get\+\_\+cost}}
+\index{get\+\_\+cost@{get\+\_\+cost}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{get\+\_\+cost}]{\setlength{\rightskip}{0pt plus 5cm}double Priority\+Queue\+::get\+\_\+cost (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const}}\label{classPriorityQueue_a3fefe82b020315a169e3ad4771450973}
+
+
+Returns the cost of a particular element in the queue. 
+
+If the element is out of queue, then an exception rises. 
+\begin{DoxyParams}{Parameters}
+{\em index} & index of the element in the queue which one wants to know the cost. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPriorityQueue_aefe65208603d5a5f0692722087700ebd}{\index{Priority\+Queue@{Priority\+Queue}!insert@{insert}}
+\index{insert@{insert}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void Priority\+Queue\+::insert (
+\begin{DoxyParamCaption}
+\item[{double}]{cost}
+\end{DoxyParamCaption}
+)}}\label{classPriorityQueue_aefe65208603d5a5f0692722087700ebd}
+
+
+Inserts cost in priority queue. 
+
+If the queue is full, then an exception rises. The sort method should be called after a cost(s) to be inserted. 
+\begin{DoxyParams}{Parameters}
+{\em cost} & cost value to be inserted in the qeue; \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classPriorityQueue_a02b033eeb3cd8a760496a1c269ec4855}{\index{Priority\+Queue@{Priority\+Queue}!remove@{remove}}
+\index{remove@{remove}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}int Priority\+Queue\+::remove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPriorityQueue_a02b033eeb3cd8a760496a1c269ec4855}
+
+
+Returns an index element of priority queue following the removal policy (minimum or maximum). 
+
+\begin{DoxyReturn}{Returns}
+an index of element removed from queue. 
+\end{DoxyReturn}
+\hypertarget{classPriorityQueue_ab03659cc1374261d43252781b3cd7e66}{\index{Priority\+Queue@{Priority\+Queue}!sort@{sort}}
+\index{sort@{sort}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{sort}]{\setlength{\rightskip}{0pt plus 5cm}void Priority\+Queue\+::sort (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPriorityQueue_ab03659cc1374261d43252781b3cd7e66}
+
+
+Sorts the queue according to removal policy (minimum or maximum). 
+
+If the queue is empty, then an exception rises. Call this method after a insertion or update of cost(s). \hypertarget{classPriorityQueue_af5033637a9c516651ee72116e0079703}{\index{Priority\+Queue@{Priority\+Queue}!update@{update}}
+\index{update@{update}!Priority\+Queue@{Priority\+Queue}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Priority\+Queue\+::update (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{double}]{cost}
+\end{DoxyParamCaption}
+)}}\label{classPriorityQueue_af5033637a9c516651ee72116e0079703}
+
+
+Updates the cost of an element if it still in the priority queue. 
+
+If the element is out of the queue, then an exception rises. The sort method should be called after a cost(s) to be updated. 
+\begin{DoxyParams}{Parameters}
+{\em index} & index of element whose cost has to be updated. \\
+\hline
+{\em cost} & cost value to be update in the queue. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Core/include/utils/\hyperlink{priority__queue_8h}{priority\+\_\+queue.\+h}\item 
+Core/src/utils/\hyperlink{priority__queue_8cpp}{priority\+\_\+queue.\+cpp}\end{DoxyCompactItemize}

@@ -1,6 +1,7 @@
 #include <classifier/core/opf.h>
 #include <iostream>
 
+namespace opf{
 OPF::OPF(Trainer &trainer, Classifier &classifier, opf::Distance distance)
 {
     cout << "Criei um opf marotors";
@@ -14,4 +15,5 @@ void OPF::BuildModel(Patterns &training)
 int OPF::Predict(Patterns &test)
 {
 
+}
 }

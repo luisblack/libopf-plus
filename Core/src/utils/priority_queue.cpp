@@ -89,10 +89,12 @@ int PriorityQueue::remove()
         throw "Queue is empty!";
     }
     //TODO: mudar essa joca
-    cur_index_--;
 
-    //Removed element is assigned with BLACK status
+    pop_heap(indexes_,indexes_+cur_index_);
     status_[cur_index_] = Status::BLACK;
+    cur_index_--;
+    //Removed element is assigned with BLACK status
+
     return indexes_[cur_index_];
 }
 

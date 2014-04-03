@@ -21,27 +21,22 @@ void hue2(Patterns& p, ostream& o, opf::io::OutputMethod omg)
 
 int main()
 {
-    try
-    {
-        Patterns p(42);
+    PriorityQueue Q(5);
+try{
+    Q.insert(0.5);
+    Q.insert(0.2);
+    Q.insert(0.3);
+    Q.insert(0.01);
+    Q.insert(10);
 
-        std::fstream f("iris.csv");
-
-        if(!f.is_open())
-        {
-            cout << "Nao consigo abrir o aqrquivo wowow\n";
-            return 1;
-        }
-
-        f >> opf::io::format(p, opf::input::csv);
-
-        cout << p;
-
-        return 0;
-    }catch(opf::OPFException e)
-    {
-        cerr << e.what() << endl;
+    Q.sort();
+    for(int i: Q){
+        cout<<i<<" "<<Q.get_cost(i)<<endl;
     }
 
+    cout<<Q.remove()<<endl;
+
+}catch(const char* e){
+    cerr<< e;}
 }
 

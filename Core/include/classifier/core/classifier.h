@@ -11,10 +11,12 @@
 #include <utils/distance.h>
 #include <classifier/core/classifying_strategy.h>
 
+namespace opf{
 /**\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
 *\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
 * \version 1.0.0
 */
+
 
 class Classifier {
 public:
@@ -27,4 +29,6 @@ public:
 	private:
 };
 
+}
 #endif /* CLASSIFIER_H_ */
+

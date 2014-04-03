@@ -12,6 +12,7 @@
 #include <classifier/core/prototypes_strategy.h>
 #include <classifier/core/training_strategy.h>
 
+namespace opf{
 /**\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
 *\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
 * \version 1.0.0
@@ -25,4 +26,5 @@ public:
 private:
 };
 
+}
 #endif /* TRAINER_H_ */
