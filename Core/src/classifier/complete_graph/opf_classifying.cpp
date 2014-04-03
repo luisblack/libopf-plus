@@ -37,3 +37,4 @@ vector<double> OPFClassifying::classify(Model model, Patterns test){
     }
     return predict_classes;
 }
+

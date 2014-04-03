@@ -14,7 +14,6 @@
 
 #include <vector>
 
-using namespace std;
 
 /**Strategy interface of way to select prototypes.
  * All new strategy of selecting prototypes must implement this interface.
@@ -22,7 +21,6 @@ using namespace std;
 *\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
 * \version 1.0.0
 */
-
 class PrototypesStrategy {
     public:
     /**Returns a vector with initial costs to all nodes.

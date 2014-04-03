@@ -6,12 +6,20 @@
  */
 #include <input/pattern.h>
 #include <iostream>
+#include <assert.h>
 
-Pattern::Pattern(){
+Pattern::Pattern(): feature_vector_(0){
     class_value_ = 0;
-	dimension_ = 0;
-    feature_vector_ = vector<double>();
-	index_ = -1;
+    dimension_ = 0;
+    index_ = -1;
+}
+
+Pattern::Pattern(int dimension): feature_vector_(dimension){
+    class_value_ = 0;
+    dimension_ = dimension;
+    index_ = -1;
+    assert(this!=NULL);
+    cout << this << endl;
 }
 
 Pattern::~Pattern(){
@@ -34,8 +42,10 @@ int Pattern::get_dimension() const {
 }
 
 void Pattern::set_dimension(int dimension) {
-	dimension_ = dimension;
+
+    feature_vector_.clear();
     feature_vector_.resize(dimension);
+    dimension_ = dimension;
 }
 
 int Pattern::get_index() const {
@@ -46,7 +56,14 @@ void Pattern::set_index(int index) {
 	index_ = index;
 }
 
-istream& operator>>(istream& in, Pattern pattern)
+ostream& operator<<(ostream& output, const Pattern &pattern)
+{
+    output << pattern.index_ << " " << pattern.class_value_ << " ";
+    copy(pattern.feature_vector_.begin(), pattern.feature_vector_.end(), ostream_iterator<double>(output, " "));
+    output << endl;
+}
+
+istream& operator>>(istream& in, Pattern &pattern)
 {
     in >> pattern.index_;
     in >> pattern.class_value_;

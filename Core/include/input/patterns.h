@@ -9,7 +9,6 @@
 #define PATTERNS_H_
 
 #include<string>
-#include <iostream>
 #include <fstream>
 #include<stdlib.h>
 
@@ -56,6 +55,13 @@ public:
 	void set_number_of_classes(int number_of_classes);
 
     friend istream& operator >>(istream& input, Patterns &patterns);
+    friend ostream& operator<<(ostream& output, Patterns& patterns);
+
+    //TO DO: mover para .cpp
+    Pattern& operator[](int index)
+    {
+        return pattern[index];
+    }
 
 private:
 	int number_of_patterns_;

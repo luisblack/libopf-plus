@@ -33,9 +33,7 @@ public:
     */
     Model(const string& file_name);
 
-    vector<int>get_ordered_list_of_nodes()const{
-        return ordered_list_of_nodes_;
-    }
+    vector<int>get_ordered_list_of_nodes() const;
     //TO DO: utilizar lista ou não
     void push_ordered_list_of_nodes(int index);
 
@@ -48,7 +46,6 @@ public:
     {
         return 0.0;
     }
-
 	//"save" method in C++ pattern
 	std::ostream& operator>>(std::ostream& out);
 

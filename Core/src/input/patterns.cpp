@@ -8,11 +8,13 @@
 #include <input/patterns.h>
 #include <input/pattern.h>
 
+#include <exception/opf_exception.h>
+
 Patterns::Patterns(string file_name) {
     load_text_file(file_name);
 }
 
-Patterns::Patterns(int number_of_patterns):number_of_patterns_(number_of_patterns), pattern(number_of_patterns), number_of_classes_(0){
+Patterns::Patterns(int number_of_patterns):number_of_patterns_(number_of_patterns), number_of_classes_(0), pattern(number_of_patterns){
 
 }
 
@@ -29,6 +31,7 @@ int Patterns::get_number_of_patterns() const {
 
 void Patterns::set_number_of_patterns(int number_of_patterns) {
 	number_of_patterns_ = number_of_patterns;
+    pattern.resize(number_of_patterns_);
 }
 
 int Patterns::get_number_of_classes() const {
@@ -48,10 +51,28 @@ void Patterns::load_text_file(string file_name){
         filein >> *this;
         filein.close();
     }else{
-        throw "Unable to open file " + file_name;
+        throw opf::OPFException("Unable to open file " + file_name);
 	}
 }
 
+ostream& operator <<(ostream& output, Patterns &patterns)
+{
+    output << patterns.number_of_patterns_ << " " << patterns.number_of_classes_ << " ";
+
+    if(patterns.number_of_patterns_<=0)//there are no samples
+    {
+        output << 0 << endl;
+        return output;
+    }
+
+    output << patterns.pattern[0].get_dimension() << endl;
+
+    for(Pattern& p : patterns.pattern)
+    {
+        output << p;
+    }
+
+}
 
 istream& operator >>(istream& input, Patterns &patterns)
 {
@@ -62,7 +83,7 @@ istream& operator >>(istream& input, Patterns &patterns)
 
         //cout << "Patterns( samples= " << patterns.number_of_patterns_ << ", classes= " << patterns.number_of_classes_ << ", features= " << number_of_features << ")\n";
 
-    //    patterns.pattern(patterns.number_of_patterns_);
+        patterns.pattern.resize(patterns.number_of_patterns_);
 
         for(int i=0; i < patterns.number_of_patterns_; ++i)
         {
@@ -71,7 +92,7 @@ istream& operator >>(istream& input, Patterns &patterns)
             input >> p;
         }
     }catch(std::exception e){
-        throw "File in invalid format.";
+        throw opf::OPFException("File in invalid format.");
     }
 
 }

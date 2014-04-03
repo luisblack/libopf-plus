@@ -12,6 +12,8 @@
 #include <iterator>
 #include <vector>
 
+#include<iostream>
+
 using namespace std;
 
 /**Class for handling a single pattern.
@@ -36,9 +38,10 @@ public:
     * @param index index of pattern.
     * */
     template <typename Iterator> Pattern(int class_value, Iterator begin, Iterator end, int index)
+        :dimension_(end-begin), feature_vector_(dimension_)
     {
+        cout << "another header paradas" << endl;
         class_value_ = class_value;
-        dimension_ = end - begin;
         set_feature_vector(begin, end);
         index_ = index;
     }
@@ -108,19 +111,23 @@ public:
 	*/
 	void set_index(int index);
 
-    /**Overloads the operator [].
-     *@return a feature
-     * */
-    double operator[](int feature_index)
+    /**
+     * @brief operator [] Allows a fast reference to read/write feature values
+     * @param feature_index The feature index
+     * @return The index related feature
+     */
+    double& operator[](int feature_index)
     {
         return feature_vector_[feature_index];
     }
+
+    friend ostream& operator<<(ostream& in, const Pattern& pattern);
 
 	/**Overloads the operator >> to input stream for a single pattern.
 	 * @param in input stream.
      * @param pattern itself.
 	 * */
-    friend istream& operator>>(istream& in, Pattern pattern);
+    friend istream& operator>>(istream& in, Pattern& pattern);
 
 private:
 	int class_value_;

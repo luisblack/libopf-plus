@@ -43,5 +43,6 @@ Model OPFTraining::train(opf::Distance distance, Patterns patterns){
             }
         }
     }
+
     return model;
 }
