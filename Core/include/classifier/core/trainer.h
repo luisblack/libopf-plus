@@ -17,7 +17,6 @@
 * \version 1.0.0
 */
 
-
 class Trainer {
 public:
     Trainer(opf::Distance distance, PrototypesStrategy &prototypes, TrainingStrategy &trainer, Patterns &patterns);

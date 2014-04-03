@@ -11,7 +11,6 @@
 #include <input/pattern.h>
 #include <input/patterns.h>
 #include <utils/distance.h>
-#include <libopf-plus.h>
 
 #include <vector>
 

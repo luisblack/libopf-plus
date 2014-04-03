@@ -8,10 +8,8 @@
 #ifndef MODEL_H_
 #define MODEL_H_
 
-
-#include <libopf-plus.h>
 #include <classifier/core/model_node.h>
-#include <iostream>
+#include <input/patterns.h>
 
 /**Class for handling the training model informations.
  * This class provides attributes and methods to deal with information arising from training process that will be used on classifying process.
@@ -23,17 +21,17 @@
 
 class Model{
 public:
-    vector<ModelNode>::iterator iterator;
-    vector<ModelNode>::const_iterator const_iterator;
+    typedef vector<ModelNode>::iterator iterator;
+    typedef vector<ModelNode>::const_iterator const_iterator;
 
 
-    //TO DO: valor ou referencia? salvar funcao de distnacia no model, é possivel?
-    Model(Pattern pattern);
+    //TO DO: valor ou referencia? salvar funcao de distancia no model, é possivel?
+    Model(Patterns& pattern);
 
     /**Constructor for a model saved in file.
      * @param file_name name of a file whose model was saved in.
     */
-    Model(string file_name);
+    Model(const string& file_name);
 
     vector<int>get_ordered_list_of_nodes()const{
         return ordered_list_of_nodes_;
@@ -41,11 +39,15 @@ public:
     //TO DO: utilizar lista ou não
     void push_ordered_list_of_nodes(int index);
 
-    ModelNode * pop_ordered_list_of_nodes()const;
+    ModelNode& pop_ordered_list_of_nodes()const;
 
-    vector<ModelNode>::iterator begin()const;
+    Model::iterator begin();
+    Model::iterator end();
 
-    vector<ModelNode>::iterator end()const;
+    double distance(const vector<double>& v1, const vector<double>& v2)
+    {
+        return 0.0;
+    }
 
 	//"save" method in C++ pattern
 	std::ostream& operator>>(std::ostream& out);
@@ -54,9 +56,14 @@ public:
     */
     void save_model_to_file();
 
+    ModelNode& operator[](int index)
+    {
+        return node_[index];
+    }
+
 private:
     vector<int> ordered_list_of_nodes_;
-    vector<ModelNode> node;
+    vector<ModelNode> node_;
 
     /**Loads a model from file. File has to be saved using save_model_to_file.
      * @see save_model_to_file

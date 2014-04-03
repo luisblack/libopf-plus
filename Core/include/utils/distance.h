@@ -5,11 +5,11 @@
  *      Author: peixinho
  */
 
-#ifndef FUNCTION_H_
-#define FUNCTION_H_
+#ifndef DISTANCE_H_
+#define DISTANCE_H_
 
-#include<functional>
-#include<vector>
+#include <functional>
+#include <vector>
 
 using namespace std;
 
@@ -25,4 +25,4 @@ namespace opf
 }
 
 
-#endif /* FUNCTION_H_ */
+#endif /* DISTANCE_H_ */

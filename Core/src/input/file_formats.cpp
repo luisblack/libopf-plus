@@ -28,7 +28,7 @@ istream& operator>>(istream &in, CsvAdapter &c)
 
     cout << "wrapper.patterns( samples= " << samples_number << ", classes= " << c.patterns_.get_number_of_classes() << ", features= " << c.patterns_.get_number_of_patterns() << ")\n";
 
-    c.patterns_.pattern = new Pattern[samples_number];
+    c.patterns_.pattern = vector<Pattern>(samples_number);
 
     for(int i=0; i<samples_number; ++i)
     {

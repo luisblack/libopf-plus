@@ -47,6 +47,7 @@ public:
         size_ = end - begin;
         policy_type_ = polyce_type;
 
+        copy(begin, end, costs_);
     }
 
 

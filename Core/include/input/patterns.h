@@ -22,6 +22,8 @@ using namespace std;
 */
 class Patterns{
 public:
+    typedef vector<Pattern>::iterator iterator;
+
     vector<Pattern> pattern;
 
     Patterns();

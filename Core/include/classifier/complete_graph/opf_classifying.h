@@ -11,9 +11,9 @@
  *\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
  * \version 1.0.0
  * */
-class OPFClassifying:public ClassifyingStrategy{
+class OPFClassifying : public ClassifyingStrategy{
    OPFClassifying();
-   virtual vector<int>classify(Model model, Patterns test);
+   virtual vector<double> classify(Model model, Patterns test);
 };
 
 #endif // OPF_CLASSIFYING_H
