@@ -38,6 +38,18 @@ vector$<$ Model\+Node $>$\+::iterator \hyperlink{classModel_a0cfbe847990e80cb903
 \item 
 vector$<$ Model\+Node $>$\+::const\+\_\+iterator \hyperlink{classModel_a578f203623cdda48b577f10a8d6e12d4}{const\+\_\+iterator}
 \end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classModel_a020fe8b33fb2c430fe42a95e1ea83df4}{load\+\_\+model\+\_\+from\+\_\+file} (string file\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Loads a model from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ int $>$ \hyperlink{classModel_a3324528ad5418b5d1a1a9a4b2a24e6e8}{ordered\+\_\+list\+\_\+of\+\_\+nodes\+\_\+}
+\item 
+vector$<$ Model\+Node $>$ \hyperlink{classModel_abf34f73f474d2eb05d2aa285cb88b828}{node}
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -101,6 +113,20 @@ Constructor for a model saved in file.
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classModel_ad821b67839a18f6fc6af508823ba73e0}
+\hypertarget{classModel_a020fe8b33fb2c430fe42a95e1ea83df4}{\index{Model@{Model}!load\+\_\+model\+\_\+from\+\_\+file@{load\+\_\+model\+\_\+from\+\_\+file}}
+\index{load\+\_\+model\+\_\+from\+\_\+file@{load\+\_\+model\+\_\+from\+\_\+file}!Model@{Model}}
+\subsubsection[{load\+\_\+model\+\_\+from\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}void Model\+::load\+\_\+model\+\_\+from\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{string}]{file\+\_\+name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classModel_a020fe8b33fb2c430fe42a95e1ea83df4}
+
+
+Loads a model from file. 
+
+File has to be saved using save\+\_\+model\+\_\+to\+\_\+file. \begin{DoxySeeAlso}{See Also}
+\hyperlink{classModel_afa9087f16c68b0c7cb67c5a285dde750}{save\+\_\+model\+\_\+to\+\_\+file} 
+\end{DoxySeeAlso}
 \hypertarget{classModel_a466e585afab385972eea3c8bd51f14f8}{\index{Model@{Model}!operator$>$$>$@{operator$>$$>$}}
 \index{operator$>$$>$@{operator$>$$>$}!Model@{Model}}
 \subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& Model\+::operator$>$$>$ (
@@ -142,6 +168,12 @@ Save model to file.
 \hypertarget{classModel_a0cfbe847990e80cb9033e8a3257bced2}{\index{Model@{Model}!iterator@{iterator}}
 \index{iterator@{iterator}!Model@{Model}}
 \subsubsection[{iterator}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$Model\+Node$>$\+::iterator Model\+::iterator}}\label{classModel_a0cfbe847990e80cb9033e8a3257bced2}
+\hypertarget{classModel_abf34f73f474d2eb05d2aa285cb88b828}{\index{Model@{Model}!node@{node}}
+\index{node@{node}!Model@{Model}}
+\subsubsection[{node}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$Model\+Node$>$ Model\+::node\hspace{0.3cm}{\ttfamily [private]}}}\label{classModel_abf34f73f474d2eb05d2aa285cb88b828}
+\hypertarget{classModel_a3324528ad5418b5d1a1a9a4b2a24e6e8}{\index{Model@{Model}!ordered\+\_\+list\+\_\+of\+\_\+nodes\+\_\+@{ordered\+\_\+list\+\_\+of\+\_\+nodes\+\_\+}}
+\index{ordered\+\_\+list\+\_\+of\+\_\+nodes\+\_\+@{ordered\+\_\+list\+\_\+of\+\_\+nodes\+\_\+}!Model@{Model}}
+\subsubsection[{ordered\+\_\+list\+\_\+of\+\_\+nodes\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ Model\+::ordered\+\_\+list\+\_\+of\+\_\+nodes\+\_\+\hspace{0.3cm}{\ttfamily [private]}}}\label{classModel_a3324528ad5418b5d1a1a9a4b2a24e6e8}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

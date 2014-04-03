@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pattern',['pattern',['../classPatterns.html#ada129f464f3a816c5658f441f8c937ce',1,'Patterns']]]
+  ['feature_5fvector_5f',['feature_vector_',['../classPattern.html#a8920639f6ec13502728eaf390056ee13',1,'Pattern']]]
 ];

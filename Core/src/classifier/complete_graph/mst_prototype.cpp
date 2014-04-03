@@ -14,9 +14,9 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns 
     double weight;
 
     //DUVIDA: inicializar vector com FLT_MAX
-    initial_costs(patterns.get_number_of_patterns());
-    predecessors(patterns.get_number_of_patterns());
-    status(patterns.get_number_of_patterns());
+    initial_costs_(patterns.get_number_of_patterns());
+    predecessors_(patterns.get_number_of_patterns());
+    prototype_status_(patterns.get_number_of_patterns());
     PriorityQueue Q(patterns.get_number_of_patterns());
 
     for(int i=0; i < patterns.get_number_of_classes(); i++)
@@ -25,7 +25,7 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns 
     }
 
     Q.update(0,0);
-    predecessors[0] = NIL;
+    predecessors_[0] = NIL;
 
     //Prim's algorithm
     while(!Q.empty())
@@ -33,25 +33,25 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns 
         Q.sort();
         p = Q.remove();
 
-        if(predecessors[p] != NIL)
+        if(predecessors_[p] != NIL)
         {//selecting nodes as prototypes
 
 
-            if(patterns.pattern[p].get_class_value() != patterns.pattern[predecessors[p]].get_class_value())
+            if(patterns.pattern[p].get_class_value() != patterns.pattern[predecessors_[p]].get_class_value())
             {//If p has different class value from its predecessor, then both have to be selected as prototypes.
             //Prototype nodes are assigned with initial cost equal to zero.
 
-                if(status[p] != PROTOTYPE)
+                if(prototype_status_[p] != PROTOTYPE)
                 {//checking if p is already a prototype.
-                    initial_costs[p] = 0.0;
-                    status[p] = PROTOTYPE;
+                    initial_costs_[p] = 0.0;
+                    prototype_status_[p] = PROTOTYPE;
                 }
             }
 
-            if(status[predecessors[p]]!= PROTOTYPE)
+            if(prototype_status_[predecessors_[p]]!= PROTOTYPE)
             {//checking if the predecessor's node of p is already a prototype.
-                initial_costs[predecessors[p]] = 0.0;
-                status[predecessors[p]] = PROTOTYPE;
+                initial_costs_[predecessors_[p]] = 0.0;
+                prototype_status_[predecessors_[p]] = PROTOTYPE;
             }
         }//end
 
@@ -62,9 +62,9 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns 
             if(weight < Q.get_cost(*q))
             {
                 Q.update(*q,weight);
-                predecessors[*q] = p;
+                predecessors_[*q] = p;
             }
         }
     }
-    return initial_costs;
+    return initial_costs_;
 }

@@ -1,10 +1,16 @@
 var searchData=
 [
-  ['test_20list',['Test List',['../test.html',1,'']]],
-  ['train',['train',['../classOPFTraining.html#a7ccc8643c9f973f7323cd6622b0bf616',1,'OPFTraining::train()'],['../classTrainer.html#a63c3c801ac12f216b10767d5f0f6a59e',1,'Trainer::train()'],['../classTrainingStrategy.html#ad5da56b8b57e010c97a782d9e629e2b5',1,'TrainingStrategy::train()']]],
-  ['trainer',['Trainer',['../classTrainer.html',1,'Trainer'],['../classTrainer.html#a8afae8a3f5b42f961df41354323ce456',1,'Trainer::Trainer()']]],
-  ['trainer_2eh',['trainer.h',['../trainer_8h.html',1,'']]],
-  ['training_5fstrategy_2eh',['training_strategy.h',['../training__strategy_8h.html',1,'']]],
-  ['trainingstrategy',['TrainingStrategy',['../classTrainingStrategy.html',1,'TrainingStrategy'],['../classTrainingStrategy.html#ac52f574cc5540ea26115b5ee8f7b5c66',1,'TrainingStrategy::TrainingStrategy()']]],
-  ['type',['Type',['../classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081a',1,'PriorityQueue']]]
+  ['save_5fmodel_5fto_5ffile',['save_model_to_file',['../classModel.html#afa9087f16c68b0c7cb67c5a285dde750',1,'Model']]],
+  ['selectprototypes',['SelectPrototypes',['../classMSTPrototypes.html#a654ccbaebfdbca73a0da0e5eb1e4e39f',1,'MSTPrototypes::SelectPrototypes()'],['../classPrototypesStrategy.html#a0422be14bb6be39a2d06112daf7043c1',1,'PrototypesStrategy::SelectPrototypes()']]],
+  ['set_5fclass_5fvalue',['set_class_value',['../classPattern.html#ac4235d677a656d5cc272d192af210d4f',1,'Pattern']]],
+  ['set_5fdimension',['set_dimension',['../classPattern.html#aa498151def7e9e9fabf874bfead90b3b',1,'Pattern']]],
+  ['set_5fdistance',['set_distance',['../classClassifier.html#a7665a5d4968c83f5e02829b67e5c7c3b',1,'Classifier']]],
+  ['set_5ffeature_5fvector',['set_feature_vector',['../classPattern.html#a325cfe99a75f6e2befccef37ea347135',1,'Pattern']]],
+  ['set_5findex',['set_index',['../classPattern.html#ad74cb513a6a76c20121297f2ab867a07',1,'Pattern']]],
+  ['set_5fnumber_5fof_5fclasses',['set_number_of_classes',['../classPatterns.html#adcfd5d41467f7174f12c139adcbea384',1,'Patterns']]],
+  ['set_5fnumber_5fof_5fpatterns',['set_number_of_patterns',['../classPatterns.html#abbac70e6ecb3c8677e5418ed85170fe6',1,'Patterns']]],
+  ['size_5f',['size_',['../classPriorityQueue.html#a802f1886ce618585d2938c62113b5652',1,'PriorityQueue']]],
+  ['sort',['sort',['../classPriorityQueue.html#ab03659cc1374261d43252781b3cd7e66',1,'PriorityQueue']]],
+  ['status',['Status',['../classPriorityQueue.html#ad8eedbb3c3c73ea4d01776bb03016e64',1,'PriorityQueue']]],
+  ['status_5f',['status_',['../classPriorityQueue.html#a7a49e277a1c48efe79fce121cc2fe5b2',1,'PriorityQueue']]]
 ];

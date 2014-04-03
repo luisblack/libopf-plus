@@ -23,6 +23,22 @@ Inheritance diagram for M\+S\+T\+Prototypes\+:\begin{figure}[H]
 \item 
 virtual vector$<$ double $>$ \hyperlink{classMSTPrototypes_a654ccbaebfdbca73a0da0e5eb1e4e39f}{Select\+Prototypes} (\hyperlink{namespaceopf_a61631393754e0aa6aaeacf0767b2b419}{opf\+::\+Distance} distance, \hyperlink{classPatterns}{Patterns} patterns)
 \begin{DoxyCompactList}\small\item\em Generates a M\+S\+T to perform a prototype selection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ double $>$ \hyperlink{classMSTPrototypes_a2674e0559c35f64871c6f3d43c05bbb3}{initial\+\_\+costs\+\_\+}
+\item 
+vector$<$ int $>$ \hyperlink{classMSTPrototypes_a797e22614528dd54cafeaaa8d67dba4d}{predecessors\+\_\+}
+\item 
+vector$<$ bool $>$ \hyperlink{classMSTPrototypes_af2f3546aaad6bce57f5b9db34f38be37}{prototype\+\_\+status\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{classMSTPrototypes_a7c70b128526bb6b010c670846821aa6f}{N\+I\+L} = -\/1
+\item 
+static const bool \hyperlink{classMSTPrototypes_adfc022b1174d52afd0ae7d87e685f49e}{P\+R\+O\+T\+O\+T\+Y\+P\+E} = true
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -75,6 +91,24 @@ vector a vector of size of patterns with zero value is a pattern is a prototype 
 
 Implements \hyperlink{classPrototypesStrategy_a0422be14bb6be39a2d06112daf7043c1}{Prototypes\+Strategy}.
 
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classMSTPrototypes_a2674e0559c35f64871c6f3d43c05bbb3}{\index{M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}!initial\+\_\+costs\+\_\+@{initial\+\_\+costs\+\_\+}}
+\index{initial\+\_\+costs\+\_\+@{initial\+\_\+costs\+\_\+}!M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}}
+\subsubsection[{initial\+\_\+costs\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ M\+S\+T\+Prototypes\+::initial\+\_\+costs\+\_\+\hspace{0.3cm}{\ttfamily [private]}}}\label{classMSTPrototypes_a2674e0559c35f64871c6f3d43c05bbb3}
+\hypertarget{classMSTPrototypes_a7c70b128526bb6b010c670846821aa6f}{\index{M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}!N\+I\+L@{N\+I\+L}}
+\index{N\+I\+L@{N\+I\+L}!M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}}
+\subsubsection[{N\+I\+L}]{\setlength{\rightskip}{0pt plus 5cm}const int M\+S\+T\+Prototypes\+::\+N\+I\+L = -\/1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classMSTPrototypes_a7c70b128526bb6b010c670846821aa6f}
+\hypertarget{classMSTPrototypes_a797e22614528dd54cafeaaa8d67dba4d}{\index{M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}!predecessors\+\_\+@{predecessors\+\_\+}}
+\index{predecessors\+\_\+@{predecessors\+\_\+}!M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}}
+\subsubsection[{predecessors\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$int$>$ M\+S\+T\+Prototypes\+::predecessors\+\_\+\hspace{0.3cm}{\ttfamily [private]}}}\label{classMSTPrototypes_a797e22614528dd54cafeaaa8d67dba4d}
+\hypertarget{classMSTPrototypes_adfc022b1174d52afd0ae7d87e685f49e}{\index{M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}!P\+R\+O\+T\+O\+T\+Y\+P\+E@{P\+R\+O\+T\+O\+T\+Y\+P\+E}}
+\index{P\+R\+O\+T\+O\+T\+Y\+P\+E@{P\+R\+O\+T\+O\+T\+Y\+P\+E}!M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}}
+\subsubsection[{P\+R\+O\+T\+O\+T\+Y\+P\+E}]{\setlength{\rightskip}{0pt plus 5cm}const bool M\+S\+T\+Prototypes\+::\+P\+R\+O\+T\+O\+T\+Y\+P\+E = true\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classMSTPrototypes_adfc022b1174d52afd0ae7d87e685f49e}
+\hypertarget{classMSTPrototypes_af2f3546aaad6bce57f5b9db34f38be37}{\index{M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}!prototype\+\_\+status\+\_\+@{prototype\+\_\+status\+\_\+}}
+\index{prototype\+\_\+status\+\_\+@{prototype\+\_\+status\+\_\+}!M\+S\+T\+Prototypes@{M\+S\+T\+Prototypes}}
+\subsubsection[{prototype\+\_\+status\+\_\+}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$bool$>$ M\+S\+T\+Prototypes\+::prototype\+\_\+status\+\_\+\hspace{0.3cm}{\ttfamily [private]}}}\label{classMSTPrototypes_af2f3546aaad6bce57f5b9db34f38be37}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

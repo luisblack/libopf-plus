@@ -157,24 +157,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">friend</span> istream&amp; <a class="code" href="file__formats_8cpp.html#a2a2e2f128a329757f385bbd6d0d3f0b4">operator&gt;&gt;</a>(istream&amp; in, <a class="code" href="classPattern.html">Pattern</a> pattern);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> class_value_;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">int</span> dimension_;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    vector&lt;double&gt; feature_vector_;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">int</span> index_;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classPattern.html#a739dc0a44f9aca7a860ccba0c303bdd3">  114</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPattern.html#a739dc0a44f9aca7a860ccba0c303bdd3">class_value_</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classPattern.html#aca4d3f613b783e6190691ae71531374d">  115</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPattern.html#aca4d3f613b783e6190691ae71531374d">dimension_</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classPattern.html#a8920639f6ec13502728eaf390056ee13">  116</a></span>&#160;    vector&lt;double&gt; <a class="code" href="classPattern.html#a8920639f6ec13502728eaf390056ee13">feature_vector_</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classPattern.html#a029289d4eac5c7d338f34c428ffc6a55">  117</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classPattern.html#a029289d4eac5c7d338f34c428ffc6a55">index_</a>;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PATTERN_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classPattern_html_aca4d3f613b783e6190691ae71531374d"><div class="ttname"><a href="classPattern.html#aca4d3f613b783e6190691ae71531374d">Pattern::dimension_</a></div><div class="ttdeci">int dimension_</div><div class="ttdef"><b>Definition:</b> pattern.h:115</div></div>
 <div class="ttc" id="classPattern_html"><div class="ttname"><a href="classPattern.html">Pattern</a></div><div class="ttdoc">Class for handling a single pattern. </div><div class="ttdef"><b>Definition:</b> pattern.h:26</div></div>
 <div class="ttc" id="file__formats_8cpp_html_a2a2e2f128a329757f385bbd6d0d3f0b4"><div class="ttname"><a href="file__formats_8cpp.html#a2a2e2f128a329757f385bbd6d0d3f0b4">operator&gt;&gt;</a></div><div class="ttdeci">istream &amp; operator&gt;&gt;(istream &amp;in, CsvAdapter &amp;c)</div><div class="ttdef"><b>Definition:</b> file_formats.cpp:8</div></div>
 <div class="ttc" id="classPattern_html_a3cf22799a811394bab7fd167727a16af"><div class="ttname"><a href="classPattern.html#a3cf22799a811394bab7fd167727a16af">Pattern::Pattern</a></div><div class="ttdeci">Pattern(int class_value, Iterator begin, Iterator end, int index)</div><div class="ttdoc">Constructor creating a labeled pattern. </div><div class="ttdef"><b>Definition:</b> pattern.h:38</div></div>
 <div class="ttc" id="classPattern_html_a325cfe99a75f6e2befccef37ea347135"><div class="ttname"><a href="classPattern.html#a325cfe99a75f6e2befccef37ea347135">Pattern::set_feature_vector</a></div><div class="ttdeci">void set_feature_vector(Iterator begin, Iterator end)</div><div class="ttdoc">Sets the feature vector of the pattern. </div><div class="ttdef"><b>Definition:</b> pattern.h:81</div></div>
 <div class="ttc" id="classPattern_html_a87dcb126d751b5520a710dbf3e4eb7c0"><div class="ttname"><a href="classPattern.html#a87dcb126d751b5520a710dbf3e4eb7c0">Pattern::Pattern</a></div><div class="ttdeci">Pattern(Iterator begin, Iterator end, int index)</div><div class="ttdoc">Constructor creating a unlabeled pattern. </div><div class="ttdef"><b>Definition:</b> pattern.h:51</div></div>
+<div class="ttc" id="classPattern_html_a8920639f6ec13502728eaf390056ee13"><div class="ttname"><a href="classPattern.html#a8920639f6ec13502728eaf390056ee13">Pattern::feature_vector_</a></div><div class="ttdeci">vector&lt; double &gt; feature_vector_</div><div class="ttdef"><b>Definition:</b> pattern.h:116</div></div>
 <div class="ttc" id="classPattern_html_a979a9f332fc23c453659fc4d4d2ae8c5"><div class="ttname"><a href="classPattern.html#a979a9f332fc23c453659fc4d4d2ae8c5">Pattern::operator[]</a></div><div class="ttdeci">double operator[](int feature_index)</div><div class="ttdef"><b>Definition:</b> pattern.h:102</div></div>
+<div class="ttc" id="classPattern_html_a029289d4eac5c7d338f34c428ffc6a55"><div class="ttname"><a href="classPattern.html#a029289d4eac5c7d338f34c428ffc6a55">Pattern::index_</a></div><div class="ttdeci">int index_</div><div class="ttdef"><b>Definition:</b> pattern.h:117</div></div>
+<div class="ttc" id="classPattern_html_a739dc0a44f9aca7a860ccba0c303bdd3"><div class="ttname"><a href="classPattern.html#a739dc0a44f9aca7a860ccba0c303bdd3">Pattern::class_value_</a></div><div class="ttdeci">int class_value_</div><div class="ttdef"><b>Definition:</b> pattern.h:114</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 1 2014 13:15:18 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 1 2014 23:47:38 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
