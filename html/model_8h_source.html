@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classModel.html#a2970c96c9a3976c0887cb06f71753f1e">Model</a>(<span class="keywordtype">string</span> file_name);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classModel.html#ad821b67839a18f6fc6af508823ba73e0">   38</a></span>&#160;    vector&lt;int&gt;<a class="code" href="classModel.html#ad821b67839a18f6fc6af508823ba73e0">get_ordered_list_of_nodes</a>()<span class="keyword">const</span>{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classModel.html#a3324528ad5418b5d1a1a9a4b2a24e6e8">ordered_list_of_nodes_</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> ordered_list_of_nodes_;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">//TO DO: utilizar lista ou não</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classModel.html#a6f2fa936b9d754d971f2972716b41656">push_ordered_list_of_nodes</a>(<span class="keywordtype">int</span> index);</div>
@@ -133,10 +133,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classModel.html#afa9087f16c68b0c7cb67c5a285dde750">save_model_to_file</a>();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classModel.html#a3324528ad5418b5d1a1a9a4b2a24e6e8">   58</a></span>&#160;    vector&lt;int&gt; <a class="code" href="classModel.html#a3324528ad5418b5d1a1a9a4b2a24e6e8">ordered_list_of_nodes_</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classModel.html#abf34f73f474d2eb05d2aa285cb88b828">   59</a></span>&#160;    vector&lt;ModelNode&gt; <a class="code" href="classModel.html#abf34f73f474d2eb05d2aa285cb88b828">node</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    vector&lt;int&gt; ordered_list_of_nodes_;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    vector&lt;ModelNode&gt; node;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classModel.html#a020fe8b33fb2c430fe42a95e1ea83df4">load_model_from_file</a>(<span class="keywordtype">string</span> file_name);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> load_model_from_file(<span class="keywordtype">string</span> file_name);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OPF_MODEL_H_ */</span><span class="preprocessor"></span></div>
@@ -144,11 +144,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classModel_html_a578f203623cdda48b577f10a8d6e12d4"><div class="ttname"><a href="classModel.html#a578f203623cdda48b577f10a8d6e12d4">Model::const_iterator</a></div><div class="ttdeci">vector&lt; ModelNode &gt;::const_iterator const_iterator</div><div class="ttdef"><b>Definition:</b> model.h:27</div></div>
 <div class="ttc" id="classModel_html_a0cfbe847990e80cb9033e8a3257bced2"><div class="ttname"><a href="classModel.html#a0cfbe847990e80cb9033e8a3257bced2">Model::iterator</a></div><div class="ttdeci">vector&lt; ModelNode &gt;::iterator iterator</div><div class="ttdef"><b>Definition:</b> model.h:26</div></div>
 <div class="ttc" id="classPattern_html"><div class="ttname"><a href="classPattern.html">Pattern</a></div><div class="ttdoc">Class for handling a single pattern. </div><div class="ttdef"><b>Definition:</b> pattern.h:26</div></div>
-<div class="ttc" id="classModel_html_a3324528ad5418b5d1a1a9a4b2a24e6e8"><div class="ttname"><a href="classModel.html#a3324528ad5418b5d1a1a9a4b2a24e6e8">Model::ordered_list_of_nodes_</a></div><div class="ttdeci">vector&lt; int &gt; ordered_list_of_nodes_</div><div class="ttdef"><b>Definition:</b> model.h:58</div></div>
 <div class="ttc" id="model__node_8h_html"><div class="ttname"><a href="model__node_8h.html">model_node.h</a></div></div>
 <div class="ttc" id="classModel_html_a035c58a162aad06dad63a2be8976e17c"><div class="ttname"><a href="classModel.html#a035c58a162aad06dad63a2be8976e17c">Model::begin</a></div><div class="ttdeci">vector&lt; ModelNode &gt;::iterator begin() const </div><div class="ttdef"><b>Definition:</b> model.cpp:24</div></div>
-<div class="ttc" id="classModel_html_a020fe8b33fb2c430fe42a95e1ea83df4"><div class="ttname"><a href="classModel.html#a020fe8b33fb2c430fe42a95e1ea83df4">Model::load_model_from_file</a></div><div class="ttdeci">void load_model_from_file(string file_name)</div><div class="ttdoc">Loads a model from file. </div></div>
-<div class="ttc" id="classModel_html_abf34f73f474d2eb05d2aa285cb88b828"><div class="ttname"><a href="classModel.html#abf34f73f474d2eb05d2aa285cb88b828">Model::node</a></div><div class="ttdeci">vector&lt; ModelNode &gt; node</div><div class="ttdef"><b>Definition:</b> model.h:59</div></div>
 <div class="ttc" id="classModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdoc">Class for handling the training model informations. </div><div class="ttdef"><b>Definition:</b> model.h:24</div></div>
 <div class="ttc" id="classModel_html_a2970c96c9a3976c0887cb06f71753f1e"><div class="ttname"><a href="classModel.html#a2970c96c9a3976c0887cb06f71753f1e">Model::Model</a></div><div class="ttdeci">Model(Pattern pattern)</div></div>
 <div class="ttc" id="classModel_html_a6f2fa936b9d754d971f2972716b41656"><div class="ttname"><a href="classModel.html#a6f2fa936b9d754d971f2972716b41656">Model::push_ordered_list_of_nodes</a></div><div class="ttdeci">void push_ordered_list_of_nodes(int index)</div><div class="ttdef"><b>Definition:</b> model.cpp:16</div></div>
@@ -160,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 1 2014 23:47:38 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 3 2014 12:33:59 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

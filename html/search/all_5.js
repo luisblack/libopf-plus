@@ -7,6 +7,5 @@ var searchData=
   ['get_5findex',['get_index',['../classPattern.html#a96c0f3b51801a27d0f8b06031b508b42',1,'Pattern']]],
   ['get_5fnumber_5fof_5fclasses',['get_number_of_classes',['../classPatterns.html#aea4f00f4ee4d22876ac8f6850098c3e1',1,'Patterns']]],
   ['get_5fnumber_5fof_5fpatterns',['get_number_of_patterns',['../classPatterns.html#a76a42a6d7eca37020a3481c9d3ffa214',1,'Patterns']]],
-  ['get_5fordered_5flist_5fof_5fnodes',['get_ordered_list_of_nodes',['../classModel.html#ad821b67839a18f6fc6af508823ba73e0',1,'Model']]],
-  ['grey',['GREY',['../classPriorityQueue.html#ad8eedbb3c3c73ea4d01776bb03016e64a9ccb6e19b5889b9fa48b114a93fe0580',1,'PriorityQueue']]]
+  ['get_5fordered_5flist_5fof_5fnodes',['get_ordered_list_of_nodes',['../classModel.html#ad821b67839a18f6fc6af508823ba73e0',1,'Model']]]
 ];

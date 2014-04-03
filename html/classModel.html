@@ -86,8 +86,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classModel-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Model Class Reference</div>  </div>
@@ -128,19 +126,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0cfbe847990e80cb9033e8a3257bced2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a578f203623cdda48b577f10a8d6e12d4"><td class="memItemLeft" align="right" valign="top">vector&lt; ModelNode &gt;::const_iterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a578f203623cdda48b577f10a8d6e12d4">const_iterator</a></td></tr>
 <tr class="separator:a578f203623cdda48b577f10a8d6e12d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a020fe8b33fb2c430fe42a95e1ea83df4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a020fe8b33fb2c430fe42a95e1ea83df4">load_model_from_file</a> (string file_name)</td></tr>
-<tr class="memdesc:a020fe8b33fb2c430fe42a95e1ea83df4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a model from file.  <a href="#a020fe8b33fb2c430fe42a95e1ea83df4">More...</a><br/></td></tr>
-<tr class="separator:a020fe8b33fb2c430fe42a95e1ea83df4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a3324528ad5418b5d1a1a9a4b2a24e6e8"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#a3324528ad5418b5d1a1a9a4b2a24e6e8">ordered_list_of_nodes_</a></td></tr>
-<tr class="separator:a3324528ad5418b5d1a1a9a4b2a24e6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf34f73f474d2eb05d2aa285cb88b828"><td class="memItemLeft" align="right" valign="top">vector&lt; ModelNode &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModel.html#abf34f73f474d2eb05d2aa285cb88b828">node</a></td></tr>
-<tr class="separator:abf34f73f474d2eb05d2aa285cb88b828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for handling the training model informations. </p>
@@ -244,34 +229,6 @@ Luis Augusto Martins Pereria <a href="#" onclick="location.href='mai'+'lto:'+'lm
 
 </div>
 </div>
-<a class="anchor" id="a020fe8b33fb2c430fe42a95e1ea83df4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Model::load_model_from_file </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>file_name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Loads a model from file. </p>
-<p>File has to be saved using save_model_to_file. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="classModel.html#afa9087f16c68b0c7cb67c5a285dde750" title="Save model to file. ">save_model_to_file</a> </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a466e585afab385972eea3c8bd51f14f8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -362,46 +319,6 @@ Luis Augusto Martins Pereria <a href="#" onclick="location.href='mai'+'lto:'+'lm
 
 </div>
 </div>
-<a class="anchor" id="abf34f73f474d2eb05d2aa285cb88b828"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;ModelNode&gt; Model::node</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a3324528ad5418b5d1a1a9a4b2a24e6e8"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;int&gt; Model::ordered_list_of_nodes_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Core/include/classifier/core/<a class="el" href="model_8h_source.html">model.h</a></li>
 <li>Core/src/classifier/core/<a class="el" href="model_8cpp.html">model.cpp</a></li>
@@ -409,7 +326,7 @@ Luis Augusto Martins Pereria <a href="#" onclick="location.href='mai'+'lto:'+'lm
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 1 2014 23:47:38 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 3 2014 12:34:00 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

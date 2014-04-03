@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['operator_28_29',['operator()',['../classMaxPolicy.html#a812f133c0ec9ce8d05fc7f53f4d001f9',1,'MaxPolicy::operator()()'],['../classMinPolicy.html#a59891945c51d479ede8f7ed3def4b783',1,'MinPolicy::operator()()']]],
-  ['operator_3e_3e',['operator&gt;&gt;',['../classModel.html#a466e585afab385972eea3c8bd51f14f8',1,'Model::operator&gt;&gt;()'],['../file__formats_8cpp.html#a2a2e2f128a329757f385bbd6d0d3f0b4',1,'operator&gt;&gt;(istream &amp;in, CsvAdapter &amp;c):&#160;file_formats.cpp'],['../pattern_8cpp.html#a27ae4d6c06ab6d17ff9392ba3f5a5532',1,'operator&gt;&gt;(istream &amp;in, Pattern pattern):&#160;pattern.cpp'],['../patterns_8cpp.html#aed3f40599aaf63a1f5126b3acac33fb4',1,'operator&gt;&gt;(istream &amp;input, Patterns &amp;patterns):&#160;patterns.cpp']]],
-  ['operator_5b_5d',['operator[]',['../classPattern.html#a979a9f332fc23c453659fc4d4d2ae8c5',1,'Pattern']]],
-  ['opf',['OPF',['../classOPF.html#a937d755f9ec9d517eead90e06d5ab672',1,'OPF']]],
-  ['opfclassifying',['OPFClassifying',['../classOPFClassifying.html#a762fd4fa90acae27402fdc0038418ca3',1,'OPFClassifying']]],
-  ['opftraining',['OPFTraining',['../classOPFTraining.html#a901f7f1c7f467dcfee5678fc4b6bfbd4',1,'OPFTraining']]]
+  ['pattern',['Pattern',['../classPattern.html#a95f42b0f1717d9e6c2d831e87d27f83c',1,'Pattern::Pattern()'],['../classPattern.html#a3cf22799a811394bab7fd167727a16af',1,'Pattern::Pattern(int class_value, Iterator begin, Iterator end, int index)'],['../classPattern.html#a87dcb126d751b5520a710dbf3e4eb7c0',1,'Pattern::Pattern(Iterator begin, Iterator end, int index)'],['../classPattern.html#a3a1bf7ddd196fac02018c9cde4c421cf',1,'Pattern::Pattern(int dimension)']]],
+  ['patterns',['Patterns',['../classPatterns.html#aa6241d95e039c41cc4f4744d2285ebd9',1,'Patterns::Patterns()'],['../classPatterns.html#a91b41ddbe7a24c86697f5e19b93e0f75',1,'Patterns::Patterns(string file_name)'],['../classPatterns.html#ab847348dfaab14ef8a5f9dbc1a936039',1,'Patterns::Patterns(int number_of_patterns)']]],
+  ['pop_5fordered_5flist_5fof_5fnodes',['pop_ordered_list_of_nodes',['../classModel.html#a7bae5e69e7ca1d5bb8a04c74148c82f0',1,'Model']]],
+  ['predict',['Predict',['../classOPF.html#a694477ddd6df7bebbd1856cdf7bf3ce1',1,'OPF']]],
+  ['priorityqueue',['PriorityQueue',['../classPriorityQueue.html#ab2db14880bcb6c0b3717c574e0c34557',1,'PriorityQueue::PriorityQueue(int size, Type type=Type::MIN)'],['../classPriorityQueue.html#a9754b8c426ea9e5085b3662e1191b5b5',1,'PriorityQueue::PriorityQueue(Iterator begin, Iterator end, Type polyce_type=Type::MIN)']]],
+  ['push_5fordered_5flist_5fof_5fnodes',['push_ordered_list_of_nodes',['../classModel.html#a6f2fa936b9d754d971f2972716b41656',1,'Model']]]
 ];

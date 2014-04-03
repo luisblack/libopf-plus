@@ -85,8 +85,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classMSTPrototypes-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MSTPrototypes Class Reference</div>  </div>
@@ -114,22 +112,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a654ccbaebfdbca73a0da0e5eb1e4e39f"><td class="memItemLeft" align="right" valign="top">virtual vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSTPrototypes.html#a654ccbaebfdbca73a0da0e5eb1e4e39f">SelectPrototypes</a> (<a class="el" href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a> distance, <a class="el" href="classPatterns.html">Patterns</a> patterns)</td></tr>
 <tr class="memdesc:a654ccbaebfdbca73a0da0e5eb1e4e39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a MST to perform a prototype selection.  <a href="#a654ccbaebfdbca73a0da0e5eb1e4e39f">More...</a><br/></td></tr>
 <tr class="separator:a654ccbaebfdbca73a0da0e5eb1e4e39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:a2674e0559c35f64871c6f3d43c05bbb3"><td class="memItemLeft" align="right" valign="top">vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSTPrototypes.html#a2674e0559c35f64871c6f3d43c05bbb3">initial_costs_</a></td></tr>
-<tr class="separator:a2674e0559c35f64871c6f3d43c05bbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a797e22614528dd54cafeaaa8d67dba4d"><td class="memItemLeft" align="right" valign="top">vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSTPrototypes.html#a797e22614528dd54cafeaaa8d67dba4d">predecessors_</a></td></tr>
-<tr class="separator:a797e22614528dd54cafeaaa8d67dba4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2f3546aaad6bce57f5b9db34f38be37"><td class="memItemLeft" align="right" valign="top">vector&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSTPrototypes.html#af2f3546aaad6bce57f5b9db34f38be37">prototype_status_</a></td></tr>
-<tr class="separator:af2f3546aaad6bce57f5b9db34f38be37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a7c70b128526bb6b010c670846821aa6f"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSTPrototypes.html#a7c70b128526bb6b010c670846821aa6f">NIL</a> = -1</td></tr>
-<tr class="separator:a7c70b128526bb6b010c670846821aa6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfc022b1174d52afd0ae7d87e685f49e"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSTPrototypes.html#adfc022b1174d52afd0ae7d87e685f49e">PROTOTYPE</a> = true</td></tr>
-<tr class="separator:adfc022b1174d52afd0ae7d87e685f49e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for handling prototypes selection by using a Minimum Spanning Tree (MST). </p>
@@ -202,107 +184,6 @@ Luis Augusto Martins Pereria <a href="#" onclick="location.href='mai'+'lto:'+'lm
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a2674e0559c35f64871c6f3d43c05bbb3"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;double&gt; MSTPrototypes::initial_costs_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7c70b128526bb6b010c670846821aa6f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const int MSTPrototypes::NIL = -1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a797e22614528dd54cafeaaa8d67dba4d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;int&gt; MSTPrototypes::predecessors_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="adfc022b1174d52afd0ae7d87e685f49e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const bool MSTPrototypes::PROTOTYPE = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af2f3546aaad6bce57f5b9db34f38be37"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vector&lt;bool&gt; MSTPrototypes::prototype_status_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Core/include/classifier/complete_graph/<a class="el" href="mst__prototype_8h_source.html">mst_prototype.h</a></li>
 <li>Core/src/classifier/complete_graph/<a class="el" href="mst__prototype_8cpp.html">mst_prototype.cpp</a></li>
@@ -310,7 +191,7 @@ Luis Augusto Martins Pereria <a href="#" onclick="location.href='mai'+'lto:'+'lm
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 1 2014 23:47:38 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 3 2014 12:34:00 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

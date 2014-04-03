@@ -7,15 +7,15 @@
 
 var indexSectionsWithContent =
 {
-  0: "bcdefgilmnoprstuw~",
+  0: "bcdefgilmoprstu~",
   1: "cmopt",
   2: "o",
   3: "cdflmoprt",
-  4: "bcdefgilmoprstu~",
-  5: "cdfinops",
+  4: "bcdefgimoprstu~",
+  5: "cip",
   6: "d",
-  7: "st",
-  8: "bgmw",
+  7: "t",
+  8: "m",
   9: "o",
   10: "lt"
 };
