@@ -26,11 +26,11 @@ using namespace std;
 class Pattern{
 public:
 
-	/**Standard constructor for a single pattern.*/
+    /**Defaul constructor for a single pattern.*/
     Pattern();
 
-    /**Constructor creating a labeled pattern.
-    * @param class_value class value whose the pattern belongs to.
+    /**Creates an instance for labeled patterns.
+    * @param class_value class whose the pattern belongs to.
     * @param feature_vector feature vector that represents the pattern.
     * @param dimension dimension of feature vector.
     * @param index index of pattern.
@@ -43,28 +43,31 @@ public:
         index_ = index;
     }
 
-	/**Constructor creating a unlabeled pattern.
-    * @param begin
-    * @param end
+    /**Creates an instance for unlabeled patterns.
+     * Class value attribute is assinged with -1.
+    * @param begin begining of feature vector
+    * @param end   ending of feature vector
     * @param index index of pattern.
     * */
     template <typename Iterator> Pattern(Iterator begin, Iterator end, int index)
     {
-        class_value_ = 0;
+        class_value_ = -1;
         dimension_ = end - begin;
         set_feature_vector(begin, end);
         index_ = index;
     }
 
-	/**Constructor creating a pattern allocating space to feature vector.
-    * @param dimension number of features in the vector.
+    /**Creates an instance defining a dimension of the feature vector.
+    * @param dimension number of feature the vector dimension.
     * */
 	Pattern(int dimension);
 
 	/**Destructor for single pattern*/
 	~Pattern();
 
-	/**Returns the class value of the pattern*/
+    /**Gets the class value of the pattern
+     * @return class value
+    */
 	int get_class_value() const;
 
 	/**Sets the class value of the pattern
@@ -72,7 +75,9 @@ public:
 	*/
 	void set_class_value(int class_value);
 
-	/**Returns the feature vector of the pattern*/
+    /**Gets the feature vector of the pattern
+     * @return feature vector
+    */
     const vector<double> get_feature_vector() const;
 
 	/**Sets the feature vector of the pattern
@@ -83,7 +88,9 @@ public:
         feature_vector_ = std::vector<double>(begin, end);
     }
 
-	/**Returns the dimension size of feature vector*/
+    /**Gets the dimension size of feature vector
+     * @return number of dimensions
+    */
 	int get_dimension() const;
 
 	/**Sets the dimension size of feature vector.
@@ -91,7 +98,9 @@ public:
 	*/
 	void set_dimension(int dimension);
 
-	/**Returns the index of a pattern.*/
+    /**Gets the index from pattern.
+     * @return index from pattern
+    */
 	int get_index() const;
 
 	/**Sets the index of a pattern.
@@ -99,6 +108,9 @@ public:
 	*/
 	void set_index(int index);
 
+    /**Overloads the operator [].
+     *@return a feature
+     * */
     double operator[](int feature_index)
     {
         return feature_vector_[feature_index];
@@ -106,7 +118,7 @@ public:
 
 	/**Overloads the operator >> to input stream for a single pattern.
 	 * @param in input stream.
-	 * @param pattern a single pattern.
+     * @param pattern itself.
 	 * */
     friend istream& operator>>(istream& in, Pattern pattern);
 

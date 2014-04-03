@@ -4,16 +4,18 @@
  *
  */
 
-#ifndef OPF_HEAP_H_
-#define OPF_HEAP_H_
+#ifndef PRIOTIRY_QUEUE_H_
+#define PRIOTIRY_QUEUE_H_
 #include <vector>
 #include <iterator>
 #include <functional>
 
 using namespace std;
 
-/**A class for handling minimum and maximum priority queues.
- *
+/**Class for handling minimum and maximum priority queues.
+ * The methods of this class are particularly implemented to deal with queues that OPF-based algorithms need to.
+ * Usage exemple:
+ * See other usages of this class in {@link mst_prototype, @link opf_training}
  * \authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
  *\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
  * \version 1.0.0
@@ -28,14 +30,15 @@ public:
                MAX /**< enum value MAX for maximum priority queue. */
               };
 
-    /**Constructor creating a empty priority queue with defined size and removal policy. A queue with minimal priority is created if the policy is not denifed.
+    /**Creates an empty instance with defined size and removal policy.
+     * A queue with minimal priority is created if the policy is not denifed.
      *@param size size of queue.
      *@param type removal policy
      *@see Type
     */
     PriorityQueue(int size, Type type = Type::MIN);
 
-    /**Constructor using an initial vector with costs and a defined removal policy.
+    /**Creates an instance using an initial vector of costs and a defined removal policy.
      * A queue with minimal priority is created if the policy is not denifed.
      * Costs are only inserted in queue
      *@param begin
@@ -63,14 +66,15 @@ public:
     */
     void insert(double cost);
 
-    /**Returns an index element of priority queue following the removal policy (minimum or maximum).
-     * @return an index of element removed from queue.
+    /**Removes an element from queue following the removal policy (minimum or maximum).
+     * If the queue is empy, then an exception rises.
+     * @return insertion index of an element removed from queue.
     */
     int remove();
 
     /**Updates the cost of an element if it still in the priority queue.
      * If the element is out of the queue, then an exception rises.
-     * The sort method should be called after a cost(s) to be updated.
+     * The {\@link sort} method should be called after a cost(s) to be updated.
      * @param index index of element whose cost has to be updated.
      * @param cost cost value to be update in the queue.
     */
@@ -112,10 +116,18 @@ private:
 
     Type policy_type_;
 
+    /**Returns
+    */
     bool min(int, int);
+
+    /**Returns
+    */
     bool max(int, int);
 
-	enum Status {BLACK, GREY, WHITE};
+    enum Status {BLACK,  /**< status of an element removed from queue. */
+                 GREY,  /**< status of an element already inserted and visited. */
+                 WHITE  /**< status of an element already inserted but not visited. */
+                };
     int size_;
     int cur_index_;
     Status* status_;
@@ -123,4 +135,4 @@ private:
     double* costs_;
 };
 
-#endif /* OPF_HEAP_H */
+#endif /* PRIOTIRY_QUEUE_H */

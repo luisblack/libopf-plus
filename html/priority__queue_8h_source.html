@@ -95,73 +95,73 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef OPF_HEAP_H_</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define OPF_HEAP_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef PRIOTIRY_QUEUE_H_</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define PRIOTIRY_QUEUE_H_</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classPriorityQueue.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPriorityQueue.html">PriorityQueue</a>{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081a">   27</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081a">Type</a> {MIN, </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081aa427d161a5bb6967ec6d39a669f852c5d">   28</a></span>&#160;               MAX </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;              };</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classPriorityQueue.html">PriorityQueue</a>(<span class="keywordtype">int</span> size, Type type = Type::MIN);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classPriorityQueue.html#a9754b8c426ea9e5085b3662e1191b5b5">   46</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Iterator&gt; <a class="code" href="classPriorityQueue.html#a9754b8c426ea9e5085b3662e1191b5b5">PriorityQueue</a>(Iterator begin, Iterator end, <a class="code" href="classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081a">Type</a> polyce_type = Type::MIN){</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        size_ = end - begin;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        policy_type_ = polyce_type;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classPriorityQueue.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPriorityQueue.html">PriorityQueue</a>{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081a">   29</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081a">Type</a> {MIN, </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081aa427d161a5bb6967ec6d39a669f852c5d">   30</a></span>&#160;               MAX </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;              };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classPriorityQueue.html">PriorityQueue</a>(<span class="keywordtype">int</span> size, Type type = Type::MIN);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classPriorityQueue.html#a9754b8c426ea9e5085b3662e1191b5b5">   49</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Iterator&gt; <a class="code" href="classPriorityQueue.html#a9754b8c426ea9e5085b3662e1191b5b5">PriorityQueue</a>(Iterator begin, Iterator end, <a class="code" href="classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081a">Type</a> polyce_type = Type::MIN){</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        size_ = end - begin;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        policy_type_ = polyce_type;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ~<a class="code" href="classPriorityQueue.html">PriorityQueue</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> insert(<span class="keywordtype">double</span> cost);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> <span class="keyword">remove</span>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> update(<span class="keywordtype">int</span> index, <span class="keywordtype">double</span> cost);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> empty() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> full() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> sort();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>* begin() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>* end() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">double</span> get_cost(<span class="keywordtype">int</span> index)<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    Type policy_type_;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    ~<a class="code" href="classPriorityQueue.html">PriorityQueue</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> insert(<span class="keywordtype">double</span> cost);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">int</span> <span class="keyword">remove</span>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> update(<span class="keywordtype">int</span> index, <span class="keywordtype">double</span> cost);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> empty() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> full() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> sort();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>* begin() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>* end() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">double</span> get_cost(<span class="keywordtype">int</span> index)<span class="keyword">const</span>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">bool</span> min(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">bool</span> max(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">enum</span> Status {BLACK, GREY, WHITE};</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">int</span> size_;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">int</span> cur_index_;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    Status* status_;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span>* indexes_;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">double</span>* costs_;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;};</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* OPF_HEAP_H */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="classPriorityQueue_html"><div class="ttname"><a href="classPriorityQueue.html">PriorityQueue</a></div><div class="ttdoc">A class for handling minimum and maximum priority queues. </div><div class="ttdef"><b>Definition:</b> priority_queue.h:22</div></div>
-<div class="ttc" id="classPriorityQueue_html_a9754b8c426ea9e5085b3662e1191b5b5"><div class="ttname"><a href="classPriorityQueue.html#a9754b8c426ea9e5085b3662e1191b5b5">PriorityQueue::PriorityQueue</a></div><div class="ttdeci">PriorityQueue(Iterator begin, Iterator end, Type polyce_type=Type::MIN)</div><div class="ttdoc">Constructor using an initial vector with costs and a defined removal policy. </div><div class="ttdef"><b>Definition:</b> priority_queue.h:46</div></div>
-<div class="ttc" id="classPriorityQueue_html_a5d63bb7f1eeef31a80cdff9f280f081a"><div class="ttname"><a href="classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081a">PriorityQueue::Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">An enumeration for setting removal policy of queue. </div><div class="ttdef"><b>Definition:</b> priority_queue.h:27</div></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    Type policy_type_;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> min(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">bool</span> max(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">enum</span> Status {BLACK, GREY, WHITE};</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">int</span> size_;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">int</span> cur_index_;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    Status* status_;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">int</span>* indexes_;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">double</span>* costs_;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;};</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PRIOTIRY_QUEUE_H */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="classPriorityQueue_html"><div class="ttname"><a href="classPriorityQueue.html">PriorityQueue</a></div><div class="ttdoc">A class for handling minimum and maximum priority queues. </div><div class="ttdef"><b>Definition:</b> priority_queue.h:24</div></div>
+<div class="ttc" id="classPriorityQueue_html_a9754b8c426ea9e5085b3662e1191b5b5"><div class="ttname"><a href="classPriorityQueue.html#a9754b8c426ea9e5085b3662e1191b5b5">PriorityQueue::PriorityQueue</a></div><div class="ttdeci">PriorityQueue(Iterator begin, Iterator end, Type polyce_type=Type::MIN)</div><div class="ttdoc">Creates an instance using an initial vector of costs and a defined removal policy. </div><div class="ttdef"><b>Definition:</b> priority_queue.h:49</div></div>
+<div class="ttc" id="classPriorityQueue_html_a5d63bb7f1eeef31a80cdff9f280f081a"><div class="ttname"><a href="classPriorityQueue.html#a5d63bb7f1eeef31a80cdff9f280f081a">PriorityQueue::Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">An enumeration for setting removal policy of queue. </div><div class="ttdef"><b>Definition:</b> priority_queue.h:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 1 2014 13:15:18 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 3 2014 12:33:59 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

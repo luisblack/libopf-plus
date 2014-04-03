@@ -101,11 +101,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classMSTPrototypes.html#a62fedec88ad4ab417181fbc672f72410">MSTPrototypes</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">virtual</span> vector&lt;double&gt; <a class="code" href="classMSTPrototypes.html#a654ccbaebfdbca73a0da0e5eb1e4e39f">SelectPrototypes</a>(<a class="code" href="namespaceopf.html#a61631393754e0aa6aaeacf0767b2b419">opf::Distance</a> distance, <a class="code" href="classPatterns.html">Patterns</a> patterns);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> NIL = -1;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> PROTOTYPE = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif // MST_PROTOTYPES_H</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">int</span> NIL = -1;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">const</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> PROTOTYPE = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    vector&lt;double&gt;initial_costs_;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    vector&lt;int&gt;predecessors_;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    vector&lt;bool&gt;prototype_status_;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif // MST_PROTOTYPES_H</span></div>
 <div class="ttc" id="distance_8h_html"><div class="ttname"><a href="distance_8h.html">distance.h</a></div></div>
 <div class="ttc" id="classMSTPrototypes_html_a654ccbaebfdbca73a0da0e5eb1e4e39f"><div class="ttname"><a href="classMSTPrototypes.html#a654ccbaebfdbca73a0da0e5eb1e4e39f">MSTPrototypes::SelectPrototypes</a></div><div class="ttdeci">virtual vector&lt; double &gt; SelectPrototypes(opf::Distance distance, Patterns patterns)</div><div class="ttdoc">Generates a MST to perform a prototype selection. </div><div class="ttdef"><b>Definition:</b> mst_prototype.cpp:11</div></div>
 <div class="ttc" id="classMSTPrototypes_html_a62fedec88ad4ab417181fbc672f72410"><div class="ttname"><a href="classMSTPrototypes.html#a62fedec88ad4ab417181fbc672f72410">MSTPrototypes::MSTPrototypes</a></div><div class="ttdeci">MSTPrototypes()</div><div class="ttdef"><b>Definition:</b> mst_prototype.cpp:6</div></div>
@@ -117,7 +120,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 1 2014 13:15:18 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 3 2014 12:33:59 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

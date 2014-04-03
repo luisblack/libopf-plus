@@ -53,7 +53,8 @@ PriorityQueue::PriorityQueue(int size, Type type): cur_index_(0), size_(size), p
         default_value = 0;
     }
 
-    for(int i=0; i<size; ++i){
+    for(int i = 0; i < size; ++i)
+    {
         indexes_[i] = i;
     }
 
@@ -72,8 +73,12 @@ void PriorityQueue::insert(double cost){
     if(full()){
         throw "Queue is full!";
     }
+    //
     costs_[cur_index_] = cost;
+
+    //Inserted element is assigned with WHITE stadus
     status_[cur_index_] = Status::WHITE;
+    //
     cur_index_++;
 
 }
@@ -85,6 +90,8 @@ int PriorityQueue::remove()
     }
     //TODO: mudar essa joca
     cur_index_--;
+
+    //Removed element is assigned with BLACK status
     status_[cur_index_] = Status::BLACK;
     return indexes_[cur_index_];
 }
@@ -102,7 +109,7 @@ bool PriorityQueue::max(int index1, int index2)
 void PriorityQueue::sort()
 {
     if(empty()){
-        throw "Impossible to sort: queue is empty. Insert elements before do this";
+        throw "Impossible to sort an empty queue. Insert elements before to do this";
     }
     //TO DO: remover esse if
     if(policy_type_ == Type::MIN)

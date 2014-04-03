@@ -14,33 +14,33 @@ Class for handling a single pattern.
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classPattern_a95f42b0f1717d9e6c2d831e87d27f83c}{Pattern} ()
-\begin{DoxyCompactList}\small\item\em Standard constructor for a single pattern. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Defaul constructor for a single pattern. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Iterator $>$ }\\\hyperlink{classPattern_a3cf22799a811394bab7fd167727a16af}{Pattern} (int class\+\_\+value, Iterator begin, Iterator end, int index)
-\begin{DoxyCompactList}\small\item\em Constructor creating a labeled pattern. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Creates an instance for labeled patterns. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Iterator $>$ }\\\hyperlink{classPattern_a87dcb126d751b5520a710dbf3e4eb7c0}{Pattern} (Iterator begin, Iterator end, int index)
-\begin{DoxyCompactList}\small\item\em Constructor creating a unlabeled pattern. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Creates an instance for unlabeled patterns. \end{DoxyCompactList}\item 
 \hyperlink{classPattern_a3a1bf7ddd196fac02018c9cde4c421cf}{Pattern} (int dimension)
-\begin{DoxyCompactList}\small\item\em Constructor creating a pattern allocating space to feature vector. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Creates an instance defining a dimension of the feature vector. \end{DoxyCompactList}\item 
 \hyperlink{classPattern_a6e8b9388bbd39934e9f9534b974d7498}{$\sim$\+Pattern} ()
 \begin{DoxyCompactList}\small\item\em Destructor for single pattern. \end{DoxyCompactList}\item 
 int \hyperlink{classPattern_aae331219e63c782b23f203ebad3aa7bc}{get\+\_\+class\+\_\+value} () const 
-\begin{DoxyCompactList}\small\item\em Returns the class value of the pattern. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets the class value of the pattern. \end{DoxyCompactList}\item 
 void \hyperlink{classPattern_ac4235d677a656d5cc272d192af210d4f}{set\+\_\+class\+\_\+value} (int class\+\_\+value)
 \begin{DoxyCompactList}\small\item\em Sets the class value of the pattern. \end{DoxyCompactList}\item 
 const vector$<$ double $>$ \hyperlink{classPattern_aae9583bcb7da91e9ae347a392ae77a52}{get\+\_\+feature\+\_\+vector} () const 
-\begin{DoxyCompactList}\small\item\em Returns the feature vector of the pattern. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets the feature vector of the pattern. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename Iterator $>$ }\\void \hyperlink{classPattern_a325cfe99a75f6e2befccef37ea347135}{set\+\_\+feature\+\_\+vector} (Iterator begin, Iterator end)
 \begin{DoxyCompactList}\small\item\em Sets the feature vector of the pattern. \end{DoxyCompactList}\item 
 int \hyperlink{classPattern_a3301651f9617962a7dd15575d381d8de}{get\+\_\+dimension} () const 
-\begin{DoxyCompactList}\small\item\em Returns the dimension size of feature vector. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets the dimension size of feature vector. \end{DoxyCompactList}\item 
 void \hyperlink{classPattern_aa498151def7e9e9fabf874bfead90b3b}{set\+\_\+dimension} (int dimension)
 \begin{DoxyCompactList}\small\item\em Sets the dimension size of feature vector. \end{DoxyCompactList}\item 
 int \hyperlink{classPattern_a96c0f3b51801a27d0f8b06031b508b42}{get\+\_\+index} () const 
-\begin{DoxyCompactList}\small\item\em Returns the index of a pattern. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Gets the index from pattern. \end{DoxyCompactList}\item 
 void \hyperlink{classPattern_ad74cb513a6a76c20121297f2ab867a07}{set\+\_\+index} (int index)
 \begin{DoxyCompactList}\small\item\em Sets the index of a pattern. \end{DoxyCompactList}\item 
 double \hyperlink{classPattern_a979a9f332fc23c453659fc4d4d2ae8c5}{operator\mbox{[}$\,$\mbox{]}} (int feature\+\_\+index)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Overloads the operator \mbox{[}\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
@@ -74,7 +74,7 @@ Luis Augusto Martins Pereria \href{mailto:lmartins@ic.unicamb.br}{\tt lmartins@i
 )}}\label{classPattern_a95f42b0f1717d9e6c2d831e87d27f83c}
 
 
-Standard constructor for a single pattern. 
+Defaul constructor for a single pattern. 
 
 \hypertarget{classPattern_a3cf22799a811394bab7fd167727a16af}{\index{Pattern@{Pattern}!Pattern@{Pattern}}
 \index{Pattern@{Pattern}!Pattern@{Pattern}}
@@ -88,11 +88,11 @@ Standard constructor for a single pattern.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPattern_a3cf22799a811394bab7fd167727a16af}
 
 
-Constructor creating a labeled pattern. 
+Creates an instance for labeled patterns. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em class\+\_\+value} & class value whose the pattern belongs to. \\
+{\em class\+\_\+value} & class whose the pattern belongs to. \\
 \hline
 {\em feature\+\_\+vector} & feature vector that represents the pattern. \\
 \hline
@@ -112,13 +112,13 @@ Constructor creating a labeled pattern.
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPattern_a87dcb126d751b5520a710dbf3e4eb7c0}
 
 
-Constructor creating a unlabeled pattern. 
+Creates an instance for unlabeled patterns. 
 
-
+Class value attribute is assinged with -\/1. 
 \begin{DoxyParams}{Parameters}
-{\em begin} & \\
+{\em begin} & begining of feature vector \\
 \hline
-{\em end} & \\
+{\em end} & ending of feature vector \\
 \hline
 {\em index} & index of pattern. \\
 \hline
@@ -132,11 +132,11 @@ Constructor creating a unlabeled pattern.
 )}}\label{classPattern_a3a1bf7ddd196fac02018c9cde4c421cf}
 
 
-Constructor creating a pattern allocating space to feature vector. 
+Creates an instance defining a dimension of the feature vector. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em dimension} & number of features in the vector. \\
+{\em dimension} & number of feature the vector dimension. \\
 \hline
 \end{DoxyParams}
 \hypertarget{classPattern_a6e8b9388bbd39934e9f9534b974d7498}{\index{Pattern@{Pattern}!````~Pattern@{$\sim$\+Pattern}}
@@ -162,8 +162,11 @@ Destructor for single pattern.
 ) const}}\label{classPattern_aae331219e63c782b23f203ebad3aa7bc}
 
 
-Returns the class value of the pattern. 
+Gets the class value of the pattern. 
 
+\begin{DoxyReturn}{Returns}
+class value 
+\end{DoxyReturn}
 \hypertarget{classPattern_a3301651f9617962a7dd15575d381d8de}{\index{Pattern@{Pattern}!get\+\_\+dimension@{get\+\_\+dimension}}
 \index{get\+\_\+dimension@{get\+\_\+dimension}!Pattern@{Pattern}}
 \subsubsection[{get\+\_\+dimension}]{\setlength{\rightskip}{0pt plus 5cm}int Pattern\+::get\+\_\+dimension (
@@ -173,8 +176,11 @@ Returns the class value of the pattern.
 ) const}}\label{classPattern_a3301651f9617962a7dd15575d381d8de}
 
 
-Returns the dimension size of feature vector. 
+Gets the dimension size of feature vector. 
 
+\begin{DoxyReturn}{Returns}
+number of dimensions 
+\end{DoxyReturn}
 \hypertarget{classPattern_aae9583bcb7da91e9ae347a392ae77a52}{\index{Pattern@{Pattern}!get\+\_\+feature\+\_\+vector@{get\+\_\+feature\+\_\+vector}}
 \index{get\+\_\+feature\+\_\+vector@{get\+\_\+feature\+\_\+vector}!Pattern@{Pattern}}
 \subsubsection[{get\+\_\+feature\+\_\+vector}]{\setlength{\rightskip}{0pt plus 5cm}const vector$<$ double $>$ Pattern\+::get\+\_\+feature\+\_\+vector (
@@ -184,8 +190,11 @@ Returns the dimension size of feature vector.
 ) const}}\label{classPattern_aae9583bcb7da91e9ae347a392ae77a52}
 
 
-Returns the feature vector of the pattern. 
+Gets the feature vector of the pattern. 
 
+\begin{DoxyReturn}{Returns}
+feature vector 
+\end{DoxyReturn}
 \hypertarget{classPattern_a96c0f3b51801a27d0f8b06031b508b42}{\index{Pattern@{Pattern}!get\+\_\+index@{get\+\_\+index}}
 \index{get\+\_\+index@{get\+\_\+index}!Pattern@{Pattern}}
 \subsubsection[{get\+\_\+index}]{\setlength{\rightskip}{0pt plus 5cm}int Pattern\+::get\+\_\+index (
@@ -195,8 +204,11 @@ Returns the feature vector of the pattern.
 ) const}}\label{classPattern_a96c0f3b51801a27d0f8b06031b508b42}
 
 
-Returns the index of a pattern. 
+Gets the index from pattern. 
 
+\begin{DoxyReturn}{Returns}
+index from pattern 
+\end{DoxyReturn}
 \hypertarget{classPattern_a979a9f332fc23c453659fc4d4d2ae8c5}{\index{Pattern@{Pattern}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
 \index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Pattern@{Pattern}}
 \subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}double Pattern\+::operator\mbox{[}$\,$\mbox{]} (
@@ -204,6 +216,13 @@ Returns the index of a pattern.
 \item[{int}]{feature\+\_\+index}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPattern_a979a9f332fc23c453659fc4d4d2ae8c5}
+
+
+Overloads the operator \mbox{[}\mbox{]}. 
+
+\begin{DoxyReturn}{Returns}
+a feature 
+\end{DoxyReturn}
 \hypertarget{classPattern_ac4235d677a656d5cc272d192af210d4f}{\index{Pattern@{Pattern}!set\+\_\+class\+\_\+value@{set\+\_\+class\+\_\+value}}
 \index{set\+\_\+class\+\_\+value@{set\+\_\+class\+\_\+value}!Pattern@{Pattern}}
 \subsubsection[{set\+\_\+class\+\_\+value}]{\setlength{\rightskip}{0pt plus 5cm}void Pattern\+::set\+\_\+class\+\_\+value (
@@ -288,7 +307,7 @@ Overloads the operator $>$$>$ to input stream for a single pattern.
 \begin{DoxyParams}{Parameters}
 {\em in} & input stream. \\
 \hline
-{\em pattern} & a single pattern. \\
+{\em pattern} & itself. \\
 \hline
 \end{DoxyParams}
 

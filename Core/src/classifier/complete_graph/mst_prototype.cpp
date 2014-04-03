@@ -17,6 +17,7 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns 
     initial_costs_ = vector<double>(patterns.get_number_of_patterns());
     predecessors_ = vector<int>(patterns.get_number_of_patterns());
     prototype_status_ = vector<bool>(patterns.get_number_of_patterns());
+
     PriorityQueue Q(patterns.get_number_of_patterns());
 
     for(int i=0; i < patterns.get_number_of_classes(); i++)
