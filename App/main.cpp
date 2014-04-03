@@ -1,6 +1,11 @@
 #include <iostream>
 #include <libopf-plus.h>
 
+#include <input/csv_format.h>
+#include <input/io_formater.h>
+
+#include <fstream>
+
 
 using namespace std;
 
@@ -16,31 +21,28 @@ void hue2(Patterns& p, ostream& o, opf::io::OutputMethod omg)
 
 int main()
 {
-    Patterns p("boat.txt");
+    try
+    {
+        Patterns p(42);
 
-    auto aeho = opf::io::format_out(p, hue);
+        std::fstream f("iris.csv");
 
-    cout << aeho << endl;
+        if(!f.is_open())
+        {
+            cout << "Nao consigo abrir o aqrquivo wowow\n";
+            return 1;
+        }
 
-//    cout << opf::io::format_out(p, [](ostream& o, Patterns &p){cout << "aeho";});
+        f >> opf::io::format(p, opf::input::csv);
 
-//    int x, y;
-//    PriorityQueue Q(5,PriorityQueue::Type::MAX);
+        cout << p.get_number_of_patterns() << endl;
+        cout << p.get_number_of_classes() << endl;
 
-//    Q.insert(0.1);
-//    Q.insert(0.01);
-//    Q.insert(0.5);
-//    Q.insert(10);
-//    Q.insert(1);
-//    Q.sort();
-//    for(const int *i = Q.begin(); i != Q.end(); ++i){
-//        Q.update(*i,0.0);
-//        cout <<Q.get_cost(*i)<<"\t";
-//        cout <<*i<<endl;
-//    }
-    cout << p.get_number_of_patterns() << endl;
-    cout << p.get_number_of_classes() << endl;
+        return 0;
+    }catch(opf::OPFException e)
+    {
+        cerr << e.what() << endl;
+    }
 
-    return 0;
 }
 

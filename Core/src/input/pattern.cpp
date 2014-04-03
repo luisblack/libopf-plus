@@ -9,14 +9,12 @@
 #include <assert.h>
 
 Pattern::Pattern(): feature_vector_(0){
-    cout << "empty parada";
     class_value_ = 0;
     dimension_ = 0;
     index_ = -1;
 }
 
 Pattern::Pattern(int dimension): feature_vector_(dimension){
-    cout << "dimension parada" << endl;
     class_value_ = 0;
     dimension_ = dimension;
     index_ = -1;

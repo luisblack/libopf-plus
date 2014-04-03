@@ -41,7 +41,13 @@ HEADERS += \
     include/classifier/core/model.h \
     include/classifier/complete_graph/opf_classifying.h \
     include/classifier/core/model_node.h \
-    include/input/io_formater.h
+    include/input/io_formater.h \
+    include/input/svmlight_format.h \
+    include/input/opf.h \
+    include/exception/opf_exception.h \
+    include/exception/lazy_programer_exception.h \
+    include/utils/string_utils.h \
+    include/input/csv_format.h
 
 SOURCES += \
     src/input/patterns.cpp \
@@ -53,4 +59,6 @@ SOURCES += \
     src/classifier/core/model.cpp \
     src/classifier/complete_graph/opf_classifying.cpp \
     src/classifier/core/model_node.cpp \
-    src/input/io_fomatter.cpp
+    src/exception/opf_exception.cpp \
+    src/exception/lazy_programer_exception.cpp \
+    src/input/io_formatter.cpp

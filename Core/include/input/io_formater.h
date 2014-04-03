@@ -18,11 +18,12 @@ namespace opf {
         {
         public:
             Patterns& patterns_;
-            InputMethod& input_function_;
-            InputFormatter(Patterns&, InputMethod&);
+            InputMethod input_function_;
+            InputFormatter(Patterns&, InputMethod);
 
         //    friend ostream& operator <<(ostream&, OutputFunction&);
             friend istream& operator >>(istream&, InputFormatter&);
+
         };
 
         class OutputFormatter
@@ -39,7 +40,6 @@ namespace opf {
 
         InputFormatter& format(Patterns& patterns, InputMethod input_method);
         OutputFormatter& format_out(Patterns& patterns, OutputMethod output_method);
-
     }
 }
 

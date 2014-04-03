@@ -8,6 +8,8 @@
 #include <input/patterns.h>
 #include <input/pattern.h>
 
+#include <exception/opf_exception.h>
+
 Patterns::Patterns(string file_name) {
     load_text_file(file_name);
 }
@@ -47,7 +49,7 @@ void Patterns::load_text_file(string file_name){
         filein >> *this;
         filein.close();
     }else{
-        throw "Unable to open file " + file_name;
+        throw opf::OPFException("Unable to open file " + file_name);
 	}
 }
 
@@ -61,8 +63,6 @@ istream& operator >>(istream& input, Patterns &patterns)
 
         //cout << "Patterns( samples= " << patterns.number_of_patterns_ << ", classes= " << patterns.number_of_classes_ << ", features= " << number_of_features << ")\n";
 
-
-
         patterns.pattern.resize(patterns.number_of_patterns_);
 
         for(int i=0; i < patterns.number_of_patterns_; ++i)
@@ -72,7 +72,7 @@ istream& operator >>(istream& input, Patterns &patterns)
             input >> p;
         }
     }catch(std::exception e){
-        throw "File in invalid format.";
+        throw opf::OPFException("File in invalid format.");
     }
 
 }
