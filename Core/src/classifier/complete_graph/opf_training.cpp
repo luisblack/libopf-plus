@@ -18,7 +18,7 @@ Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototype
     vector<double>initial_costs = mst.SelectPrototypes(distance, patterns);
 
     //DUVIDA: isso muda o valor do vector?
-    PriorityQueue Q(initial_costs.begin(),initial_costs.end(),PriorityQueue::Type::MIN);
+    PriorityQueue Q(initial_costs.begin(),initial_costs.end(),PriorityQueue::min_policy);
 
 
     Model model(patterns, distance);

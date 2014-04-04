@@ -9,6 +9,8 @@
 #include <vector>
 #include <iterator>
 #include <functional>
+#include <limits>
+#include <utils/queue_element.h>
 
 using namespace std;
 
@@ -22,32 +24,13 @@ using namespace std;
 */
 
 class PriorityQueue{
+
 public:
 
-    struct QueueElement
-    {
-        enum Status {BLACK,  /**< status of an element removed from queue. */
-                     GREY,  /**< status of an element already inserted and visited. */
-                     WHITE  /**< status of an element already inserted but not visited. */
-                    };
-        double cost_;
-        int index_;
-        Status status_;
-
-        bool operator<(const QueueElement& other)
-        {
-            return cost_ < other.cost_;
-        }
-    };
+    typedef function<bool(const QueueElement&, const QueueElement&)> HeapPolicy;
 
     typedef vector<QueueElement>::iterator iterator;
     typedef vector<QueueElement>::const_iterator const_iterator;
-
-    /** An enumeration for setting removal policy of queue.
-    */
-    enum Type {MIN, /**< enum value MIN for minimum priority queue. */
-               MAX /**< enum value MAX for maximum priority queue. */
-              };
 
     /**Creates an empty instance with defined size and removal policy.
      * A queue with minimal priority is created if the policy is not denifed.
@@ -55,7 +38,7 @@ public:
      *@param type removal policy
      *@see Type
     */
-    PriorityQueue(int size, Type type = Type::MIN);
+    PriorityQueue(int size, HeapPolicy type = PriorityQueue::min_policy);
 
     /**Creates an instance using an initial vector of costs and a defined removal policy.
      * A queue with minimal priority is created if the policy is not denifed.
@@ -65,7 +48,7 @@ public:
      *@param type removal policy
      *@see Type
     */
-    template <typename Iterator> PriorityQueue(Iterator begin, Iterator end, Type polyce_type = Type::MIN){
+    template <typename Iterator> PriorityQueue(Iterator begin, Iterator end, HeapPolicy polyce_type = PriorityQueue::min_policy){
         size_ = end - begin;
         policy_type_ = polyce_type;
 
@@ -137,9 +120,22 @@ public:
     */
     double get_cost(int index)const;
 
+    static bool max_policy(const QueueElement& e1, const QueueElement& e2)
+    {
+        return e1.cost_ > e2.cost_;
+    }
+
+    static bool min_policy(const QueueElement& e1, const QueueElement& e2)
+    {
+        return e1.cost_ < e2.cost_;
+    }
+
 private:
 
-    Type policy_type_;
+    const QueueElement MAX_QUEUE = QueueElement(numeric_limits<double>::max());
+    const QueueElement MIN_QUEUE = QueueElement(numeric_limits<double>::min());
+
+    HeapPolicy policy_type_;
 
     /**
      * @brief initialize initialize data structures

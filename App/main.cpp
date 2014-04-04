@@ -22,7 +22,7 @@ void hue2(Patterns& p, ostream& o, opf::io::OutputMethod omg)
 
 int main()
 {
-    PriorityQueue Q(5, PriorityQueue::MAX);
+    PriorityQueue Q(5, PriorityQueue::max_policy);
 
 try{
 

@@ -47,7 +47,8 @@ HEADERS += \
     include/exception/lazy_programer_exception.h \
     include/utils/string_utils.h \
     include/input/csv_format.h \
-    include/exception/invalid_format_exception.h
+    include/exception/invalid_format_exception.h \
+    include/utils/queue_element.h
 
 SOURCES += \
     src/input/patterns.cpp \

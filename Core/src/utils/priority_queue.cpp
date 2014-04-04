@@ -7,18 +7,7 @@
 
 using namespace opf;
 
-
-bool max_policy(PriorityQueue::QueueElement& e1, PriorityQueue::QueueElement& e2)
-{
-    return e1.cost_ > e2.cost_;
-}
-
-bool min_policy(PriorityQueue::QueueElement& e1, PriorityQueue::QueueElement& e2)
-{
-    return e1.cost_ < e2.cost_;
-}
-
-PriorityQueue::PriorityQueue(int size, Type type): size_(size), policy_type_(type), elements(size), indexes_(size){
+PriorityQueue::PriorityQueue(int size, HeapPolicy type): size_(size), policy_type_(type), elements(size), indexes_(size){
     initialize();
 }
 
@@ -28,19 +17,12 @@ void PriorityQueue::initialize()
 
     cur_index_ = 0;
 
-    if(policy_type_==Type::MIN)
-    {
-        default_value = numeric_limits<double>::max();
-    }
-    else
-    {
-        default_value = 0;
-    }
+    default_value = policy_type_(MAX_QUEUE, MIN_QUEUE);
 
     for(int i = 0; i < size_; ++i)
     {
         elements[i].index_ = i;
-        elements[i].status_ = QueueElement::Status::WHITE;
+        elements[i].status_ = QueueElement::QueueElement::Status::WHITE;
     }
 }
 
@@ -61,7 +43,7 @@ void PriorityQueue::insert(double cost){
     cur_index_++;
 }
 
-const PriorityQueue::QueueElement& PriorityQueue::remove()
+const QueueElement& PriorityQueue::remove()
 {
     if(empty()){
         throw OPFException("Queue is empty!");
@@ -79,20 +61,15 @@ const PriorityQueue::QueueElement& PriorityQueue::remove()
 
 void PriorityQueue::sort()
 {
-    if(empty()){
-        throw OPFException("Impossible to sort an empty queue. Insert elements before to do this");
-    }
-    //TO DO: remover esse if
-    if(policy_type_ == Type::MIN)
-    {
-        make_heap(elements.begin(), elements.begin() + cur_index_, min_policy);
-        sort_heap(elements.begin(), elements.begin() + cur_index_, min_policy);
-    }
-    else
-    {
-        make_heap(elements.begin(), elements.begin()+cur_index_, max_policy);
-        sort_heap(elements.begin(), elements.begin()+cur_index_, max_policy);
-    }
+    //Peixinho: isso acaba por causar uma exception no algoritmo, talvez seja melhor simplesmente ordenar nada
+    //ao inves de levantar exception, afinal este nao eh um comportamento perigoso
+    //o que acha zé?
+//    if(empty()){
+//        throw OPFException("Impossible to sort an empty queue. Insert elements before to do this");
+//    }
+
+    make_heap(elements.begin(), elements.begin() + cur_index_, policy_type_);
+    sort_heap(elements.begin(), elements.begin() + cur_index_, policy_type_);
 
     for (int i = 0; i < cur_index_; ++i) {
         indexes_[elements[i].index_] = i;
