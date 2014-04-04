@@ -12,7 +12,6 @@ OPFTraining::OPFTraining(){
 }
 
 Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototypes mst){
-    int p;
     double tmp;
     double weight;
 
@@ -26,22 +25,22 @@ Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototype
 
     while(!Q.empty()){
         //Q.sort();
-        p = Q.remove();
-        model.push_ordered_list_of_nodes(p);
-        model[p].set_cost(Q.get_cost(p));
+        auto p = Q.remove();
+        model.push_ordered_list_of_nodes(p.index_);
+        model[p.index_].set_cost(p.cost_);
 
         //TO DO: mudar para um par com atributo index e cost
         for(PriorityQueue::const_iterator q = Q.begin(); q != Q.end(); ++q){
 
             //DUVIDA: como vamos passar a matriz de distâncias?
-            weight = distance(model[p].get_feature_vector(), model[*q].get_feature_vector());
+            weight = distance(model[p.index_].get_feature_vector(), model[q->index_].get_feature_vector());
 
-            tmp = max(weight,Q.get_cost(p));
+            tmp = max(weight,p.cost_);
 
-            if(weight < Q.get_cost(*q)){
-                Q.update(*q, weight);
-                model[*q].set_predecessor(p);
-                model[*q].set_class_value(model[p].get_class_value());
+            if(weight < q->cost_){
+                Q.update(q->index_, weight);
+                model[q->index_].set_predecessor(p.index_);
+                model[q->index_].set_class_value(model[p.index_].get_class_value());
             }
         }
     }

@@ -8,6 +8,7 @@
 
 
 using namespace std;
+using namespace opf;
 
 void hue(ostream& o, Patterns& p)
 {
@@ -21,8 +22,10 @@ void hue2(Patterns& p, ostream& o, opf::io::OutputMethod omg)
 
 int main()
 {
-    PriorityQueue Q(5);
+    PriorityQueue Q(5, PriorityQueue::MAX);
+
 try{
+
     Q.insert(0.5);
     Q.insert(0.2);
     Q.insert(0.3);
@@ -30,37 +33,32 @@ try{
     Q.insert(10);
 
     Q.sort();
-    for(int i: Q){
-        cout<<i<<" "<<Q.get_cost(i)<<endl;
+    for(auto i: Q){
+        cout<< i.index_ << " " << i.cost_ <<endl;
     }
 
     while(!Q.empty())
     {
         cout << "================" << endl;
-        int r = Q.remove();
+        auto r = Q.remove();
         Q.sort();
 
-        cout << "remove " << r << endl;
+        cout << "remove " << r.index_ << endl;
 
         for(auto i : Q)
         {
-            cout << i << "  ++++++++++++++++++ ";
-            Q.update(i, Q.get_cost(r));
-            cout << i << " " << Q.get_cost(i) << endl;
+            cout << i.index_ << "  ++++++++++++++++++ ";
+            Q.update(i.index_, r.cost_);
+            cout << i.index_ << " " << i.cost_ << " " << Q.get_cost(i.index_) << endl;
         }
 
         cout << "---------------- ";
 
-        cout<< r << " " << Q.get_cost(r) <<endl;
+        cout<< r.index_ << " " << r.cost_ <<endl;
     }
 
-}catch(const char* e){
-    cerr<< e << endl;
-}
-
-catch(string s)
-{
-    cerr << s << endl;
+}catch(OPFException e){
+    cerr<< e.what() << endl;
 }
 
 }

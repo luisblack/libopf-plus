@@ -10,7 +10,6 @@ MSTPrototypes::MSTPrototypes()
 
 vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns patterns)
 {
-    int p;
     double weight;
 
     //DUVIDA: inicializar vector com FLT_MAX
@@ -32,38 +31,38 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns 
     while(!Q.empty())
     {
         Q.sort();
-        p = Q.remove();
+        auto p = Q.remove();
 
-        if(predecessors_[p] != NIL)
+        if(predecessors_[p.index_] != NIL)
         {//selecting nodes as prototypes
 
 
-            if(patterns.pattern[p].get_class_value() != patterns.pattern[predecessors_[p]].get_class_value())
+            if(patterns.pattern[p.index_].get_class_value() != patterns.pattern[predecessors_[p.index_]].get_class_value())
             {//If p has different class value from its predecessor, then both have to be selected as prototypes.
             //Prototype nodes are assigned with initial cost equal to zero.
 
-                if(prototype_status_[p] != PROTOTYPE)
+                if(prototype_status_[p.index_] != PROTOTYPE)
                 {//checking if p is already a prototype.
-                    initial_costs_[p] = 0.0;
-                    prototype_status_[p] = PROTOTYPE;
+                    initial_costs_[p.index_] = 0.0;
+                    prototype_status_[p.index_] = PROTOTYPE;
                 }
             }
 
-            if(prototype_status_[predecessors_[p]]!= PROTOTYPE)
+            if(prototype_status_[predecessors_[p.index_]]!= PROTOTYPE)
             {//checking if the predecessor's node of p is already a prototype.
-                initial_costs_[predecessors_[p]] = 0.0;
-                prototype_status_[predecessors_[p]] = PROTOTYPE;
+                initial_costs_[predecessors_[p.index_]] = 0.0;
+                prototype_status_[predecessors_[p.index_]] = PROTOTYPE;
             }
         }//end
 
         for(PriorityQueue::const_iterator q = Q.begin(); q != Q.end(); ++q)
         {
-            weight = distance(patterns.pattern[p].get_feature_vector(), patterns.pattern[*q].get_feature_vector());
+            weight = distance(patterns.pattern[p.index_].get_feature_vector(), patterns.pattern[q->index_].get_feature_vector());
 
-            if(weight < Q.get_cost(*q))
+            if(weight < q->cost_)
             {
-                Q.update(*q,weight);
-                predecessors_[*q] = p;
+                Q.update(q->index_,weight);
+                predecessors_[q->index_] = p.index_;
             }
         }
     }

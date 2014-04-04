@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <functional>
 #include <iterator>
+#include <exception/opf_exception.h>
+
+using namespace opf;
 
 
 bool max_policy(PriorityQueue::QueueElement& e1, PriorityQueue::QueueElement& e2)
@@ -53,42 +56,42 @@ void PriorityQueue::insert(double cost){
 
     elements[cur_index_].cost_ = cost;
     elements[cur_index_].status_ = QueueElement::Status::WHITE;
+    indexes_[cur_index_] = cur_index_;
 
     cur_index_++;
 }
 
-int PriorityQueue::remove()
+const PriorityQueue::QueueElement& PriorityQueue::remove()
 {
     if(empty()){
-        throw "Queue is empty!";
+        throw OPFException("Queue is empty!");
     }
     //TODO: mudar essa joca
 
     pop_heap(elements.begin(), elements.begin()+cur_index_);
 
-    vector<QueueElement> elementzors(elements.begin(), elements.end());
     cur_index_--;
 
     elements[cur_index_].status_ = QueueElement::Status::BLACK;
 
-    return elements[cur_index_].index_;
+    return elements[cur_index_];
 }
 
 void PriorityQueue::sort()
 {
     if(empty()){
-        throw "Impossible to sort an empty queue. Insert elements before to do this";
+        throw OPFException("Impossible to sort an empty queue. Insert elements before to do this");
     }
     //TO DO: remover esse if
     if(policy_type_ == Type::MIN)
     {
-        make_heap(elements.begin(), elements.end(), min_policy);
-        sort_heap(elements.begin(), elements.end(), min_policy);
+        make_heap(elements.begin(), elements.begin() + cur_index_, min_policy);
+        sort_heap(elements.begin(), elements.begin() + cur_index_, min_policy);
     }
     else
     {
-        make_heap(elements.begin(), elements.end(), max_policy);
-        sort_heap(elements.begin(), elements.end(), max_policy);
+        make_heap(elements.begin(), elements.begin()+cur_index_, max_policy);
+        sort_heap(elements.begin(), elements.begin()+cur_index_, max_policy);
     }
 
     for (int i = 0; i < cur_index_; ++i) {
@@ -101,7 +104,7 @@ void PriorityQueue::update(int index, double cost)
     int inner_index = indexes_[index];
 
     if(elements[inner_index].status_ == QueueElement::Status::BLACK){
-        throw "Element " + to_string(index) + " is already out of queue";
+        throw OPFException("Element " + to_string(index) + " is already out of queue");
     }
     elements[inner_index].cost_ = cost;
     elements[inner_index].status_ = QueueElement::Status::GREY;
@@ -119,12 +122,12 @@ bool PriorityQueue::full() const
 
 PriorityQueue::const_iterator PriorityQueue::begin() const
 {
-    return indexes_.begin();
+    return elements.begin();
 }
 
 PriorityQueue::const_iterator PriorityQueue::end() const
 {
-    return indexes_.end();
+    return elements.begin()+cur_index_;
 }
 
 double PriorityQueue::get_cost(int index) const{

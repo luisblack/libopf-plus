@@ -24,9 +24,6 @@ using namespace std;
 class PriorityQueue{
 public:
 
-    typedef vector<int>::iterator iterator;
-    typedef vector<int>::const_iterator const_iterator;
-
     struct QueueElement
     {
         enum Status {BLACK,  /**< status of an element removed from queue. */
@@ -42,6 +39,9 @@ public:
             return cost_ < other.cost_;
         }
     };
+
+    typedef vector<QueueElement>::iterator iterator;
+    typedef vector<QueueElement>::const_iterator const_iterator;
 
     /** An enumeration for setting removal policy of queue.
     */
@@ -95,7 +95,7 @@ public:
      * If the queue is empy, then an exception rises.
      * @return insertion index of an element removed from queue.
     */
-    int remove();
+    const QueueElement& remove();
 
     /**Updates the cost of an element if it still in the priority queue.
      * If the element is out of the queue, then an exception rises.
