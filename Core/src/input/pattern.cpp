@@ -8,6 +8,8 @@
 #include <iostream>
 #include <assert.h>
 
+namespace opf{
+
 Pattern::Pattern(): feature_vector_(0){
     class_value_ = 0;
     dimension_ = 0;
@@ -77,4 +79,6 @@ istream& operator>>(istream& in, Pattern &pattern)
 //        std::cout << pattern.feature_vector_[j] << ", ";
 //    }
     return in;
+}
+
 }

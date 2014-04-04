@@ -3,7 +3,7 @@
 namespace opf
 {
 
-    namespace io
+    namespace input
     {
 
     InputFormatter::InputFormatter(Patterns &patterns, InputMethod input_function)
@@ -18,6 +18,19 @@ namespace opf
         return input;
     }
 
+    //cant be called in parallel, overwites values
+    //to call in parallel, you should instantiate different copies of InputFormatter object
+    InputFormatter& format(Patterns& patterns, InputMethod input_method)
+    {
+        static InputFormatter formatter(patterns, input_method);
+        return formatter;
+    }
+
+    }
+
+    namespace output
+    {
+
 
     OutputFormatter::OutputFormatter(Patterns &patterns, OutputMethod& output_function)
         :patterns_(patterns), output_function_(output_function)
@@ -31,13 +44,6 @@ namespace opf
         return output;
     }
 
-    //cant be called in parallel, overwites values
-    //to call in parallel, you should instantiate different copies of InputFormatter object
-    InputFormatter& format(Patterns& patterns, InputMethod input_method)
-    {
-        static InputFormatter formatter(patterns, input_method);
-        return formatter;
-    }
 
     //cant be called in parallel, overwites values
     //to call in parallel, you should instantiate different copies of OutputFormatter object

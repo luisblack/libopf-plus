@@ -15,14 +15,14 @@ void hue(ostream& o, Patterns& p)
     o << p.get_number_of_patterns() + p.get_number_of_classes();
 }
 
-void hue2(Patterns& p, ostream& o, opf::io::OutputMethod omg)
+void hue2(Patterns& p, ostream& o, opf::output::OutputMethod omg)
 {
     omg(o,p);
 }
 
 int main()
 {
-    PriorityQueue Q(5, PriorityQueue::max_policy);
+    PriorityQueue Q(5, PriorityQueue::min_policy);
 
 try{
 

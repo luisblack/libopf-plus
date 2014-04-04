@@ -25,21 +25,6 @@ namespace opf
     namespace input
     {
 
-        bool check_types(const string& line)
-        {
-            vector<string> types = split(line, DELIMITERS);
-
-            //check if all features are from double type (no strings allowed)
-            //they can be integer???
-            for (int i = 0; i < types.size() - 1; ++i) {
-                if(types[i] != DOUBLE_TYPE)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
         bool readLine(const string& line, vector<double>& feats, string &label)
         {
             vector<string> values = split(line, DELIMITERS);
@@ -73,9 +58,6 @@ namespace opf
 
             input.ignore(numeric_limits<int>::max(), NEW_LINE);//ignore the classes name line
             getline(input, line);//types line
-
-            if(check_types(line))
-                throw InvalidFormatException("The features should be double.");
 
             //read values
             int cur_line = 3;//the samples starts on line 2

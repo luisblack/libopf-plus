@@ -1,5 +1,7 @@
 #include<classifier/core/model_node.h>
 
+namespace opf{
+
 ModelNode::ModelNode()
 {}
 
@@ -19,4 +21,4 @@ void ModelNode::set_predecessor(int predecessor){
     predecessor_ = predecessor;
 }
 
-
+}

@@ -3,6 +3,9 @@
 
 #include <input/pattern.h>
 
+namespace opf
+{
+
 /**\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
 *\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
 * \version 1.0.0
@@ -34,5 +37,7 @@ private:
     double cost_;
     int predecessor_;
 };
+
+}
 
 #endif // MODEL_NODE_H

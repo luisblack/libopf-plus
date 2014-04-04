@@ -9,22 +9,24 @@ using namespace std;
 
 namespace opf {
 
-    namespace io {
-
-        typedef function<void(istream&, Patterns&)> InputMethod;
-        typedef function<void(ostream&, Patterns&)> OutputMethod;
+    namespace input {
 
         class InputFormatter
         {
+
         public:
             Patterns& patterns_;
             InputMethod input_function_;
             InputFormatter(Patterns&, InputMethod);
 
-        //    friend ostream& operator <<(ostream&, OutputFunction&);
             friend istream& operator >>(istream&, InputFormatter&);
 
         };
+
+        InputFormatter& format(Patterns& patterns, InputMethod input_method);
+    }
+
+    namespace output {
 
         class OutputFormatter
         {
@@ -34,12 +36,9 @@ namespace opf {
             OutputFormatter(Patterns&, OutputMethod&);
 
             friend ostream& operator <<(ostream&, OutputFormatter&);
-        //    friend istream& operator >>(istream&, InputFunction&);
         };
 
-
-        InputFormatter& format(Patterns& patterns, InputMethod input_method);
-        OutputFormatter& format_out(Patterns& patterns, OutputMethod output_method);
+        OutputFormatter& format(Patterns& patterns, OutputMethod output_method);
     }
 }
 

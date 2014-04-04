@@ -3,12 +3,14 @@
 #include <utils/priority_queue.h>
 #include <limits>
 
+using namespace opf;
+
 MSTPrototypes::MSTPrototypes()
 {
 
 }
 
-vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, Patterns patterns)
+vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, opf::Patterns patterns)
 {
     double weight;
 

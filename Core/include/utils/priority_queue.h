@@ -14,6 +14,9 @@
 
 using namespace std;
 
+namespace opf
+{
+
 /**Class for handling minimum and maximum priority queues.
  * The methods of this class are particularly implemented to deal with queues that OPF-based algorithms need to.
  * Usage exemple:
@@ -147,5 +150,6 @@ private:
     vector<int> indexes_;
     vector<QueueElement> elements;
 };
+}
 
 #endif /* PRIOTIRY_QUEUE_H */

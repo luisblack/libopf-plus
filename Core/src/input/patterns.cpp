@@ -10,9 +10,14 @@
 
 #include <exception/opf_exception.h>
 
-Patterns::Patterns(string file_name) {
+namespace opf
+{
+
+Patterns::Patterns(string file_name, opf::input::InputMethod) {
     load_text_file(file_name);
 }
+
+Patterns::Patterns(){}
 
 Patterns::Patterns(int number_of_patterns):number_of_patterns_(number_of_patterns), number_of_classes_(0), pattern(number_of_patterns){
 
@@ -94,5 +99,7 @@ istream& operator >>(istream& input, Patterns &patterns)
     }catch(std::exception e){
         throw opf::OPFException("File in invalid format.");
     }
+}
 
 }
+

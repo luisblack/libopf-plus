@@ -1,6 +1,9 @@
 #ifndef QUEUE_ELEMENT_H
 #define QUEUE_ELEMENT_H
 
+namespace opf
+{
+
 class QueueElement
 {
     friend class PriorityQueue;//allows PriorityQueue to access private data
@@ -24,5 +27,6 @@ class QueueElement
         return cost_ < other.cost_;
     }
 };
+}
 
 #endif // QUEUE_ELEMENT_H

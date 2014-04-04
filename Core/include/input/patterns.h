@@ -11,10 +11,23 @@
 #include<string>
 #include <fstream>
 #include<stdlib.h>
-
-#include "pattern.h"
+#include <functional>
+#include <input/pattern.h>
 
 using namespace std;
+
+namespace opf
+{
+
+class Patterns;//fix cyclic reference between Input/OutputMethod and Patterns
+
+namespace input {
+    typedef function<void(istream&, opf::Patterns&)> InputMethod;
+}
+
+namespace output {
+    typedef function<void(ostream&, opf::Patterns&)> OutputMethod;
+}
 
 /**Class for handling a set of patterns.
 *@see Pattern()
@@ -30,12 +43,12 @@ public:
     /**Constructor creating an set of patterns from a dataset file with defined extension.
     * @param file_name name of dataset file.
     */
-    Patterns(string file_name);
+    Patterns(string file_name, opf::input::InputMethod);
 
     /**Constructor creating an empty set of patterns with defined size. Except the number of patterns,
     * @param number_of_patterns number of patterns to be allocated.
     * */
-	Patterns(int number_of_patterns);
+    Patterns(int);
 
 	/**Destructor of patterns.*/
 	~Patterns();
@@ -70,6 +83,8 @@ private:
 	/*Load a txt dataset and save in a pattern object**/
     void load_text_file(string file_name);
 };
+
+}
 
 
 #endif /* INSTANCES_H_ */

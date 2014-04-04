@@ -16,6 +16,8 @@
 
 using namespace std;
 
+namespace opf{
+
 /**Class for handling a single pattern.
  *@see Patterns()
  *
@@ -136,5 +138,7 @@ private:
 	int index_;
 
 };
+
+}
 
 #endif /* PATTERN_H_ */
