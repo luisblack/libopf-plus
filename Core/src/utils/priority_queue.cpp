@@ -1,9 +1,11 @@
 #include <utils/priority_queue.h>
 #include <limits>
+#include <iostream>
 #include <algorithm>
 #include <functional>
 #include <iterator>
 #include <exception/opf_exception.h>
+#include <cassert>
 
 using namespace opf;
 
@@ -56,6 +58,11 @@ const QueueElement& PriorityQueue::remove()
 
     elements[cur_index_].status_ = QueueElement::Status::BLACK;
 
+    int i = 0;
+    for (i = 0; i < cur_index_; ++i) {
+        indexes_[elements[i].index_] = i;
+    }
+
     return elements[cur_index_];
 }
 
@@ -79,6 +86,8 @@ void PriorityQueue::sort()
 void PriorityQueue::update(int index, double cost)
 {
     int inner_index = indexes_[index];
+
+    assert(elements[inner_index].index_==index);
 
     if(elements[inner_index].status_ == QueueElement::Status::BLACK){
         throw OPFException("Element " + to_string(index) + " is already out of queue");

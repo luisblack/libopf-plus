@@ -15,7 +15,7 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, opf::Patt
     double weight;
 
     //DUVIDA: inicializar vector com FLT_MAX
-    initial_costs_ = vector<double>(patterns.get_number_of_patterns());
+    initial_costs_ = vector<double>(patterns.get_number_of_patterns(), numeric_limits<double>::max());
     predecessors_ = vector<int>(patterns.get_number_of_patterns());
     prototype_status_ = vector<bool>(patterns.get_number_of_patterns());
 
@@ -48,13 +48,14 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, opf::Patt
                     initial_costs_[p.index_] = 0.0;
                     prototype_status_[p.index_] = PROTOTYPE;
                 }
+
+                if(prototype_status_[predecessors_[p.index_]]!= PROTOTYPE)
+                {//checking if the predecessor's node of p is already a prototype.
+                    initial_costs_[predecessors_[p.index_]] = 0.0;
+                    prototype_status_[predecessors_[p.index_]] = PROTOTYPE;
+                }
             }
 
-            if(prototype_status_[predecessors_[p.index_]]!= PROTOTYPE)
-            {//checking if the predecessor's node of p is already a prototype.
-                initial_costs_[predecessors_[p.index_]] = 0.0;
-                prototype_status_[predecessors_[p.index_]] = PROTOTYPE;
-            }
         }//end
 
         for(PriorityQueue::const_iterator q = Q.begin(); q != Q.end(); ++q)

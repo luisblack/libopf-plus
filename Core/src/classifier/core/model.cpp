@@ -3,7 +3,7 @@
 
 namespace opf{
 
-    Model::Model(Patterns& patterns, Distance& distance):ordered_list_of_nodes_(patterns.get_number_of_patterns()),distance(distance){
+    Model::Model(Patterns& patterns, Distance& distance):ordered_list_of_nodes_(patterns.get_number_of_patterns()),distance(distance),node_(patterns.get_number_of_patterns()){
 
     }
 
@@ -16,7 +16,7 @@ namespace opf{
     }
 
     ModelNode& Model::pop_ordered_list_of_nodes() const{
-        ModelNode node;
+        ModelNode node = node_.back();
         return node;
     }
 

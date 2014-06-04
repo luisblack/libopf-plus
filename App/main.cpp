@@ -27,7 +27,6 @@ void ff(Distance dist){
     vector<double>v1;
     v1.push_back(1);
     v1.push_back(2);
-    cout<< dist(v1,v1);
 }
 
 int main()
@@ -42,6 +41,28 @@ int main()
     Patterns patterns;
     fs>>patterns;
     ff(Dist);
-    mst.SelectPrototypes(Dist, patterns);
+    vector<double> v = mst.SelectPrototypes(Dist, patterns);
+
+//    cout << "\n\n============\n\n";
+//    int i=0;
+//    for (double d : v) {
+//        if(d==0)
+//        {
+//            cout << i << endl;
+//        }
+//        i++;
+//    }
+
+    OPFTraining training;
+
+    Model m = training.train(Dist, patterns, mst);
+
+    cout << endl;
+    cout << m.end() - m.begin() << endl;
+
+    for (ModelNode i : m) {
+        cout << i.get_predecessor() << endl;
+    }
+
     //opf.train(distance,patterns);
 }

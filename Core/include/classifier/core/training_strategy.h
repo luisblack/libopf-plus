@@ -2,6 +2,7 @@
 #define TRAINING_STRATEGY_H_
 
 #include <classifier/core/model.h>
+#include <classifier/complete_graph/mst_prototype.h>
 
 namespace opf{
 
@@ -16,9 +17,8 @@ public:
     TrainingStrategy()
     {}
 
-    /*define input and output parameters*/
-    virtual Model* train()=0;
-    virtual ~TrainingStrategy()=0;
+    virtual Model train(opf::Distance distance, opf::Patterns patterns, MSTPrototypes& mst)=0;
+    virtual ~TrainingStrategy() {}
 };
 
 }

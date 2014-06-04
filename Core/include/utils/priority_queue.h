@@ -8,6 +8,7 @@
 #define PRIOTIRY_QUEUE_H_
 #include <vector>
 #include <iterator>
+#include <iostream>
 #include <functional>
 #include <limits>
 #include <utils/queue_element.h>
@@ -54,6 +55,7 @@ public:
     template <typename Iterator> PriorityQueue(Iterator begin, Iterator end, HeapPolicy polyce_type = PriorityQueue::min_policy){
         size_ = end - begin;
         policy_type_ = polyce_type;
+        elements.resize(size_);
 
         initialize();
 
