@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['maxpolicy',['MaxPolicy',['../classMaxPolicy.html',1,'']]],
-  ['minpolicy',['MinPolicy',['../classMinPolicy.html',1,'']]],
-  ['model',['Model',['../classModel.html',1,'']]],
-  ['mstprototypes',['MSTPrototypes',['../classMSTPrototypes.html',1,'']]]
+  ['inputformatter',['InputFormatter',['../classopf_1_1input_1_1InputFormatter.html',1,'opf::input']]],
+  ['invalidformatexception',['InvalidFormatException',['../classopf_1_1InvalidFormatException.html',1,'opf']]]
 ];

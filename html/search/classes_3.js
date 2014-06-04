@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['pattern',['Pattern',['../classPattern.html',1,'']]],
-  ['patterns',['Patterns',['../classPatterns.html',1,'']]],
-  ['priorityqueue',['PriorityQueue',['../classPriorityQueue.html',1,'']]],
-  ['prototypesstrategy',['PrototypesStrategy',['../classPrototypesStrategy.html',1,'']]]
+  ['model',['Model',['../classopf_1_1Model.html',1,'opf']]],
+  ['modelnode',['ModelNode',['../classopf_1_1ModelNode.html',1,'opf']]],
+  ['mstprototypes',['MSTPrototypes',['../classopf_1_1MSTPrototypes.html',1,'opf']]]
 ];

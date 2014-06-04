@@ -31,7 +31,7 @@ class PrototypesStrategy {
      * @see MSTPrototypes
     */
     //DUVIDA: definir vetor de custos iniciais e de status de protótipos ao inves de retorno na função.
-    virtual vector<double> SelectPrototypes(opf::Distance distance, opf::Patterns patterns) = 0;
+    virtual vector<double> SelectPrototypes(opf::Distance distance, opf::Patterns &patterns) = 0;
 	private:
 };
 

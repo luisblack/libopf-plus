@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['classifier',['Classifier',['../classClassifier.html',1,'']]],
-  ['classifyingstrategy',['ClassifyingStrategy',['../classClassifyingStrategy.html',1,'']]],
-  ['csvadapter',['CsvAdapter',['../classCsvAdapter.html',1,'']]]
+  ['classifier',['Classifier',['../classopf_1_1Classifier.html',1,'opf']]],
+  ['classifyingstrategy',['ClassifyingStrategy',['../classopf_1_1ClassifyingStrategy.html',1,'opf']]]
 ];

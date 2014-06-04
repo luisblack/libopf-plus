@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['insert',['insert',['../classPriorityQueue.html#aefe65208603d5a5f0692722087700ebd',1,'PriorityQueue']]]
+  ['hue',['hue',['../main_8cpp.html#a7aa505486e3e18b542e76323554fc66e',1,'main.cpp']]]
 ];

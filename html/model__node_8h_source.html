@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,34 +89,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">model_node.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="model__node_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MODEL_NODE_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MODEL_NODE_H</span></div>
+<a href="model__node_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MODEL_NODE_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define MODEL_NODE_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include&lt;<a class="code" href="pattern_8h.html">input/pattern.h</a>&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="pattern_8h.html">input/pattern.h</a>&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>ModelNode: <span class="keyword">public</span> <a class="code" href="classPattern.html">Pattern</a>{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> get_cost()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceopf_1_1io.html#ad6c7d85dd27ef4975b0d6703dc42b91a">opf</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classopf_1_1ModelNode.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classopf_1_1ModelNode.html">ModelNode</a> : <span class="keyword">public</span> <a class="code" href="classopf_1_1Pattern.html">Pattern</a>{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classopf_1_1ModelNode.html#a4d006eeeb79c1060d32d67fa23d901df">ModelNode</a>();</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> set_cost(<span class="keywordtype">double</span> cost);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> get_predecessor()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classopf_1_1ModelNode.html#ab6d22cb8ee71056834ce371b2641aba3">get_cost</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classopf_1_1ModelNode.html#af5b15129e2153054a1eaee8d29118704">set_cost</a>(<span class="keywordtype">double</span> cost);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> set_predecessor(<span class="keywordtype">int</span> predecessor);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">double</span> cost_;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> predecessor_;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classopf_1_1ModelNode.html#acf41a0c81de8c8fba200c26e4420edc0">get_predecessor</a>()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classopf_1_1ModelNode.html#afdaa734cd674ce2fb13e48b76232a64a">set_predecessor</a>(<span class="keywordtype">int</span> predecessor);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // MODEL_NODE_H</span></div>
-<div class="ttc" id="classPattern_html"><div class="ttname"><a href="classPattern.html">Pattern</a></div><div class="ttdoc">Class for handling a single pattern. </div><div class="ttdef"><b>Definition:</b> pattern.h:26</div></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">double</span> cost_;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> predecessor_;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif // MODEL_NODE_H</span></div>
+<div class="ttc" id="classopf_1_1Pattern_html"><div class="ttname"><a href="classopf_1_1Pattern.html">opf::Pattern</a></div><div class="ttdoc">Class for handling a single pattern. </div><div class="ttdef"><b>Definition:</b> pattern.h:30</div></div>
+<div class="ttc" id="namespaceopf_1_1io_html_ad6c7d85dd27ef4975b0d6703dc42b91a"><div class="ttname"><a href="namespaceopf_1_1io.html#ad6c7d85dd27ef4975b0d6703dc42b91a">opf::io::opf</a></div><div class="ttdeci">void opf(ostream &amp;o, Patterns &amp;p)</div><div class="ttdef"><b>Definition:</b> opf.h:10</div></div>
+<div class="ttc" id="classopf_1_1ModelNode_html_af5b15129e2153054a1eaee8d29118704"><div class="ttname"><a href="classopf_1_1ModelNode.html#af5b15129e2153054a1eaee8d29118704">opf::ModelNode::set_cost</a></div><div class="ttdeci">void set_cost(double cost)</div><div class="ttdoc">Sets the propagated cost to a node. </div><div class="ttdef"><b>Definition:</b> model_node.cpp:12</div></div>
+<div class="ttc" id="classopf_1_1ModelNode_html"><div class="ttname"><a href="classopf_1_1ModelNode.html">opf::ModelNode</a></div><div class="ttdef"><b>Definition:</b> model_node.h:13</div></div>
+<div class="ttc" id="classopf_1_1ModelNode_html_afdaa734cd674ce2fb13e48b76232a64a"><div class="ttname"><a href="classopf_1_1ModelNode.html#afdaa734cd674ce2fb13e48b76232a64a">opf::ModelNode::set_predecessor</a></div><div class="ttdeci">void set_predecessor(int predecessor)</div><div class="ttdoc">Sets a predecessor to a node. </div><div class="ttdef"><b>Definition:</b> model_node.cpp:20</div></div>
+<div class="ttc" id="classopf_1_1ModelNode_html_acf41a0c81de8c8fba200c26e4420edc0"><div class="ttname"><a href="classopf_1_1ModelNode.html#acf41a0c81de8c8fba200c26e4420edc0">opf::ModelNode::get_predecessor</a></div><div class="ttdeci">int get_predecessor() const </div><div class="ttdoc">Returns the index of predecessor node. </div><div class="ttdef"><b>Definition:</b> model_node.cpp:16</div></div>
+<div class="ttc" id="classopf_1_1ModelNode_html_ab6d22cb8ee71056834ce371b2641aba3"><div class="ttname"><a href="classopf_1_1ModelNode.html#ab6d22cb8ee71056834ce371b2641aba3">opf::ModelNode::get_cost</a></div><div class="ttdeci">double get_cost() const </div><div class="ttdoc">Returns the propagated cost of a node. </div><div class="ttdef"><b>Definition:</b> model_node.cpp:8</div></div>
+<div class="ttc" id="classopf_1_1ModelNode_html_a4d006eeeb79c1060d32d67fa23d901df"><div class="ttname"><a href="classopf_1_1ModelNode.html#a4d006eeeb79c1060d32d67fa23d901df">opf::ModelNode::ModelNode</a></div><div class="ttdeci">ModelNode()</div><div class="ttdef"><b>Definition:</b> model_node.cpp:5</div></div>
 <div class="ttc" id="pattern_8h_html"><div class="ttname"><a href="pattern_8h.html">pattern.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 28 2014 23:38:56 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 22 2014 18:54:40 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,4 +1,11 @@
 var searchData=
 [
-  ['remove',['remove',['../classPriorityQueue.html#a02b033eeb3cd8a760496a1c269ec4855',1,'PriorityQueue']]]
+  ['operator_3c',['operator&lt;',['../classopf_1_1QueueElement.html#a8fee8d4744167ef6e15499e5f0ac4ed8',1,'opf::QueueElement']]],
+  ['operator_3c_3c',['operator&lt;&lt;',['../namespaceopf_1_1output.html#a5afac33deb9178710f1d99edc3219f3e',1,'opf::output::operator&lt;&lt;()'],['../namespaceopf.html#acf5fd15fc266cd630fe92b43dcdf8d21',1,'opf::operator&lt;&lt;(ostream &amp;output, const Pattern &amp;pattern)'],['../namespaceopf.html#a45f91c273b7cc06225afea23e5a9f57a',1,'opf::operator&lt;&lt;(ostream &amp;output, Patterns &amp;patterns)']]],
+  ['operator_3e_3e',['operator&gt;&gt;',['../classopf_1_1Model.html#a70ae138707fb661793dafeb7fea173d5',1,'opf::Model::operator&gt;&gt;()'],['../file__formats_8cpp.html#a2a2e2f128a329757f385bbd6d0d3f0b4',1,'operator&gt;&gt;():&#160;file_formats.cpp'],['../namespaceopf_1_1input.html#a11be33303d8bb09d3dcaed0c52d528c5',1,'opf::input::operator&gt;&gt;()'],['../namespaceopf.html#a982afea1c95e9fb04a185a92c32365ac',1,'opf::operator&gt;&gt;(istream &amp;in, Pattern &amp;pattern)'],['../namespaceopf.html#a9110e212f5421faed711b796e70154ae',1,'opf::operator&gt;&gt;(istream &amp;input, Patterns &amp;patterns)']]],
+  ['operator_5b_5d',['operator[]',['../classopf_1_1Model.html#a8f66a4430fcd566ed596dec9adab8b6b',1,'opf::Model::operator[]()'],['../classopf_1_1Pattern.html#a1addbb601d499ef8526821c70c93d112',1,'opf::Pattern::operator[]()'],['../classopf_1_1Patterns.html#abe9885281aeac27afb49e07ddb23b8d7',1,'opf::Patterns::operator[]()']]],
+  ['opf',['OPF',['../classopf_1_1OPF.html#a6fb4517148f82fbcd69db0760e589a4b',1,'opf::OPF::OPF()'],['../namespaceopf_1_1io.html#ad6c7d85dd27ef4975b0d6703dc42b91a',1,'opf::io::opf(ostream &amp;o, Patterns &amp;p)'],['../namespaceopf_1_1io.html#af3331f6b7f02a9959115d2c65faf24b4',1,'opf::io::opf(istream &amp;i, Patterns &amp;p)']]],
+  ['opfexception',['OPFException',['../classopf_1_1OPFException.html#a587f64396d7e862c933204afd025d7e4',1,'opf::OPFException::OPFException()'],['../classopf_1_1OPFException.html#aa79aaef78476fcbff3d46e150ad7c7c8',1,'opf::OPFException::OPFException(const string &amp;message)']]],
+  ['opftraining',['OPFTraining',['../classopf_1_1OPFTraining.html#a07d984e1e6a92c00685ed28697a69151',1,'opf::OPFTraining']]],
+  ['outputformatter',['OutputFormatter',['../classopf_1_1output_1_1OutputFormatter.html#a7d1c91caa6b2106b3873d606bed95ecf',1,'opf::output::OutputFormatter']]]
 ];

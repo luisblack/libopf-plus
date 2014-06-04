@@ -21,7 +21,7 @@ public:
      * @param patterns a set of single pattern.
      * @returns vector a vector of size of patterns with zero value is a pattern is a prototype and infinity otherwise.
      * */
-    virtual vector<double> SelectPrototypes(Distance distance, Patterns patterns);
+    virtual vector<double> SelectPrototypes(Distance distance, Patterns &patterns);
 private:
     const static int NIL = -1;
     const static bool PROTOTYPE = true;

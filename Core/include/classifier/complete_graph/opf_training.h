@@ -23,6 +23,7 @@ class OPFTraining: public TrainingStrategy{
 public:
 	OPFTraining();
     virtual Model train(opf::Distance distance, opf::Patterns patterns, MSTPrototypes& mst);
+    virtual ~OPFTraining();
 private:
 };
 

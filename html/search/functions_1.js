@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['classifier',['Classifier',['../classClassifier.html#ab386c7969106735b11062f948eb16708',1,'Classifier']]],
-  ['classify',['classify',['../classClassifier.html#a955fe3a8a866ae5ad0d322077967cbfe',1,'Classifier::classify(Pattern pattern)'],['../classClassifier.html#a3e1ed6cb802dd01c2f9485daf2d1e023',1,'Classifier::classify(Patterns patterns)'],['../classClassifyingStrategy.html#a0b0e637921ba52ff52069824e96cab7b',1,'ClassifyingStrategy::classify()']]],
-  ['classifyingstrategy',['ClassifyingStrategy',['../classClassifyingStrategy.html#a8dd920216306e6df413a9e5e0b34d93b',1,'ClassifyingStrategy']]],
-  ['csvadapter',['CsvAdapter',['../classCsvAdapter.html#a64b1bef0e0fdcba81f2c0d94b38ab0a0',1,'CsvAdapter']]]
+  ['classifier',['Classifier',['../classopf_1_1Classifier.html#ab8632f1b6ffd9d93b4f1c193a317d939',1,'opf::Classifier']]],
+  ['classify',['classify',['../classopf_1_1Classifier.html#abba83ccf1270633d61ffe6e2a96e64c3',1,'opf::Classifier::classify(Pattern pattern)'],['../classopf_1_1Classifier.html#a0bb7af8b83c92a5b50306af16c8cea2a',1,'opf::Classifier::classify(Patterns patterns)'],['../classopf_1_1ClassifyingStrategy.html#a7e41e0eca08359eb71653f42ab127241',1,'opf::ClassifyingStrategy::classify()']]],
+  ['classifyingstrategy',['ClassifyingStrategy',['../classopf_1_1ClassifyingStrategy.html#a7cfc9f54faae374a280c345394838376',1,'opf::ClassifyingStrategy']]],
+  ['csv',['csv',['../namespaceopf_1_1output.html#a55271d989a0833c523b3738adc5c537b',1,'opf::output::csv()'],['../namespaceopf_1_1input.html#a8cc3ade1a4bf99df0a15482530008bf6',1,'opf::input::csv()']]]
 ];

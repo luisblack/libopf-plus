@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['opf',['OPF',['../classOPF.html',1,'']]],
-  ['opfclassifying',['OPFClassifying',['../classOPFClassifying.html',1,'']]],
-  ['opftraining',['OPFTraining',['../classOPFTraining.html',1,'']]]
+  ['lazyprogramerexception',['LazyProgramerException',['../classopf_1_1LazyProgramerException.html',1,'opf']]]
 ];

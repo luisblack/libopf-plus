@@ -3,26 +3,16 @@
 }
 {\ttfamily \#include $<$input/pattern.\+h$>$}\\*
 {\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceopf}{opf}
+\begin{DoxyCompactList}\small\item\em Class for handling the training model informations. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-istream \& \hyperlink{pattern_8cpp_a27ae4d6c06ab6d17ff9392ba3f5a5532}{operator$>$$>$} (istream \&in, \hyperlink{classPattern}{Pattern} pattern)
+ostream \& \hyperlink{namespaceopf_acf5fd15fc266cd630fe92b43dcdf8d21}{opf\+::operator$<$$<$} (ostream \&output, const Pattern \&pattern)
+\item 
+istream \& \hyperlink{namespaceopf_a982afea1c95e9fb04a185a92c32365ac}{opf\+::operator$>$$>$} (istream \&in, Pattern \&pattern)
 \end{DoxyCompactItemize}
-
-
-\subsection{Function Documentation}
-\hypertarget{pattern_8cpp_a27ae4d6c06ab6d17ff9392ba3f5a5532}{\index{pattern.\+cpp@{pattern.\+cpp}!operator$>$$>$@{operator$>$$>$}}
-\index{operator$>$$>$@{operator$>$$>$}!pattern.\+cpp@{pattern.\+cpp}}
-\subsubsection[{operator$>$$>$}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
-\begin{DoxyParamCaption}
-\item[{istream \&}]{in, }
-\item[{{\bf Pattern}}]{pattern}
-\end{DoxyParamCaption}
-)}}\label{pattern_8cpp_a27ae4d6c06ab6d17ff9392ba3f5a5532}
-
-\begin{DoxyParams}{Parameters}
-{\em in} & input stream. \\
-\hline
-{\em pattern} & itself. \\
-\hline
-\end{DoxyParams}

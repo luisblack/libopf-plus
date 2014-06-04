@@ -13,10 +13,12 @@ namespace opf{
 class TrainingStrategy
 {
 public:
-    TrainingStrategy();
+    TrainingStrategy()
+    {}
 
     /*define input and output parameters*/
-    virtual Model* train();
+    virtual Model* train()=0;
+    virtual ~TrainingStrategy()=0;
 };
 
 }

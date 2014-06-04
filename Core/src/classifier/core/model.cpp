@@ -28,4 +28,7 @@ namespace opf{
         return node_.end();
 
     }
+
+    void Model::load_model_from_file(string file_name)
+    {}
 }

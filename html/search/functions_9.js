@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['pattern',['Pattern',['../classPattern.html#a95f42b0f1717d9e6c2d831e87d27f83c',1,'Pattern::Pattern()'],['../classPattern.html#a3cf22799a811394bab7fd167727a16af',1,'Pattern::Pattern(int class_value, Iterator begin, Iterator end, int index)'],['../classPattern.html#a87dcb126d751b5520a710dbf3e4eb7c0',1,'Pattern::Pattern(Iterator begin, Iterator end, int index)'],['../classPattern.html#a3a1bf7ddd196fac02018c9cde4c421cf',1,'Pattern::Pattern(int dimension)']]],
-  ['patterns',['Patterns',['../classPatterns.html#aa6241d95e039c41cc4f4744d2285ebd9',1,'Patterns::Patterns()'],['../classPatterns.html#a91b41ddbe7a24c86697f5e19b93e0f75',1,'Patterns::Patterns(string file_name)'],['../classPatterns.html#ab847348dfaab14ef8a5f9dbc1a936039',1,'Patterns::Patterns(int number_of_patterns)']]],
-  ['pop_5fordered_5flist_5fof_5fnodes',['pop_ordered_list_of_nodes',['../classModel.html#a7bae5e69e7ca1d5bb8a04c74148c82f0',1,'Model']]],
-  ['predict',['Predict',['../classOPF.html#a694477ddd6df7bebbd1856cdf7bf3ce1',1,'OPF']]],
-  ['priorityqueue',['PriorityQueue',['../classPriorityQueue.html#ab2db14880bcb6c0b3717c574e0c34557',1,'PriorityQueue::PriorityQueue(int size, Type type=Type::MIN)'],['../classPriorityQueue.html#a9754b8c426ea9e5085b3662e1191b5b5',1,'PriorityQueue::PriorityQueue(Iterator begin, Iterator end, Type polyce_type=Type::MIN)']]],
-  ['push_5fordered_5flist_5fof_5fnodes',['push_ordered_list_of_nodes',['../classModel.html#a6f2fa936b9d754d971f2972716b41656',1,'Model']]]
+  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['max_5fpolicy',['max_policy',['../classopf_1_1PriorityQueue.html#a1b78e4f7ed4ccc68586dad1b5d186595',1,'opf::PriorityQueue']]],
+  ['min_5fpolicy',['min_policy',['../classopf_1_1PriorityQueue.html#aa445668dd62e1302e2a28809b2984681',1,'opf::PriorityQueue']]],
+  ['model',['Model',['../classopf_1_1Model.html#a7aa768bf835ea917c4ce321a93c233f0',1,'opf::Model::Model(Patterns &amp;pattern, Distance &amp;distance)'],['../classopf_1_1Model.html#ae4f6408579c5df0eb6d83682265c1635',1,'opf::Model::Model(const string &amp;file_name)']]],
+  ['modelnode',['ModelNode',['../classopf_1_1ModelNode.html#a4d006eeeb79c1060d32d67fa23d901df',1,'opf::ModelNode']]],
+  ['mstprototypes',['MSTPrototypes',['../classopf_1_1MSTPrototypes.html#a62fedec88ad4ab417181fbc672f72410',1,'opf::MSTPrototypes']]]
 ];

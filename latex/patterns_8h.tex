@@ -2,12 +2,30 @@
 \label{patterns_8h}\index{Core/include/input/patterns.\+h@{Core/include/input/patterns.\+h}}
 }
 {\ttfamily \#include $<$string$>$}\\*
-{\ttfamily \#include $<$iostream$>$}\\*
 {\ttfamily \#include $<$fstream$>$}\\*
 {\ttfamily \#include $<$stdlib.\+h$>$}\\*
-{\ttfamily \#include \char`\"{}pattern.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$input/pattern.\+h$>$}\\*
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-class \hyperlink{classPatterns}{Patterns}
+class \hyperlink{classopf_1_1Patterns}{opf\+::\+Patterns}
 \begin{DoxyCompactList}\small\item\em Class for handling a set of patterns. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceopf}{opf}
+\begin{DoxyCompactList}\small\item\em Class for handling the training model informations. \end{DoxyCompactList}\item 
+ \hyperlink{namespaceopf_1_1input}{opf\+::input}
+\item 
+ \hyperlink{namespaceopf_1_1output}{opf\+::output}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef function$<$ void(istream \\*
+\&, \hyperlink{classopf_1_1Patterns}{opf\+::\+Patterns} \&)$>$ \hyperlink{namespaceopf_1_1input_a9083cbcc4b164d4c306b3992fbdbf347}{opf\+::input\+::\+Input\+Method}
+\item 
+typedef function$<$ void(ostream \\*
+\&, \hyperlink{classopf_1_1Patterns}{opf\+::\+Patterns} \&)$>$ \hyperlink{namespaceopf_1_1output_ad44bcc3249086de45bc82fa30d64c3f9}{opf\+::output\+::\+Output\+Method}
+\end{DoxyCompactItemize}

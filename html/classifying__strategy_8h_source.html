@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -96,27 +96,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="model_8h.html">classifier/core/model.h</a>&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classClassifyingStrategy.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classClassifyingStrategy.html">ClassifyingStrategy</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classClassifyingStrategy.html#a8dd920216306e6df413a9e5e0b34d93b">ClassifyingStrategy</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">virtual</span> vector&lt;double&gt; <a class="code" href="classClassifyingStrategy.html#a0b0e637921ba52ff52069824e96cab7b">classify</a>(<a class="code" href="classModel.html">Model</a> model, <a class="code" href="classPatterns.html">Patterns</a> test);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#endif // CLASSIFIERSTRATEGY_H</span></div>
-<div class="ttc" id="classClassifyingStrategy_html_a0b0e637921ba52ff52069824e96cab7b"><div class="ttname"><a href="classClassifyingStrategy.html#a0b0e637921ba52ff52069824e96cab7b">ClassifyingStrategy::classify</a></div><div class="ttdeci">virtual vector&lt; double &gt; classify(Model model, Patterns test)</div><div class="ttdoc">Returns a vector with predicted class values for all pattern in the set test. </div></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceopf_1_1io.html#ad6c7d85dd27ef4975b0d6703dc42b91a">opf</a>{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classopf_1_1ClassifyingStrategy.html">   19</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classopf_1_1ClassifyingStrategy.html">ClassifyingStrategy</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="classopf_1_1ClassifyingStrategy.html#a7cfc9f54faae374a280c345394838376">ClassifyingStrategy</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">virtual</span> vector&lt;double&gt; <a class="code" href="classopf_1_1ClassifyingStrategy.html#a7e41e0eca08359eb71653f42ab127241">classify</a>(<a class="code" href="classopf_1_1Model.html">Model</a> model, <a class="code" href="classopf_1_1Patterns.html">Patterns</a> test);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    };</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif // CLASSIFIERSTRATEGY_H</span></div>
+<div class="ttc" id="classopf_1_1Model_html"><div class="ttname"><a href="classopf_1_1Model.html">opf::Model</a></div><div class="ttdef"><b>Definition:</b> model.h:25</div></div>
+<div class="ttc" id="namespaceopf_1_1io_html_ad6c7d85dd27ef4975b0d6703dc42b91a"><div class="ttname"><a href="namespaceopf_1_1io.html#ad6c7d85dd27ef4975b0d6703dc42b91a">opf::io::opf</a></div><div class="ttdeci">void opf(ostream &amp;o, Patterns &amp;p)</div><div class="ttdef"><b>Definition:</b> opf.h:10</div></div>
 <div class="ttc" id="model_8h_html"><div class="ttname"><a href="model_8h.html">model.h</a></div></div>
-<div class="ttc" id="classModel_html"><div class="ttname"><a href="classModel.html">Model</a></div><div class="ttdoc">Class for handling the training model informations. </div><div class="ttdef"><b>Definition:</b> model.h:24</div></div>
-<div class="ttc" id="classPatterns_html"><div class="ttname"><a href="classPatterns.html">Patterns</a></div><div class="ttdoc">Class for handling a set of patterns. </div><div class="ttdef"><b>Definition:</b> patterns.h:23</div></div>
-<div class="ttc" id="classClassifyingStrategy_html_a8dd920216306e6df413a9e5e0b34d93b"><div class="ttname"><a href="classClassifyingStrategy.html#a8dd920216306e6df413a9e5e0b34d93b">ClassifyingStrategy::ClassifyingStrategy</a></div><div class="ttdeci">ClassifyingStrategy()</div></div>
-<div class="ttc" id="classClassifyingStrategy_html"><div class="ttname"><a href="classClassifyingStrategy.html">ClassifyingStrategy</a></div><div class="ttdoc">Interface for classifying strategies. </div><div class="ttdef"><b>Definition:</b> classifying_strategy.h:17</div></div>
+<div class="ttc" id="classopf_1_1ClassifyingStrategy_html_a7e41e0eca08359eb71653f42ab127241"><div class="ttname"><a href="classopf_1_1ClassifyingStrategy.html#a7e41e0eca08359eb71653f42ab127241">opf::ClassifyingStrategy::classify</a></div><div class="ttdeci">virtual vector&lt; double &gt; classify(Model model, Patterns test)</div><div class="ttdoc">Returns a vector with predicted class values for all pattern in the set test. </div></div>
+<div class="ttc" id="classopf_1_1ClassifyingStrategy_html_a7cfc9f54faae374a280c345394838376"><div class="ttname"><a href="classopf_1_1ClassifyingStrategy.html#a7cfc9f54faae374a280c345394838376">opf::ClassifyingStrategy::ClassifyingStrategy</a></div><div class="ttdeci">ClassifyingStrategy()</div></div>
+<div class="ttc" id="classopf_1_1ClassifyingStrategy_html"><div class="ttname"><a href="classopf_1_1ClassifyingStrategy.html">opf::ClassifyingStrategy</a></div><div class="ttdoc">Interface for classifying strategies. </div><div class="ttdef"><b>Definition:</b> classifying_strategy.h:19</div></div>
+<div class="ttc" id="classopf_1_1Patterns_html"><div class="ttname"><a href="classopf_1_1Patterns.html">opf::Patterns</a></div><div class="ttdoc">Class for handling a set of patterns. </div><div class="ttdef"><b>Definition:</b> patterns.h:35</div></div>
 <div class="ttc" id="patterns_8h_html"><div class="ttname"><a href="patterns_8h.html">patterns.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 3 2014 12:33:59 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 22 2014 18:54:40 for LibOPF::Plus by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,11 +1,15 @@
 var searchData=
 [
-  ['classifier',['Classifier',['../classClassifier.html',1,'Classifier'],['../classClassifier.html#ab386c7969106735b11062f948eb16708',1,'Classifier::Classifier()']]],
+  ['classifier',['Classifier',['../classopf_1_1Classifier.html',1,'opf']]],
+  ['classifier',['Classifier',['../classopf_1_1Classifier.html#ab8632f1b6ffd9d93b4f1c193a317d939',1,'opf::Classifier']]],
   ['classifier_2eh',['classifier.h',['../classifier_8h.html',1,'']]],
-  ['classify',['classify',['../classClassifier.html#a955fe3a8a866ae5ad0d322077967cbfe',1,'Classifier::classify(Pattern pattern)'],['../classClassifier.html#a3e1ed6cb802dd01c2f9485daf2d1e023',1,'Classifier::classify(Patterns patterns)'],['../classClassifyingStrategy.html#a0b0e637921ba52ff52069824e96cab7b',1,'ClassifyingStrategy::classify()']]],
+  ['classify',['classify',['../classopf_1_1Classifier.html#abba83ccf1270633d61ffe6e2a96e64c3',1,'opf::Classifier::classify(Pattern pattern)'],['../classopf_1_1Classifier.html#a0bb7af8b83c92a5b50306af16c8cea2a',1,'opf::Classifier::classify(Patterns patterns)'],['../classopf_1_1ClassifyingStrategy.html#a7e41e0eca08359eb71653f42ab127241',1,'opf::ClassifyingStrategy::classify()']]],
   ['classifying_5fstrategy_2eh',['classifying_strategy.h',['../classifying__strategy_8h.html',1,'']]],
-  ['classifyingstrategy',['ClassifyingStrategy',['../classClassifyingStrategy.html',1,'ClassifyingStrategy'],['../classClassifyingStrategy.html#a8dd920216306e6df413a9e5e0b34d93b',1,'ClassifyingStrategy::ClassifyingStrategy()']]],
-  ['const_5fiterator',['const_iterator',['../classModel.html#a578f203623cdda48b577f10a8d6e12d4',1,'Model']]],
-  ['cost_5f',['cost_',['../classMaxPolicy.html#a043674b1b1737b2aaf7e29985693142a',1,'MaxPolicy::cost_()'],['../classMinPolicy.html#abc47d408ac95a36297971f47513db31b',1,'MinPolicy::cost_()']]],
-  ['csvadapter',['CsvAdapter',['../classCsvAdapter.html',1,'CsvAdapter'],['../classCsvAdapter.html#a64b1bef0e0fdcba81f2c0d94b38ab0a0',1,'CsvAdapter::CsvAdapter()']]]
+  ['classifyingstrategy',['ClassifyingStrategy',['../classopf_1_1ClassifyingStrategy.html#a7cfc9f54faae374a280c345394838376',1,'opf::ClassifyingStrategy']]],
+  ['classifyingstrategy',['ClassifyingStrategy',['../classopf_1_1ClassifyingStrategy.html',1,'opf']]],
+  ['const_5fiterator',['const_iterator',['../classopf_1_1Model.html#a7c16f7473c21a56550fc5710607e8f8e',1,'opf::Model::const_iterator()'],['../classopf_1_1PriorityQueue.html#aed8babcaa94b55b23ad5e4089e8b91a4',1,'opf::PriorityQueue::const_iterator()']]],
+  ['cost_5f',['cost_',['../classopf_1_1QueueElement.html#a24361c7a7c02e64b13825d10806ca874',1,'opf::QueueElement']]],
+  ['csv',['csv',['../namespaceopf_1_1output.html#a55271d989a0833c523b3738adc5c537b',1,'opf::output::csv()'],['../namespaceopf_1_1input.html#a8cc3ade1a4bf99df0a15482530008bf6',1,'opf::input::csv()']]],
+  ['csv_5fformat_2ecpp',['csv_format.cpp',['../csv__format_8cpp.html',1,'']]],
+  ['csv_5fformat_2eh',['csv_format.h',['../csv__format_8h.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['training_5fpatterns_5f',['training_patterns_',['../classModel.html#afb80c281c5f29f3659195c34693ac644',1,'Model']]]
+  ['new_5fline',['NEW_LINE',['../namespaceopf.html#a2b1f54bbedca5f63be8b631958338bb3',1,'opf']]]
 ];

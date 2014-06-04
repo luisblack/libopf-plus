@@ -20,7 +20,9 @@ namespace opf{
 
 class Trainer {
 public:
+    //TO DO: mudar parametros para funcao de train
     Trainer(opf::Distance distance, PrototypesStrategy &prototypes, TrainingStrategy &trainer, Patterns &patterns);
+    //TO DO: mudar nome da funcao
     virtual Model train() = 0;
 
 private:

@@ -15,50 +15,33 @@ void hue(ostream& o, Patterns& p)
     o << p.get_number_of_patterns() + p.get_number_of_classes();
 }
 
-void hue2(Patterns& p, ostream& o, opf::output::OutputMethod omg)
-{
-    omg(o,p);
+double euclidean_distance(const vector<double> v1, const vector<double> v2){
+    double dist=0;
+    for(int i=0; i < v1.size();i++){
+        dist+=(v1[i]-v2[i])*(v1[i]-v2[i]);
+    }
+    return dist;
+}
+
+void ff(Distance dist){
+    vector<double>v1;
+    v1.push_back(1);
+    v1.push_back(2);
+    cout<< dist(v1,v1);
 }
 
 int main()
 {
-    PriorityQueue Q(5, PriorityQueue::min_policy);
+//    OPFTraining opf;
+    MSTPrototypes mst;
+    Distance Dist = euclidean_distance;
 
-try{
+    fstream fs;
+    fs.open("boat.txt");
 
-    Q.insert(0.5);
-    Q.insert(0.2);
-    Q.insert(0.3);
-    Q.insert(0.01);
-    Q.insert(10);
-
-    Q.sort();
-    for(auto i: Q){
-        cout<< i.index_ << " " << i.cost_ <<endl;
-    }
-
-    while(!Q.empty())
-    {
-        cout << "================" << endl;
-        auto r = Q.remove();
-        Q.sort();
-
-        cout << "remove " << r.index_ << endl;
-
-        for(auto i : Q)
-        {
-            cout << i.index_ << "  ++++++++++++++++++ ";
-            Q.update(i.index_, r.cost_);
-            cout << i.index_ << " " << i.cost_ << " " << Q.get_cost(i.index_) << endl;
-        }
-
-        cout << "---------------- ";
-
-        cout<< r.index_ << " " << r.cost_ <<endl;
-    }
-
-}catch(OPFException e){
-    cerr<< e.what() << endl;
-}
-
+    Patterns patterns;
+    fs>>patterns;
+    ff(Dist);
+    mst.SelectPrototypes(Dist, patterns);
+    //opf.train(distance,patterns);
 }

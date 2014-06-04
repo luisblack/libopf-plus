@@ -11,6 +11,11 @@ OPFTraining::OPFTraining(){
 
 }
 
+OPFTraining::~OPFTraining()
+{
+
+}
+
 Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototypes& mst){
     double tmp;
     double weight;

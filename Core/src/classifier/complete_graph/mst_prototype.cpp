@@ -10,7 +10,7 @@ MSTPrototypes::MSTPrototypes()
 
 }
 
-vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, opf::Patterns patterns)
+vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, opf::Patterns &patterns)
 {
     double weight;
 
@@ -21,7 +21,7 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, opf::Patt
 
     PriorityQueue Q(patterns.get_number_of_patterns());
 
-    for(int i=0; i < patterns.get_number_of_classes(); i++)
+    for(int i=0; i < patterns.get_number_of_patterns(); i++)
     {
         Q.insert(numeric_limits<double>::max());
     }

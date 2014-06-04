@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['pattern_2ecpp',['pattern.cpp',['../pattern_8cpp.html',1,'']]],
-  ['pattern_2eh',['pattern.h',['../pattern_8h.html',1,'']]],
-  ['patterns_2ecpp',['patterns.cpp',['../patterns_8cpp.html',1,'']]],
-  ['patterns_2eh',['patterns.h',['../patterns_8h.html',1,'']]],
-  ['priority_5fqueue_2ecpp',['priority_queue.cpp',['../priority__queue_8cpp.html',1,'']]],
-  ['priority_5fqueue_2eh',['priority_queue.h',['../priority__queue_8h.html',1,'']]],
-  ['prototypes_5fstrategy_2eh',['prototypes_strategy.h',['../prototypes__strategy_8h.html',1,'']]]
+  ['opf_2ecpp',['opf.cpp',['../opf_8cpp.html',1,'']]],
+  ['opf_2eh',['opf.h',['../classifier_2core_2opf_8h.html',1,'']]],
+  ['opf_2eh',['opf.h',['../input_2opf_8h.html',1,'']]],
+  ['opf_5fclassifying_2ecpp',['opf_classifying.cpp',['../opf__classifying_8cpp.html',1,'']]],
+  ['opf_5fclassifying_2eh',['opf_classifying.h',['../opf__classifying_8h.html',1,'']]],
+  ['opf_5fexception_2ecpp',['opf_exception.cpp',['../opf__exception_8cpp.html',1,'']]],
+  ['opf_5fexception_2eh',['opf_exception.h',['../opf__exception_8h.html',1,'']]],
+  ['opf_5ftraining_2ecpp',['opf_training.cpp',['../opf__training_8cpp.html',1,'']]],
+  ['opf_5ftraining_2eh',['opf_training.h',['../opf__training_8h.html',1,'']]]
 ];

@@ -19,6 +19,12 @@
 *~
 *.bak
 
+#html	
+html/
+
+#latex
+latex/
+
 #bin
 bin/
 

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['begin',['begin',['../classModel.html#a035c58a162aad06dad63a2be8976e17c',1,'Model::begin()'],['../classPriorityQueue.html#a06ca073a126211e579a87445edf5a24f',1,'PriorityQueue::begin()']]],
-  ['buildmodel',['BuildModel',['../classOPF.html#a3008876cfbc3879986126308ca23cc1e',1,'OPF']]]
+  ['begin',['begin',['../classopf_1_1Model.html#a654022870213fca958798faa72f344ec',1,'opf::Model::begin()'],['../classopf_1_1PriorityQueue.html#ad8d11edf2c99d7aaca3de4f4ae32542e',1,'opf::PriorityQueue::begin()']]],
+  ['buildmodel',['BuildModel',['../classopf_1_1OPF.html#a9c3f0887dcf9a2433525efa9bb551dbc',1,'opf::OPF']]]
 ];

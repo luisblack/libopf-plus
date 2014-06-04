@@ -93,7 +93,7 @@ istream& operator >>(istream& input, Patterns &patterns)
         for(int i=0; i < patterns.number_of_patterns_; ++i)
         {
             Pattern&p = patterns.pattern[i];
-            p.set_dimension(patterns.number_of_patterns_);
+            p.set_dimension(number_of_features);
             input >> p;
         }
     }catch(std::exception e){

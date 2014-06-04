@@ -8,6 +8,7 @@
 #include <utils/priority_queue.h>
 #include <exception/opf_exception.h>
 #include <exception/lazy_programer_exception.h>
+#include <classifier/complete_graph/opf_training.h>
 
 //TO DO: adicionar outros includes aqui
 

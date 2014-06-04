@@ -65,4 +65,5 @@ SOURCES += \
     src/input/io_formatter.cpp \
     src/input/csv_format.cpp \
     src/input/string_utils.cpp \
-    src/exception/invalid_format_exception.cpp
+    src/exception/invalid_format_exception.cpp \
+    src/classifier/core/trainer.cpp
