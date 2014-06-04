@@ -56,13 +56,14 @@ public:
         size_ = end - begin;
         policy_type_ = polyce_type;
         elements.resize(size_);
+        indexes_.resize(size_);
 
         initialize();
 
-        int idx = 0;
+        cur_index_ = 0;
         for(auto it = begin; it!=end; ++it)
         {
-            elements[idx].cost_ = *it;
+            elements[cur_index_++].cost_ = *it;
         }
     }
 

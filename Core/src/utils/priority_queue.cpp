@@ -25,6 +25,7 @@ void PriorityQueue::initialize()
     {
         elements[i].index_ = i;
         elements[i].status_ = QueueElement::QueueElement::Status::WHITE;
+        indexes_[i] = i;
     }
 }
 

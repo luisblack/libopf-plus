@@ -24,6 +24,7 @@ namespace opf {
 
     class Model{
     public:
+        int cur_idx_;
         typedef vector<ModelNode>::iterator iterator;
         typedef vector<ModelNode>::const_iterator const_iterator;
         Distance distance;

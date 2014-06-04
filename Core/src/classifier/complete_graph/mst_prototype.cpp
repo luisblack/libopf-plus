@@ -60,12 +60,15 @@ vector<double> MSTPrototypes::SelectPrototypes(opf::Distance distance, opf::Patt
 
         for(PriorityQueue::const_iterator q = Q.begin(); q != Q.end(); ++q)
         {
-            weight = distance(patterns.pattern[p.index_].get_feature_vector(), patterns.pattern[q->index_].get_feature_vector());
-
-            if(weight < q->cost_)
+            if(q->cost_>p.cost_)
             {
-                Q.update(q->index_,weight);
-                predecessors_[q->index_] = p.index_;
+                weight = distance(patterns.pattern[p.index_].get_feature_vector(), patterns.pattern[q->index_].get_feature_vector());
+
+                if(weight < q->cost_)
+                {
+                    Q.update(q->index_,weight);
+                    predecessors_[q->index_] = p.index_;
+                }
             }
         }
     }

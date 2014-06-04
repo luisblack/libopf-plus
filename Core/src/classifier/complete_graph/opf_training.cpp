@@ -2,6 +2,7 @@
 #include <classifier/complete_graph/mst_prototype.h>
 #include <classifier/core/model.h>
 #include <libopf-plus.h>
+#include <cassert>
 
 namespace opf {
 
@@ -22,17 +23,37 @@ Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototype
 
     vector<double>initial_costs = mst.SelectPrototypes(distance, patterns);
 
+    for (double d : initial_costs) {
+        cout << "Initial: " << d << endl;
+    }
+
     //DUVIDA: isso muda o valor do vector?
-    PriorityQueue Q(initial_costs.begin(),initial_costs.end(),PriorityQueue::min_policy);
+    PriorityQueue Q(initial_costs.size(), PriorityQueue::min_policy);
+
+    for (double cost : initial_costs) {
+        Q.insert(cost);
+    }
 
 
     Model model(patterns, distance);
 
+    cout << "Start Train" << endl;
+
+    cout << Q.empty() << endl;
+
     while(!Q.empty()){
-        //Q.sort();
+
+        Q.sort();
         auto p = Q.remove();
+
+        cout << p.cost_ << endl;
+
         model.push_ordered_list_of_nodes(p.index_);
         model[p.index_].set_cost(p.cost_);
+
+        cout << p.index_ << " --> " << model[p.index_].get_cost() << endl;
+
+        assert(p.cost_ == model[p.index_].get_cost());
 
         //TO DO: mudar para um par com atributo index e cost
         for(PriorityQueue::const_iterator q = Q.begin(); q != Q.end(); ++q){

@@ -16,8 +16,7 @@ namespace opf{
     }
 
     ModelNode& Model::pop_ordered_list_of_nodes() const{
-        ModelNode node = node_.back();
-        return node;
+
     }
 
     Model::iterator Model::begin(){
