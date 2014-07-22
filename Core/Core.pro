@@ -49,7 +49,8 @@ HEADERS += \
     include/input/csv_format.h \
     include/exception/invalid_format_exception.h \
     include/utils/queue_element.h \
-    include/utils/io_utils.h
+    include/utils/io_utils.h \
+    include/utils/indexed_iterator.h
 
 SOURCES += \
     src/input/patterns.cpp \

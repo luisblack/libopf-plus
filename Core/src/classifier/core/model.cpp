@@ -1,5 +1,6 @@
 #include<classifier/core/model.h>
 #include<libopf-plus.h>
+#include<utils/indexed_iterator.h>
 
 namespace opf{
 
@@ -36,6 +37,16 @@ namespace opf{
 
     Model::iterator Model::end(){
         return node_.end();
+    }
+
+    IndexedIterator<ModelNode> Model::ordered_begin()
+    {
+        return IndexedIterator<ModelNode>::begin(node_, ordered_list_of_nodes_);
+    }
+
+    IndexedIterator<ModelNode> Model::ordered_end()
+    {
+        return IndexedIterator<ModelNode>::end(node_, ordered_list_of_nodes_);
     }
 
     void Model::load_model_from_file(const string filename)

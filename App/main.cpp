@@ -62,6 +62,11 @@ int main()
     auto hue = [](const vector<double> v, const vector<double> x) {return euclidean_distance(v,x);};
     Model m = training.train(euclidean_distance, patterns, mst);
 
+    for (auto it = m.ordered_begin(); it!=m.ordered_end(); ++it) {
+        //cout << it.index_[it.cur_idx_] << endl;
+        cout << *it;
+    }
+
     OPFClassifying classifier;
 
     vector<double> out = classifier.classify(m, patterns);

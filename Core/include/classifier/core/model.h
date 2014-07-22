@@ -11,6 +11,7 @@
 #include <classifier/core/model_node.h>
 #include <input/patterns.h>
 #include <utils/distance.h>
+#include<utils/indexed_iterator.h>
 
 /**Class for handling the training model informations.
  * This class provides attributes and methods to deal with information arising from training process that will be used on classifying process.
@@ -48,6 +49,8 @@ namespace opf {
         Model::iterator begin();
         Model::iterator end();
 
+        IndexedIterator<ModelNode> ordered_begin();
+        IndexedIterator<ModelNode> ordered_end();
 
         //"save" method in C++ pattern
         std::ostream& operator>>(std::ostream& out);
