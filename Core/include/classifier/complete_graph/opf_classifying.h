@@ -13,8 +13,12 @@ namespace opf{
  * \version 1.0.0
  * */
 class OPFClassifying : public ClassifyingStrategy{
+   public:
    OPFClassifying();
    virtual vector<double> classify(Model model, Patterns test);
+   virtual ~OPFClassifying(){};
+   private:
+   virtual double classify(Model model, Pattern test);
 };
 }
 #endif // OPF_CLASSIFYING_H

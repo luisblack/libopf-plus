@@ -35,6 +35,10 @@ int main()
     MSTPrototypes mst;
     Distance Dist = euclidean_distance;
 
+    vector<double> v = {12,32,33};
+
+    cout << v << endl;
+
     fstream fs;
     fs.open("boat.txt");
 
@@ -55,9 +59,14 @@ int main()
 
     OPFTraining training;
 
-    Model m = training.train(Dist, patterns, mst);
+    auto hue = [](const vector<double> v, const vector<double> x) {return euclidean_distance(v,x);};
+    Model m = training.train(euclidean_distance, patterns, mst);
 
-    cout << endl;
+    OPFClassifying classifier;
+
+    vector<double> out = classifier.classify(m, patterns);
+
+    cout << out << endl;
     cout << m.end() - m.begin() << endl;
 
 //    for (ModelNode i : m) {

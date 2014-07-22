@@ -24,7 +24,8 @@ namespace opf {
 
     class Model{
     public:
-        int cur_idx_;
+        int cur_push_idx_;
+        int cur_pop_idx_;
         typedef vector<ModelNode>::iterator iterator;
         typedef vector<ModelNode>::const_iterator const_iterator;
         Distance distance;
@@ -42,7 +43,7 @@ namespace opf {
         //TO DO: utilizar lista ou não
         void push_ordered_list_of_nodes(int index);
 
-        ModelNode& pop_ordered_list_of_nodes()const;
+        ModelNode& pop_ordered_list_of_nodes();
 
         Model::iterator begin();
         Model::iterator end();
@@ -53,7 +54,7 @@ namespace opf {
 
         /**Save model to file. Model has to be completely filled.
         */
-        void save_model_to_file();
+        void save_model_to_file(const string filename);
 
         ModelNode& operator[](int index)
         {
@@ -67,7 +68,7 @@ namespace opf {
         /**Loads a model from file. File has to be saved using save_model_to_file.
          * @see save_model_to_file
         */
-        void load_model_from_file(string file_name);
+        void load_model_from_file(const string file_name);
     };
 
 }

@@ -6,8 +6,6 @@
 
 namespace opf {
 
-
-
 OPFTraining::OPFTraining(){
 
 }
@@ -23,9 +21,9 @@ Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototype
 
     vector<double>initial_costs = mst.SelectPrototypes(distance, patterns);
 
-    for (double d : initial_costs) {
-        cout << "Initial: " << d << endl;
-    }
+//    for (double d : initial_costs) {
+//        cout << "Initial: " << d << endl;
+//    }
 
     //DUVIDA: isso muda o valor do vector?
     PriorityQueue Q(initial_costs.size(), PriorityQueue::min_policy);
@@ -37,21 +35,21 @@ Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototype
 
     Model model(patterns, distance);
 
-    cout << "Start Train" << endl;
+//    cout << "Start Train" << endl;
 
-    cout << Q.empty() << endl;
+//    cout << Q.empty() << endl;
 
     while(!Q.empty()){
 
         Q.sort();
         auto p = Q.remove();
 
-        cout << p.cost_ << endl;
+//        cout << p.cost_ << endl;
 
         model.push_ordered_list_of_nodes(p.index_);
         model[p.index_].set_cost(p.cost_);
 
-        cout << p.index_ << " --> " << model[p.index_].get_cost() << endl;
+//        cout << p.index_ << " --> " << model[p.index_].get_cost() << endl;
 
         assert(p.cost_ == model[p.index_].get_cost());
 
@@ -62,13 +60,13 @@ Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototype
             weight = distance(model[p.index_].get_feature_vector(), model[q->index_].get_feature_vector());
 
             tmp = max(weight,p.cost_);
-
             if(weight < q->cost_){
                 Q.update(q->index_, weight);
                 model[q->index_].set_predecessor(p.index_);
                 model[q->index_].set_class_value(model[p.index_].get_class_value());
             }
         }
+
     }
 
     return model;

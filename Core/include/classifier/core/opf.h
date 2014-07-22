@@ -5,9 +5,11 @@
  *      Author: tome
  */
 
+#include <utils/io_utils.h>
 #include <utils/distance.h>
 #include <classifier/core/model.h>
 #include <classifier/core/prototypes_strategy.h>
+#include <classifier/complete_graph/opf_classifying.h>
 #include <classifier/core/classifier.h>
 #include <classifier/core/trainer.h>
 
@@ -16,7 +18,7 @@
 
 namespace opf{
 /**\authors Alan Zanoni Peixinho apeixinho@studends.ic.unicamp.br
-*\authors Luis Augusto Martins Pereria lmartins@ic.unicamb.br
+*\authors Luis Augusto Martins Pereria lmartins@ic.unicamp.br
 * \version 1.0.0
 */
 
