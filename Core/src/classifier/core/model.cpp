@@ -18,6 +18,11 @@ namespace opf{
         cur_push_idx_++;
     }
 
+    vector<int> Model::get_ordered_list_of_nodes() const
+    {
+        return ordered_list_of_nodes_;
+    }
+
     ModelNode& Model::pop_ordered_list_of_nodes(){
 
         if(cur_pop_idx_>=cur_push_idx_)

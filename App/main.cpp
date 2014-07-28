@@ -31,6 +31,9 @@ void ff(Distance dist){
 
 int main()
 {
+
+    try
+    {
 //    OPFTraining opf;
     MSTPrototypes mst;
     Distance Dist = euclidean_distance;
@@ -40,7 +43,7 @@ int main()
     cout << v << endl;
 
     fstream fs;
-    fs.open("boat.txt");
+    fs.open("training.txt");
 
     Patterns patterns;
     fs>>patterns;
@@ -67,9 +70,17 @@ int main()
         cout << *it;
     }
 
+    cout << "testing.txt" << endl;
+
     OPFClassifying classifier;
 
-    vector<double> out = classifier.classify(m, patterns);
+    Patterns p;
+
+    fstream f;
+    f.open("testing.txt");
+    f>>p;
+
+    vector<double> out = classifier.classify(m, p);
 
     cout << out << endl;
     cout << m.end() - m.begin() << endl;
@@ -79,4 +90,8 @@ int main()
 //    }
 
     //opf.train(distance,patterns);
+    }catch(OPFException e)
+    {
+        cout << e.what() << endl;
+    }
 }

@@ -21,15 +21,15 @@ Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototype
 
     vector<double>initial_costs = mst.SelectPrototypes(distance, patterns);
 
-//    for (double d : initial_costs) {
-//        cout << "Initial: " << d << endl;
-//    }
+    for (double d : initial_costs) {
+        cout << "Initial: " << d << endl;
+    }
 
     //DUVIDA: isso muda o valor do vector?
     PriorityQueue Q(initial_costs.size(), PriorityQueue::min_policy);
 
     for (double cost : initial_costs) {
-        Q.insert(cost);
+        Q.insert(min(cost, 1000.0));
     }
 
 
@@ -44,12 +44,12 @@ Model OPFTraining::train(opf::Distance distance, Patterns patterns, MSTPrototype
         Q.sort();
         auto p = Q.remove();
 
-//        cout << p.cost_ << endl;
+        cout << p.cost_ << endl;
 
         model.push_ordered_list_of_nodes(p.index_);
         model[p.index_].set_cost(p.cost_);
 
-//        cout << p.index_ << " --> " << model[p.index_].get_cost() << endl;
+        cout << p.index_ << " --> " << model[p.index_].get_cost() << endl;
 
         assert(p.cost_ == model[p.index_].get_cost());
 

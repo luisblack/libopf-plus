@@ -10,7 +10,7 @@ namespace opf
 /**
  * Print a generic array
  */
-template<typename T> std::ostream& operator<<(std::ostream& o, std::vector<T> v)
+template<typename T> std::ostream& operator<<(std::ostream& o, const std::vector<T> &v)
 {
     o << "[";
     int i = 0;

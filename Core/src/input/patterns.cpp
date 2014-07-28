@@ -81,7 +81,7 @@ ostream& operator <<(ostream& output, Patterns &patterns)
 
 istream& operator >>(istream& input, Patterns &patterns)
 {
-    int number_of_features;
+    int number_of_features = 0;
     try{
         //TODO: ler uma linha de cada vez, para validar linhas.
         input >> patterns.number_of_patterns_ >> patterns.number_of_classes_ >> number_of_features;

@@ -1,5 +1,6 @@
 #include<classifier/complete_graph/opf_classifying.h>
 #include<classifier/core/model.h>
+#include<utils/io_utils.h>
 #include<limits>
 
 namespace opf{
@@ -22,6 +23,8 @@ double OPFClassifying::classify(Model model, Pattern pattern)
 {
     double weight = numeric_limits<double>::max();
     double class_value = 0;
+
+    cout << "Nodes: " << model.get_ordered_list_of_nodes() << endl;
 
     //TO DO: use ordered list of nodes to speed up
     for (ModelNode node : model) {
