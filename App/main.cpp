@@ -32,6 +32,8 @@ void ff(Distance dist){
 int main()
 {
 
+    cout << "Hue Hue Br";
+
     try
     {
 //    OPFTraining opf;

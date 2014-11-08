@@ -3,20 +3,18 @@
 
 #include <string>
 
-using namespace std;
-
 namespace opf {
 
-class OPFException : exception
+class OPFException : std::exception
 {
 private:
-    const string HEADER = "OPF Exception: ";
-    string message_;
+    const std::string HEADER = "OPF Exception: ";
+    std::string message_;
 public:
     OPFException();
-    OPFException(const string& message);
+    OPFException(const std::string& message);
 
-    void set_message(const string&);
+    void set_message(const std::string&);
 
     virtual const char* what() const throw();
 };

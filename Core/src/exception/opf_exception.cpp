@@ -1,22 +1,20 @@
-#include "include/exception/opf_exception.h"
+#include <exception/opf_exception.h>
 
-using namespace opf;
-
-OPFException::OPFException(const string& message):message_(HEADER + message)
+opf::OPFException::OPFException(const std::string& message):message_(HEADER + message)
 {
 }
 
-OPFException::OPFException()
+opf::OPFException::OPFException()
 {
 
 }
 
-void OPFException::set_message(const string& message)
+void opf::OPFException::set_message(const std::string& message)
 {
     message_ = message;
 }
 
-const char* OPFException::what() const throw()
+const char* opf::OPFException::what() const throw()
 {
     return message_.c_str();
 }
